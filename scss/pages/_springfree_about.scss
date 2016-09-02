@@ -1,0 +1,151 @@
+.t_line_view a.t_line_node {
+	//left: 50% !important;
+
+}
+
+.internal-page{
+	
+	.large-content-header{
+		margin:auto;
+		font-weight:100;
+		text-align:center;
+		font-size: 58px;
+		color:#333333;
+
+		@include breakpoint($mobile){
+			@include header-for-copy-mobile();
+		}
+	}
+
+	.intro-copy-block{
+		max-width:1075px;
+		display:block;
+		margin:auto;
+	}
+
+	&.about-us {
+		.intro-copy-block{
+			margin-top:50px;
+
+			@include breakpoint($mobile){
+				margin-top: 6px;
+			}
+		}
+
+		.related-post .col .holder p {
+			font-size:16px;
+			font-weight: 300;
+  			line-height: 22px;
+  			width:70%;
+		}
+	}	
+} 
+
+.timeline-section {
+	font-family:source_sans_pro, Arial, Helvetica, sans-serif;	
+	font-weight:100;
+	margin-top: 60px;
+	background:#00afe0;
+	padding: 40px 0;
+	
+	.large-content-header {
+		font-weight:100;
+		color:white;
+		margin:auto;
+		text-align:center;
+		font-size: 58px;
+
+		@include breakpoint($mobile){
+			@include header-for-copy-mobile();
+		}		
+	}
+
+	.timelineFlat{
+
+		#t_line_left:hover,#t_line_right:hover{
+			color:white;
+		}
+
+		h4.t_line_month{
+			color:white;
+		}
+
+		.item{
+
+			background:white;
+			border: 3px solid #fff;
+			box-shadow: 0 0 27px rgba(0, 0, 0, 0.16);
+
+			h2{
+				font-family:source_sans_pro, Arial, Helvetica, sans-serif;	
+				font-weight:100;
+				color:#797979;
+
+			}
+		}
+
+		h4.t_line_month{
+			//font-family:source_sans_pro, Arial, Helvetica, sans-serif;
+			//font-size:20px;
+			//font-weight:100;
+			display: none;
+		}
+		.t_node_desc{ 
+
+			span{
+
+				background:white;
+				color:#00afe0;
+				font-family:source_sans_pro, Arial, Helvetica, sans-serif;
+				font-size:20px;
+				font-weight:100;
+
+				&:after{
+					border-top:5px solid white;
+				}				
+			}
+		}
+
+		a.t_line_node{
+			font-family:source_sans_pro, Arial, Helvetica, sans-serif;
+			font-size:20px;
+			font-weight:100;
+			color:white;
+
+
+			&:after{
+				background:#b7b6b6;
+				border: none;				
+				top: 25px;
+
+			}
+
+			&.active{
+				color:white;
+				font-weight: 400;
+
+				&:after{
+					background:white;					
+				  border: 2px solid white;
+				}				
+			}
+		}
+	} 
+}
+
+/*
+//Saugar's CSS Import
+.related-post {
+	.col{
+		.holder{
+			.wrap{
+  			padding: 0 129px 10px 50px;
+
+			}
+		}
+	}
+}
+*/
+
+
+

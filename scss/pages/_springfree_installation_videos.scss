@@ -1,0 +1,104 @@
+.bg-stretch-title.bg-stretch{
+	position:relative;
+	left:0; 
+	top:0;
+	width:100%;
+	overflow:hidden;
+	height:80%;
+	background:#f2f2f2;
+}
+
+.shop{
+	.bg-stretch-title.bg-stretch{
+		.text-content {
+			color: #797979;
+			  padding-top: 20px;
+		}
+	}
+
+	.install-btn {
+		width:30%;
+		border-radius:20px;
+		text-transform:uppercase;
+	}
+
+	.choices{
+		text-align:center;
+	}
+
+	.install-vids{
+		margin:40px 0;
+
+		@include breakpoint($mobile){
+			margin:0;
+		}
+	}
+
+	.panel-header {
+		font-weight:200;
+		text-align:center
+	}
+
+	.install-content-holder {
+		text-align:center;
+		//margin:auto;
+		margin: 30px auto 0;
+
+		@include breakpoint($mobile){
+			margin:0 auto;
+		}
+
+	}
+	.ui-state-active span.tag-label{
+		display:none;
+	}
+}
+
+
+.internal-page{
+	.intro-copy{
+		max-width:930px;
+  	color: #797979;
+  	margin:auto;
+  	text-align:center;
+  	margin-top:70px;
+
+  	@include breakpoint($mobile){
+  		  margin-top: 40px;
+  			margin-bottom: 20px;
+  	}
+	}
+}
+
+.install-trampoline-lists {
+	
+	@include breakpoint($mobile){
+		  text-align: center;
+  		display: inline-block;
+  		padding: 0;
+	}
+
+	li{
+		list-style-type:none;
+	}	
+}
+
+.installation-videos{
+	margin-bottom:40px;
+	h2 {
+		font-size:42px;
+		line-height:normal;
+
+		@include breakpoint($mobile){
+					font-size:23px;
+
+		}
+	}
+}
+
+
+.reveal-link-container{
+	padding:50px;
+	text-align:center;
+	@include brief-copy-desktop();	
+}

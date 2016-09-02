@@ -1,0 +1,510 @@
+//snippets - - - - - - - - - - - 
+//@include breakpoint($tablet){}
+//@include breakpoint($mobile){}
+//snippets - - - - - - - - - - - 
+
+
+
+// header content
+// - - - - - - - - - - - - - - - - - - - - - - 
+
+//weight and color      
+h1, h2, h3, h4 {
+  font-weight: 200;
+  color:#333;
+
+  @include breakpoint($tablet){}
+
+  @include breakpoint($mobile){
+    font-weight: 300;
+  }
+}
+
+//sizes and line-height
+h1 {
+  font-size: 67px;
+  line-height: 66px;
+
+  @include breakpoint($tablet){}
+
+  @include breakpoint($mobile){
+    font-size:23px;
+  }
+}
+
+//sizes and line-height
+h2 {
+  font-size: 54px;
+  line-height: 66px;
+
+  @include breakpoint($tablet){}
+
+  @include breakpoint($mobile){
+    font-size:23px;
+    line-height: normal;
+
+  }
+}
+
+//sizes and line-height
+h3 {
+  font-size: 40px;
+  line-height: 66px;
+  
+  @include breakpoint($tablet){}
+  @include breakpoint($mobile){
+    font-size:22px;
+    line-height:normal;    
+  }
+}
+
+//sizes and line-height
+h4 {
+  font-size: 36px;
+  line-height: 66px;
+
+  @include breakpoint($tablet){}
+  @include breakpoint($mobile){
+    font-size:20px;
+    line-height:normal;        
+  }      
+
+}
+
+
+
+// body content
+// - - - - - - - - - - - - - - - - - - - - - - 
+
+html, body, li, p, label {
+  font-size:21px;
+  line-height:normal;
+  color:#333;
+  font-weight: 200;
+
+
+  @include breakpoint($tablet){
+    font-size:18px;
+    line-height:25px;
+  }
+
+  @include breakpoint($mobile){
+    font-size:18px;
+    line-height:$body-line-height;
+    font-weight: 300;
+  }
+
+}
+
+li {
+  margin-bottom:10px;
+  @include breakpoint($tablet){
+    margin-bottom:0;
+  }
+
+}
+
+p {
+  line-height:30px;
+  
+  @include breakpoint($tablet){
+    line-height:25px;
+
+  }
+  @include breakpoint($mobile){
+    //line-height:20px;
+    //line-height:31px;
+    //line-height:normal;
+    line-height:$body-line-height;
+  }
+
+  &.reduce-p-margin{
+    margin-bottom:10px;
+  }
+
+}
+
+//force margin-bottom reduction on p tag
+.tag-holder {
+  p {
+    &.reduce-p-margin {
+      margin-bottom:10px;
+    }          
+  }
+}
+
+strong {
+  font-weight: 400;
+
+}
+
+
+// drupal admin menu reset
+// - - - - - - - - - - - - - - - - - - - - - - 
+
+#admin-menu {
+  p, a, span  {
+    font-size:12px !important;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//font treatments for desktop
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+
+
+
+//header for copy alt - mobile
+@mixin header-for-copy-alt-desktop(){
+    font-size:$header-for-copy-alt-desktop;
+    letter-spacing:normal;
+    line-height:normal;
+    font-weight:normal;
+}
+
+
+
+
+
+
+
+//homepage hero header - contrast with dark background
+@mixin hero-header-desktop-contrast(){
+  font-size: 67px;
+  line-height: 66px;
+  font-weight: 300;
+  text-shadow: 0px 0px 20px rgba(0,0,0,1);
+  color: white;
+};
+
+//basic page header - contrast with dark background
+@mixin title-desktop-contrast(){
+  font-size: 67px;
+  line-height: 66px;
+  font-weight: 300;
+  color: white;
+  text-shadow:none;
+};
+
+@mixin hero-header-desktop(){
+  font-size: 67px;
+  line-height: 66px;
+  font-weight: 300;
+  color: 333;
+};
+
+@mixin hero-header-desktop-light(){
+  font-weight: 200;
+};
+
+@mixin brief-copy-desktop(){
+  font-size:22px;
+  letter-spacing:normal;
+  line-height:$body-line-height;
+  font-weight:300;
+};
+
+@mixin button-pill-desktop(){
+  font-size: $button-desktop;
+  text-transform: uppercase;
+  line-height: 21px;
+  color:white;
+
+}
+
+
+
+
+
+
+
+//font treatments for tablet
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+@mixin hero-header-tablet(){
+  font-size:56px;
+  line-height:60px;
+};
+
+//basic page header - contrast with dark background
+@mixin title-tablet-contrast(){
+  font-size: 56px;
+  line-height: 60px;
+};  
+
+@mixin hero-header-tablet-light(){
+  font-weight: 200;
+};  
+
+@mixin brief-copy-tablet(){
+  font-size:21px;
+  line-height:normal;
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+//font treatments for mobile
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+//homepage hero header
+@mixin hero-header-mobile(){
+  font-size:$header-mobile;
+  letter-spacing:normal;
+  line-height:normal;
+  font-weight:normal;
+};
+
+@mixin hero-sub-header-mobile(){
+  font-size:$body-mobile;
+  font-weight:normal;
+};
+
+//button-pill
+@mixin button-pill-mobile() {
+    letter-spacing:1px;
+    padding:5px 15px;
+    font-size:12px;
+    font-weight:600;
+};
+
+//used in: product benefits static slide in homepage
+@mixin header-for-copy-mobile(){
+  font-size:$header-alt-mobile;
+  letter-spacing:normal;
+  line-height:normal;
+  font-weight:300;
+};
+
+//brief-copy
+@mixin brief-copy-mobile(){
+  font-size:$body-mobile;
+  letter-spacing:normal;
+  line-height:normal;
+  font-weight:300;
+};
+
+@mixin brief-copy-alt-mobile(){
+  font-size: 12px;
+  line-height: 15px;
+  white-space: normal;    
+}
+
+//hero text link - used in shop trampolines hero space
+@mixin hero-text-link() {
+    font-size: 16px !important;
+    line-height: 15px;
+};
+
+//header for copy alt - mobile
+@mixin header-for-copy-alt-mobile(){
+    font-size:$header-for-copy-alt-mobile;
+    letter-spacing:normal;
+    line-height:normal;
+    font-weight:normal;
+}
+
+@mixin alt-hero-header-mobile(){
+  font-size:30px;
+  letter-spacing:normal;
+  line-height:normal;
+  font-weight:300;
+};
+
+//use to override hero-header-mobile()
+@mixin hero-header-mobile-light(){
+  font-weight:200;
+};
+
+ 
+
+@mixin strong-header-mobile(){
+  font-size:21px;
+  letter-spacing:normal;
+  line-height:normal;
+  font-weight:600;
+};
+
+
+
+
+
+
+
+@mixin text-link-mobile(){
+  font-size: 13px !important;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #00afe0;
+}
+
+
+label {
+  font-family: 'source_sans_pro',Arial,Helvetica,sans-serif;  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//CSS Classes
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+.header-for-copy-alt {
+  @include header-for-copy-alt-desktop();
+
+  @include breakpoint($tablet){}
+
+  @include breakpoint($mobile){
+    @include header-for-copy-alt-mobile();
+  }
+  
+}
+
+
+
+
+//global desktop
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+    // hero space
+    // - - - - - - - - - - - - - - - - - - - - - - 
+
+    .fr-CA{
+      .hero-header{
+        @include breakpoint($mobile){
+          font-size:25px;
+        }
+      }
+    }
+
+    .hero-header{
+      font-size: 67px;
+      line-height: 66px;
+      font-weight: 300;
+      text-shadow: 0px 0px 20px black;
+      
+      @include breakpoint($tablet){
+        font-size: 56px;
+        line-height: 60px;
+      }
+
+      @include breakpoint($mobile){
+        @include hero-header-mobile();
+      }
+
+
+      &.contrast{
+        color:white;
+      }
+
+      &.no-shadow{
+        text-shadow: none;
+      }
+    }
+
+    .hero-sub-copy{
+
+      font-size: 22px;
+      letter-spacing: normal;
+      line-height: normal;
+      font-weight: 400;
+      text-shadow: 0px 0px 20px black;
+
+      @include breakpoint($tablet){
+
+      }
+
+      @include breakpoint($mobile){
+        @include hero-sub-header-mobile();
+      }
+
+      &.contrast{
+        color:white;
+      }
+
+      &.no-shadow{
+        text-shadow: none;
+      }
+    }
+
+    .contrast{
+      color:white;
+    }
+
+
+    // buttons
+    // - - - - - - - - - - - - - - - - - - - - - - 
+    .btn {  
+      &.btn-default{
+        &.button-pill{
+          font-size: 15px;
+          text-transform: uppercase;
+          line-height: 21px;
+          letter-spacing:1px;
+
+          @include breakpoint($tablet){}
+
+          @include breakpoint($mobile){            
+            @include button-pill-mobile();
+
+            &.inline-textbox-submit {
+              padding:10px 15px;
+            }
+          }              
+
+        }
+      }
+    }
+
+
+    strong.title {
+      text-transform:uppercase;
+      font-size:17px;
+      line-height:normal;
+    }

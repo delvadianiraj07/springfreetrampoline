@@ -1,0 +1,241 @@
+.btn{
+	white-space: normal;
+}
+
+.button-pill, .button-pill-desktop{
+	//must include btn & btn-default
+	  //font-size: 15px;
+    //line-height: 21px;
+    //padding: 10px;
+    padding: 10px 20px;
+    border-radius: 9999px;
+    text-transform:uppercase;
+    color:white;
+    background-color:#00afe0;
+    text-shadow: none;
+}
+
+.tgoma-wrapper{
+	.btn-default{
+    padding: 10px 20px;
+    border-radius: 9999px;
+    text-transform:uppercase;
+    color:white;
+    background-color:#00afe0;
+    text-shadow: none;		
+	}
+}
+
+.btn.btn-default.button-pill.outline-style-button{
+	background:white;
+	border:1px solid #00afe0;
+	color:#00afe0;
+	border-radius:60px;
+}
+
+.btn{
+	&.btn-default {
+		&.button-pill{
+			&.buy-tgoma{
+				background-color:#a4e000;
+				border:none;
+				color:white;
+			}
+
+		}
+	}
+}
+
+input{
+	&.btn{
+		&.btn-default {
+			&.button-pill{	
+				&.buy-tgoma{
+					background-image: url('http://static.springfree.com/sites/springfreetrampoline.com/files/images/tgoma_logo_0.png');
+				  background-repeat: no-repeat;
+					background-position:195px 5px;
+				  padding-right:75px;
+				  padding-top:12px;
+				  padding-bottom:12px;
+				  background-size:60px 34px;
+
+				  @include breakpoint($mobile){
+				  	background-position: 157px 5px;
+				  }
+				}
+			}
+		}
+	}
+}
+
+.products-list{
+	&.multi-button-option{
+		.btn{
+			&.btn-default{
+				&.button-pill{
+						font-size:13px;
+						background-position: 173px 5px;
+						
+					&.buy-tgoma{
+						//font-size:13px;
+						//padding:7px 12px 7px 13px;
+						@include breakpoint($mobile){
+							//white-space:nowrap;
+							font-size: 11px;
+				    	font-weight: 900;
+				    	//padding-right: 50px;
+				    	padding-right: 15px;
+				    	padding-bottom: 10px;
+				    	background-size: 50px;
+				    	background-position: 46px 29px;	
+						}
+					}
+
+					&.no-bg{
+						padding-top:0;
+						padding-left:13px;	
+
+						@include breakpoint($tablet){
+							font-size: 11px;
+							white-space: nowrap;
+							padding-left: 0;
+						}		
+					}
+				}
+			}
+		}
+}
+}
+
+
+
+
+.btn.btn-default.button-pill.no-bg{
+		background:none;
+		color:#00afe0;
+		border:none;
+		padding-top:10px;
+}
+
+a.buy-tgoma:after {
+	  content: '';
+    display: inline-block;
+    background-image: url('http://static.springfree.com/sites/springfreetrampoline.com/files/images/tgoma_logo_0.png');
+    width: 60px;
+    height: 34px;
+    background-repeat: no-repeat;
+    background-size: 60px auto;
+    vertical-align: middle;
+}
+
+
+
+
+.hero-slide, .how-we-make{
+	.btn{
+		@include button-pill-desktop();
+		text-transform: uppercase;
+		border-radius: 20px;
+		letter-spacing: 1px;
+
+		@include breakpoint($mobile){
+			@include button-pill-mobile();
+		}
+	}
+}
+.model-selector{
+	.btn{
+		@include button-pill-desktop();
+		//border-radius: 20px;
+		text-transform: uppercase;
+
+		@include breakpoint($mobile){
+			@include button-pill-mobile();
+		}
+	}
+	.article{
+		.btn{
+			//min-width: 159px;
+
+			@include breakpoint($mobile){
+				//min-width: 0;
+				//width: 100%;
+				//max-width: 156px;
+				margin: 0 auto;
+			}
+		}
+	}
+	.btn-wrap{
+		.btn{
+			//min-width: 268px;
+
+			@include breakpoint($mobile){
+				//min-width: 0;
+				//width: 100%;
+				//max-width: 156px;
+				margin: 0 auto;
+
+				&.btn-browse{
+					background: #333;
+					border-color:#333;
+
+					&:hover{
+						background: lighten(#333, 5%);
+					}
+				}
+			}
+		}
+	}
+	.product-btn{
+		@include breakpoint($mobile){
+			//font-size: 10px !important;
+			//line-height: 16px !important;
+			//padding: 4px 10px;
+			//min-width: 0 !important;
+			//display: block;
+			//width: 100%;
+			//border-radius: 10px;
+			background: #00afe0;
+			color:#fff !important;
+			text-decoration: none !important;
+			//border: 1px solid transparent;
+			//max-width: 156px;
+			margin: 0 auto;
+
+			&:hover{
+				text-decoration: none;
+				background: darken(#00afe0, 5%);
+			}
+		}
+	}
+}
+.promo-panel{
+	.btn{
+		letter-spacing: 0;
+		//min-width: 243px;
+		margin: 0 18px 10px;
+		//border-radius: 20px;
+		//font-size: 15px;
+		//line-height: 19px;
+		//padding: 10px;
+		text-transform: uppercase;
+
+		@include breakpoint($mobile){
+			//@include button-pill-mobile();
+			//font-size: 10px;
+			//line-height: 16px;
+			//padding: 4px 10px;
+			//min-width: 0;
+			//width: 100%;
+			//border-radius: 10px;
+			//margin: 0 0 13px;
+			//display: block;
+		}
+	}
+}
+
+.text-link{
+	@include breakpoint($mobile){
+		@include text-link-mobile();
+	}
+}

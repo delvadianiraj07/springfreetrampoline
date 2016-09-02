@@ -1,0 +1,245 @@
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+.icon-delivery:before {
+	content: "\e600";
+}
+
+.icon-guide:before {
+	content: "\e601";
+}
+
+.icon-maintenance:before {
+	content: "\e602";
+}
+
+.icon-manuals:before {
+	content: "\e603";
+}
+
+.icon-parts:before {
+	content: "\e604";
+}
+
+.icon-warranty:before {
+	content: "\e605";
+}
+
+.jcf-list .jcf-option-hideme {
+	display: none; 
+	text-shadow:none !important;
+}
+
+
+.try-us{
+	@include breakpoint ($mobile){
+
+		.shoppage-head {
+			height: 520px;
+			max-height: 770px;
+		}
+	}
+
+}
+
+.helpandsupport {
+
+	.shoppage-head {
+
+		.text-content {
+			padding: 51px 10px;
+
+			@include breakpoint($mobile){
+				  padding: 51px 10px 0;
+			}
+		}
+
+		h1 {
+				@include hero-header-desktop-contrast();
+				//font-size: 85px;
+				//line-height: 90px;
+				//font-weight: 200;
+				@include breakpoint($mobile) { 
+				@include hero-header-mobile();
+			}
+
+		}
+	}
+
+	.container-fluid {
+		max-width: 1107px;
+		margin: 0 auto;
+	}
+
+	.no-padding {
+		padding-right: 0;
+		padding-left: 0;
+	}
+
+	.help-option {
+		padding: 57px 0 53px;
+
+		h2 {
+			margin: 0 0 28px;
+			font-size: 30px;
+			line-height: 34px;
+			font-weight: 400;
+			color:white;
+
+			@include breakpoint($mobile) {
+				@include header-for-copy-alt-mobile();
+				margin-bottom: 10px;
+			}
+		}
+
+		.description {
+			//font-size: 25px;
+			//line-height: 35px;
+			//font-weight: 300;
+			
+			@include brief-copy-desktop();
+
+			padding-bottom: 38px;
+			@include breakpoint($mobile) {
+				font-size: 14px;
+				line-height: 17px;
+			}
+			p {
+				margin: 0;
+			}
+			a {
+				color: #fff;
+				text-decoration: underline;
+				&:hover {
+					text-decoration: none;
+				}
+			}
+
+			.color-online {
+				color: #92eb32;
+			}
+		}
+		
+		.form-group {
+			padding: 16px 0;
+		}
+	}
+
+	.support-section {
+		background: url(../../images/img-2.jpg) no-repeat;
+		background-size: cover;
+		text-align: center;
+		padding-top: 88px;
+
+		h2 {
+			margin: 0 0 27px;
+			font-size: 67px;
+			line-height: 70px;
+			font-weight: 200;
+			@include breakpoint($mobile) {
+				@include header-for-copy-mobile();
+			}
+		}
+
+		.description {
+			font-size: 31px;
+			line-height: 42px;
+			font-weight: 200;
+			padding-bottom: 76px;
+			@include breakpoint($mobile) {
+				font-size: 20px;
+				line-height: 24px;
+			}
+			p {margin-bottom: 20px;}
+		}
+	}
+
+	.support-media {
+		ul {
+			@extend %listreset;
+			margin: 0 -3px 109px;
+		}
+		li {
+			padding: 3px;
+			a {
+				display: block;
+				background: #fff;
+				color: #333;
+				font-size: 25px;
+				line-height: 30px;
+				padding: 56px 65px;
+				@include breakpoint($mobile) {
+					padding: 10px;
+					font-size: 16px;
+					line-height: 20px;
+				}
+				[class^="icon-"], [class*=" icon-"] {
+					display: block;
+					font-size: 80px;
+					line-height: 80px;
+					color: #00afe0;
+					margin-bottom: 18px;
+					@include breakpoint($mobile) {
+						font-size: 50px;
+						line-height: 50px;
+					}
+				}
+				&:hover {
+					background: #0db3e2;
+					color: #fff;
+					text-decoration: none;
+					[class^="icon-"], [class*=" icon-"] {
+						color: #fff;
+					}
+				}
+			}
+		}
+	}
+	
+}
+.jcf-select-location-selector {
+	background: #f1eff0;
+	min-width: 245px;
+	height: 41px;
+	border-radius: 20px;
+	.jcf-select-text {
+		font-size: 18px;
+		line-height: 22px;
+		font-weight: normal;
+		text-transform: uppercase;
+		color: #333;
+		max-width: none;
+		width: 80%;
+		padding: 4px 5px 4px 15px;
+	}
+	.jcf-select-opener {
+		width: 50px;
+		&:after {
+			background-position: -144px -74px;
+			width: 10px;
+			height: 6px;
+			top: 0;
+			left: 0;
+			bottom: 0;
+			right: 0;
+			margin: auto;
+		}			
+	}
+	&.jcf-select-drop .jcf-select-drop-content {
+		border: none;
+	}
+	.jcf-list {
+		font-size: 14px;
+		line-height: 18px;
+	}
+}

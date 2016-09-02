@@ -1,0 +1,813 @@
+
+
+.row.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+
+  & > [class^="col-"],
+  & > [class*=" col-"] {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+
+
+// homepage > hero : royal slider styles
+// ========================================================================
+
+.header{
+	&.contrast-header{
+		//@include hero-header-desktop-contrast();
+
+		p {
+			//@include brief-copy-desktop();
+			//text-shadow: 0px 0px 20px black;			
+			//color:white;
+			//text-rendering: optimizeLegibility;
+
+		}
+	}
+}
+
+#homepage-hero-carousel {
+	
+
+	// promo based position
+	// - - - - - - - - - - - - - - - 
+
+	.button-pill.q2-promo-btn {
+		  position: relative;
+	  	top: 380px;
+  		left: -330px;
+
+  		@include breakpoint($tablet){
+  			top: 270px;
+  			left: -197px;  			
+  		}
+
+  		@include breakpoint($mobile){
+			  top: 194px;
+			  left: auto;
+			  z-index: 10;		
+  		}
+
+	}
+
+	//Promotions Slider 
+	.three-for-free-btn {
+	  position: relative;
+	  top: 90px;
+
+	  @include breakpoint($mobile){
+	  	 top: 60px;
+	  }
+	}
+
+
+	// - - - - - - - - - - - - - - - 
+
+
+	.rsArrow{
+		top:40%;
+
+		@include breakpoint($mobile) {
+			//top:28%;
+			display:none !important;
+		}
+	}
+
+	.slide-item{ 
+		height:600px;
+
+		@include breakpoint($tablet) {
+			height:450px;
+		}		
+
+		@include breakpoint($mobile) {
+			height:300px;
+		}		
+	}
+	
+
+	.rsNav.rsBullets {
+		position: relative;
+		//bottom: 50px;
+		bottom:-10px; //changed due to bundles
+		width: 100%;
+		height: 120px;
+		text-align: center;	 
+		z-index:1;
+		 
+		@include breakpoint($mobile) {
+			//display:none;
+			//bottom: 0;
+		}
+	}
+
+	.rsNavItem.rsBullet{
+		letter-spacing: 0;
+		width: 21px;
+		height: 21px;
+		display: inline-block;
+		vertical-align: top;
+		margin: 0 6px;
+		border-radius: 10px/10px 10px 11px 11px;
+		background: #d7d7d7;
+		cursor:pointer;
+
+		@include breakpoint($mobile) {
+		  width: 15px;
+		 	height: 15px;
+		}
+
+		&.rsNavSelected, &:hover{
+			background: #00afe0;
+		}
+	}
+}
+
+
+
+.rsArrow {
+	height:86px;
+	width: 31px;
+	position:absolute;
+	top:25%;
+
+	&.rsArrowLeft {
+		background: url('../../images/sprite.png') no-repeat 0 -23px;
+		left:5%;
+	}
+
+	&.rsArrowRight {
+		background: url('../../images/sprite.png') no-repeat -41px -23px;
+		right:5%;
+	}
+}
+
+
+// homepage > trampoline slide : royal slider styles
+// ========================================================================
+
+@include breakpoint ($mobile){
+	.springfreemodels-tab {
+		.product-carousel{
+			.carousel-nav {
+		  	top: 30.5%;
+			}
+		}
+	}
+}
+
+
+
+// homepage > accessories slide : royal slider styles
+// ========================================================================
+
+.shop-accessories {
+	.product-carousel{
+		.carousel-nav {
+	  	top: 37.5%;
+		}
+	}
+}
+// safety > safety slide : royal slider styles
+// ========================================================================
+
+.helpandsupport{
+
+	.method-block{
+
+		.internal-method-frame{
+
+
+			.method-frame{
+					padding: 122px 45px;
+
+					@include breakpoint($tablet) { 
+						padding: 68px 45px;
+					}
+
+					@include breakpoint($mobile) { 
+						//padding: 41px 45px;
+						padding: 40px 45px 0;
+					}
+
+					@include breakpoint(320px) { 
+						//padding: 41px 45px;
+						padding: 13px 45px;
+					}					
+					//background:none;
+					//box-shadow:none;
+			}
+		}
+
+	.internal-method-frame{
+		//min-height:500px;
+
+		@include breakpoint($tablet) { 
+			height:610px;
+		}
+
+		@include breakpoint($mobile) { 
+			min-height:440px;
+			height:440px;
+		}
+
+	&.intro-frame{
+
+			@include breakpoint($mobile) {
+				height: 400px;
+			}
+
+			.method-frame {
+				position: relative;
+				top: 14%;
+
+				@include breakpoint($tablet) {
+					top: 8%;
+				}
+
+				@include breakpoint($mobile) {
+					top: 8%;
+				}
+
+			}
+		}				
+	}
+
+		.container-fluid {
+			padding-left:0;
+			padding-right:0;
+			width:100%;
+		}
+
+	}
+}
+
+
+.safety-slide{
+
+	h2 {
+		@include breakpoint($mobile) {
+			@include header-for-copy-alt-mobile();
+		}		
+	}
+
+	.safety-image-holder {
+		
+		//min-height: 200px;
+		margin-bottom:15px;
+
+		img {
+			//height:100%;
+			width: 100%;
+
+			@include breakpoint($mobile) {
+				width: 320px;
+			}
+		}
+
+		&.displace-image-holder{
+			position: relative;
+  		top: -30px;
+		}
+	}
+
+	.wrapped-frame {
+		//height:500px;
+		//padding:60px 0 0 0;
+		position: relative;
+		//top:29%;
+		 top: 18%;
+	}
+
+	@include breakpoint($mobile) {
+		.wrapped-frame {
+			height:300px;
+		}
+	}
+
+	.tab-content {
+		padding-top:30px;
+	}
+
+
+	.tab-left-column, .tab-right-column {
+		text-align:center;
+	}
+
+
+	.description{
+		
+		p {
+			@include brief-copy-desktop();
+			//font-size: 25px;
+			max-width:400px;
+			margin:30px auto;
+			min-height:120px;
+
+			@include breakpoint($desktop) {
+				//font-size: 22px;
+				max-width:325px;				
+				margin:auto;
+				min-height:150px;
+			}
+			
+			@include breakpoint($mobile) {
+				@include brief-copy-mobile();
+				margin:auto;
+			}
+		}
+
+		&.intro-description{
+			p{
+				min-height:0;			
+
+				@include breakpoint($mobile) {
+					font-size: 15px;
+				}
+			}
+
+			@include breakpoint($mobile) { 
+				margin:15px 0
+			}
+
+		}  		
+	}
+
+	.safety-image-holder {
+		//height:317px;
+	}
+
+	.tab-column-headers {
+		display:none;
+	}
+
+	.nested-header {
+		font-size:32px;
+		font-weight:100;		
+		display:block; 
+	}
+
+	@include breakpoint($mobile) {
+		.nested-header { display:none;}
+		.tab-column-headers {display:block;}
+	}
+
+	//royal slider
+
+	.rsArrow{
+		top:55%;
+	}
+
+	h2 {
+		margin-top:0;
+	}
+
+	//.rsNav.rsBullets.reposition{
+	//	position: relative;
+	//}
+
+	.rsNav.rsBullets {
+		position: relative;
+		width: 100%;
+		height: 21px;
+		text-align: center;	  
+		bottom: 40px;
+
+		@include breakpoint($tablet){};
+		@include breakpoint($mobile){
+			bottom: -50px;
+		};
+	
+
+	}
+
+	.rsNavItem.rsBullet{
+		letter-spacing: 0;
+		width: 21px;
+		height: 21px;
+		display: inline-block;
+		vertical-align: top;
+		margin: 0 6px;
+		border-radius: 10px/10px 10px 11px 11px;
+		background: #d7d7d7;
+		cursor:pointer;
+
+		&.rsNavSelected, &:hover{
+			background: #00afe0;
+		}
+
+	}
+
+	.tab-column-header.col-xs-6 {
+		padding-left:0;
+		padding-right:0;
+	}
+
+	.tab-column-headers{
+
+		&.nav-tabs{
+			border-bottom:none;
+			text-align:center;
+
+			.active{
+				h1 {
+					color:#333;
+				}
+			}
+
+			h1 {
+				@include header-for-copy-mobile();
+				//font-size: 26px;
+				//font-weight: 300;
+				color:white;
+				margin-top: 15px;
+				@include breakpoint($mobile){
+					@include header-for-copy-alt-mobile();
+
+				}
+
+			}
+
+
+			a {
+				display:inline-block;
+				height:58px;
+				width:100%;
+			}
+
+			a:hover {
+				text-decoration:none;
+			}
+
+			.tab-column-header{
+				background:#00afe0;
+			}
+
+			.tab-column-header.active{
+				background:transparent;
+			}		
+		}
+
+	}
+
+
+
+} 
+
+	.btn-continue{
+
+		&.continue-carousel{
+			display:inline-block;
+			//width:100%;
+			text-align:center;
+			//margin-top: -32px;
+			position: relative;
+  		top: -100px;
+  		left:50%;
+  		margin-left:-80px;
+
+  		#learn-carousel-button {
+  			margin-left:-12px;
+
+	  		@include breakpoint($mobile){
+	  			margin-left:0px;
+	  		};  			
+  		}
+
+  		@include breakpoint($tablet){
+
+  		};
+
+  		@include breakpoint($mobile){
+  			top:0;
+  		};
+
+	 		.btn {
+				font-size: 15px;
+	  			line-height: 20px;
+				font-weight: bold;
+				text-transform: uppercase;
+				color: #fff;
+				border-radius: 20px;
+				min-width: 158px;
+			 	//height: 41px;
+				//padding: 10px;
+
+				@include breakpoint($mobile) {
+					@include button-pill-mobile();
+				}
+			}
+		}
+	}
+
+
+// quality > quality slide : royal slider styles
+// ========================================================================
+
+
+
+
+.helpandsupport  .container-fluid.full-width{
+	max-width:100%;
+	padding-left:0;
+	padding-right:0;
+}	
+
+
+#quality-carousel{
+
+	.slide-item{
+		height: 550px !important;
+
+		@include breakpoint($tablet) {
+			height: 450px !important;
+		}
+
+		@include breakpoint($mobile) {
+			height: 350px !important;
+		}			
+	}
+
+	img {
+		width: 100%;
+		height:auto;
+		vertical-align: bottom;
+		&.cancel-width{
+			//width:auto;
+		}
+		@include breakpoint($mobile) {
+			width: 50%;
+		}
+
+		@include breakpoint(420px) {
+  			width: 80%;
+		}
+
+	}
+
+
+
+	.quality-intro-slide{
+		background:#00afe0;
+
+		img {
+
+			@include breakpoint($mobile) {
+				width: 105%;
+			}
+
+		}		
+	}
+
+	.quality-slide{
+		&.header{
+			color:white;
+		}
+
+		.btn-default{
+			background-color:white;
+			color:#00afe0;
+		}
+	}
+
+
+	.carousel-block {
+
+		.btn-wrap {
+			padding: 34px 10px 62px;
+			//position: absolute;
+			bottom: 0;
+			//left:50%;
+			//width:100%;
+			//text-align:center;
+			
+			@include breakpoint($mobile) {
+				padding: 0;
+			}
+
+		}
+		.quality-intro-slide{
+			.header{
+				
+				@include breakpoint($mobile) {
+					text-align:center;
+				}
+
+				h1{
+					margin:50px 0 19px;
+					color:white;
+
+					@include breakpoint($mobile) {
+						margin:0 0 19px;
+					}	
+				}
+				p{
+					color:white;
+				}
+			}
+
+		}
+
+		.header{
+			padding:0;
+			min-height: 600px;
+			@include hero-header-desktop-light();
+			
+			@include breakpoint($mobile) {
+				padding: 30px 20px;
+				min-height: 0;
+				text-align:left;
+
+			}
+
+			&.padding-top-20 {
+				@include breakpoint($mobile) {
+					padding-top:20%;
+				}
+			}
+
+			h1{
+
+				margin:50px 0 19px;
+				text-shadow:none;
+				color:#333;
+				font-weight:200;
+
+				@include breakpoint($desktop) {
+					margin:0 0 19px;
+				}
+
+				@include breakpoint($tablet) {
+					margin: 20px 0 19px;
+					@include brief-copy-desktop();
+					font-weight:600;
+				}			
+
+
+				@include breakpoint($mobile) {
+					margin:0 0 19px;					
+					//min-height: 380px;
+					@include hero-header-mobile();
+					@include hero-header-mobile-light();
+
+				}		
+				
+				&.contrast-header {
+					color:white;
+				}	
+				
+
+				&.reset-contrast-header {
+					text-shadow:none;
+					color:#333;
+				}					
+			}
+
+			p{
+				@include brief-copy-desktop();
+				font-size:20px;
+
+				@include breakpoint($tablet) {
+					font-size: 18px;
+				}
+
+
+				@include breakpoint($mobile) {
+					@include brief-copy-mobile();
+					font-size: 14px;
+				}					
+			}
+
+
+			&.no-length{
+				padding:0 0 0;
+			}
+
+
+		}	
+	}
+
+
+
+}
+
+.fr-CA {
+	#quality-carousel-rs {
+		.slide-bg {
+			.bg-image{
+
+				@include breakpoint($mobile){
+					opacity:0.2;
+				}	
+			}
+		}
+	}
+}
+
+
+#quality-carousel-rs {
+
+	.rsArrow{
+		top:55%;
+	}
+
+	.rsNav.rsBullets {
+		position: relative;
+		bottom: 50px;
+		width: 100%;
+		height: 120px;
+  		text-align: center;	  
+
+  		@include breakpoint($desktop){
+  			bottom: 30px;
+  		}
+	}
+
+	.rsNavItem.rsBullet{
+		letter-spacing: 0;
+		width: 21px;
+		height: 21px;
+		display: inline-block;
+		vertical-align: top;
+		margin: 0 6px;
+		border-radius: 10px/10px 10px 11px 11px;
+		background: #d7d7d7;
+		cursor:pointer;
+
+		&.rsNavSelected, &:hover{
+			background: #00afe0;
+		}
+	}
+
+	.position-offset{
+  		position: relative;
+  		bottom: -50px;
+	}
+	
+
+
+
+	.slide-bg {
+		position:absolute;
+		width:100%;
+		//bottom: 0;
+
+		@include breakpoint($tablet){
+			//top: 0;
+
+		}
+		
+		.bg-image{
+			display:inline-block;
+
+
+			&.bg-left-position{
+
+				img{
+					@include breakpoint($mobile){
+						position:relative;
+					}					
+				}
+			}
+
+			&.by-20 {
+				@include breakpoint($mobile){
+					left:20px;
+				}				
+			}
+			&.by-30 {
+				@include breakpoint($mobile){
+					left:30px;
+				}				
+			}
+			&.by-120 {
+				@include breakpoint($mobile){
+					left:120px;
+				}					
+			}
+			&.by-50{
+				@include breakpoint($mobile){
+					left:50px;
+				}	
+			}
+
+		}
+	}
+
+	.header-quality{
+		//width:70%;
+		//margin:auto;
+	}
+}
+
+
+// Homepage
+.homepage-slider-adjust img {
+	margin-top: 0 !important;
+	margin-left: 0 !important;
+}
+

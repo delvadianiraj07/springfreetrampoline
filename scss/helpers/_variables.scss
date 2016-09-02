@@ -1,0 +1,53 @@
+@import "../vendors/bootstrap/variables";
+@import "../vendors/bootstrap/mixins";
+
+// breakpoints ______________________________________________________________________
+//___________________________________________________________________________________
+
+$mobile: 767px;  // mobile 767px and less 
+$tablet: 991px;  // mobile 767px and less 
+$desktop: 1199px; // tablet 1025px {desctop - 1} and less 
+$lg-desktop: 1299px; // tablet 1025px {desctop - 1} and less 
+$retina: 1.5;    // standart retina > 1.5x
+$retina-hd: 2.5; // hd retina > 2.5x
+
+// images ___________________________________________________________________________
+//___________________________________________________________________________________
+
+$img-path : '../../images/';
+
+$sprite-1x-width: 258px;
+$sprite-1x-height: 200px;
+
+
+// font attributes __________________________________________________________________
+//___________________________________________________________________________________
+
+
+  // desktop
+  // ===================================
+	  
+	$hero-header-desktop:67px;
+	$hero-subHeader-desktop:24px;
+	$header-for-copy-alt-desktop:22px;
+	
+	//button-pill
+	$button-desktop:15px;
+
+
+  // tablet
+  // ===================================
+  	
+  	$hero-header-tablet: 36px;
+
+
+  // mobile
+  // ===================================
+
+	$body-mobile: 18px;
+	$header-mobile:31px;
+	$header-alt-mobile:29px;
+	$body-line-height:27px;
+	$header-for-copy-alt-mobile:22px;
+
+

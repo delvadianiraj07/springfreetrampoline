@@ -1,0 +1,115 @@
+// breakpoints mixin
+@mixin breakpoint($rule, $orientation:""){
+	@if ($rule == $retina or $rule == $retina-hd){
+		@media only screen and ( min-resolution : #{$retina*96} ), ( -webkit-min-device-pixel-ratio : #{$retina} ){
+			@content;
+		}
+	}
+	@if ($orientation == "landscape" ){
+		@media only screen and (max-width: #{$rule}) and (orientation: #{$orientation}){
+			@content;
+		}
+	}
+	@else{
+		@media only screen and (max-width: #{$rule}){
+			@content;
+		}
+	}
+}
+
+/// breakpoints mixin usage
+/// selector{
+///   height:100px;
+///   @include breakpoint($tablet){
+///     height:50px;
+///   }
+/// }
+
+// reset for list
+%listreset {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+
+// full width
+%full-width {
+	padding-left: 9999px;
+	padding-right: 9999px;
+	margin-left: -9999px;
+	margin-right: -9999px;
+}
+
+@mixin img-sprite($img-name, $pos-x, $pos-y){
+	background: url($img-path + $img-name) no-repeat $pos-x $pos-y;
+}
+
+@mixin retina-image($file, $ext, $width: $sprite-1x-width, $height: $sprite-1x-height) {
+  background-image: url($img-path + $file + '.' + $ext);
+  background: url($img-path + $file + '.' + $ext) no-repeat -9999px -9999px;
+
+  @media
+  only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (   min--moz-device-pixel-ratio: 2),
+  only screen and (     -o-min-device-pixel-ratio: 2/1),
+  only screen and (        min-device-pixel-ratio: 2),
+  only screen and (                min-resolution: 192dpi),
+  only screen and (                min-resolution: 2dppx) {
+    background-image: url($img-path + $file + '@2x.' + $ext);
+    background-size: $width $height;
+  }
+}
+
+// from http://codepen.io/MichaelArestad/pen/IxFGj 
+@mixin arrow-lazy($al-direction: top, $al-size: 10px, $al-color: #ccc, $al-center: 50%, $al-margin: -1px, $al-pseudo: before){
+	position: relative;
+	border-color: $al-color;
+
+	&:#{$al-pseudo} {
+		position: absolute;
+		content: "";
+		width: 0;
+		height: 0;
+		border: 0;
+		border-color: $al-color;
+
+		@if $al-direction == "right" {
+			top: $al-center;
+			left: 100%;
+			margin-left: $al-margin;
+			margin-top: $al-size * -1;
+			border-top: $al-size solid transparent;
+			border-bottom: $al-size solid transparent;
+			border-left: $al-size solid $al-color;
+			border-left-color: inherit;
+		} @else if $al-direction == "down" {
+			top: 100%;
+			left: $al-center;
+			margin-top: $al-margin;
+			margin-left: $al-size * -1;
+			border-left: $al-size solid transparent;
+			border-right: $al-size solid transparent;
+			border-top: $al-size solid $al-color;
+			border-top-color: inherit;
+		} @else if $al-direction == "left" {
+			top: $al-center;
+			right: 100%;
+			margin-right: $al-margin;
+			margin-top: $al-size * -1;
+			border-top: $al-size solid transparent;
+			border-bottom: $al-size solid transparent; 
+			border-right:$al-size solid $al-color;
+			border-right-color: inherit;
+		} @else {
+			bottom: 100%;
+			left: $al-center;
+			margin-bottom: $al-margin;
+			margin-left: $al-size * -1;
+			border-left: $al-size solid transparent;
+			border-right: $al-size solid transparent;
+			border-bottom: $al-size solid $al-color;
+			border-bottom-color: inherit;
+		}
+	}
+}

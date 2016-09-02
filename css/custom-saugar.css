@@ -1,0 +1,888 @@
+/*!*** Hero space copy alignment ****/
+.text-about-us {
+  padding-top:225px  !important;
+}
+.shoppage-head .text-content {/*Shop Trampolines hero*/
+  padding: 178px 10px 122px;
+}
+.text-safety {
+    padding-top: 182px !important;
+}
+
+/*!*** Hompage fixes ****/
+.model-selector {
+  padding-top: 75px;
+}
+
+
+
+.product-carousel .carousel-pagination a {
+  padding: 20px 10px;
+}
+.product-carousel .slide-item {
+  padding-top: 10px;
+}
+.product-carousel .carousel-pagination a .img-wrap {
+  margin-bottom: 20px;
+}
+.model-selector .btn-wrap {
+  padding: 50px 0;
+}
+
+.social-bar .header {
+  padding: 30px 20px 40px;
+}
+
+/*!*** Video CTA Homepage static HTML ****/
+
+
+.video-block .body {     
+  display: inline-block;
+  vertical-align: top;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+}
+
+.video-block .body a:after {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  /*transform: translate(-50%, -50%);*/
+  content: '';
+  background-image: url("../images/ico01.png");
+  margin-left: -60.5px;
+  margin-top:-43px;
+  width: 121px;
+  height: 86px;
+
+}
+
+
+/*!*** Safety pages fixes ***/
+.helpandsupport #accordion1.safety-accordion .btn-closed {
+  margin-top: 0px !important;
+}
+
+
+.helpandsupport #accordion1.safety-accordion .panel-body.tips-content {
+ padding: 25px 0 100px;
+}
+.helpandsupport #accordion1.safety-accordion .panel-heading.white {
+  padding: 50px 10px 41px;
+}
+
+.helpandsupport #accordion1.safety-accordion .panel.safety-research {
+  padding-bottom: 20px;
+}
+
+
+/*!*** Safety Carousel ***/
+.helpandsupport .method-block {
+  background: #f1eff0;  
+  padding-bottom: 0;
+}
+.safety-slide .safety-image-holder {
+  width: 80%;
+  margin: 0 auto;
+}
+.safety-slide .safety-image-holder.displace-image-holder {
+  top: 0;
+}
+/*!*** Global fixes ***/
+.tag-holder{
+  padding-top: 50px;
+}
+
+.olark-online {
+  color: #92eb32;
+}
+.not-available {
+  color: #f18732;
+}
+
+.social-bar .socials {
+  background: #EDEDED;
+}
+#main-nav > .nav {
+  margin-right: 15px;
+}
+.add-nav a{
+  padding-top:5px;
+}
+.tab-holder .product-wrap {
+  padding: 33px 5px 12px;
+}
+
+.header-shadow #nav {
+  margin-top:-11px;
+}
+.header-shadow #main-nav > .nav {
+  padding: 33px 20px 18px 10px;
+}
+
+.header-shadow .navbar-header {
+  height:75px;
+  top:-15px;
+}
+.header-shadow .add-nav li.btn-holder .btn{
+  font-size: 14px;
+  padding: 4px 8px;
+}
+
+body.shop #fancybox-close,
+#fancybox-close {
+  display: inherit !important;
+}
+
+.add-nav li.btn-holder .btn {
+  font-size:16px;
+}
+.add-nav li a.tel-link span{
+  font-size: 16px;
+  color:black;
+}
+
+#main-nav > .nav > li ul.sub-menu a > span {
+  display:inline-block;
+  height:15px;
+  width: 27px;
+  vertical-align: sub;
+  background: url('../images/sprite.png') no-repeat;  
+}
+
+
+#main-nav > .nav > li > a.flag-us ,
+#main-nav > .nav > li ul.sub-menu a > span.flag-us {
+  background-position: -364px 0; 
+}
+
+#main-nav > .nav > li > a.flag-ca,
+#main-nav > .nav > li ul.sub-menu a > span.flag-ca {
+  background-position: -84px 0; 
+}
+
+#main-nav > .nav > li > a.flag-au,
+#main-nav > .nav > li ul.sub-menu a > span.flag-au {
+  background-position: -334px 0; 
+}
+
+#main-nav > .nav > li > a.flag-nz,
+#main-nav > .nav > li ul.sub-menu a > span.flag-nz {
+  background-position: -393px 0; 
+}
+
+
+#main-nav > .nav > li ul.sub-menu a > span.flag-other {
+  background-position: -418px -0; 
+}
+
+.promo-panel h3 {
+  text-shadow: 0 0 15px #000;
+}
+
+
+.compare-view .table-row .img-wrap img{ /* Fix image width in Shop Trampolines > Compare view */
+  width: 120px;
+}
+
+/*! **** Swiftype search ****/
+/** Have to use !important for this section */
+form input.st-search-input {
+  font-size: inherit !important;
+  padding-left: 27px !important;
+  height: 34px !important;
+  width: 100% !important;
+  color: inherit !important;
+  border: 1px solid #ccc !important;
+  -webkit-border-radius: 15px !important;
+  -moz-border-radius: 15px !important;
+  -ms-border-radius: 15px !important;
+  -o-border-radius: 15px !important;
+  border-radius: 15px !important;
+  -webkit-box-shadow: inset 0 1px 3px 0 rgba(0,0,0,0.17) !important;
+  -moz-box-shadow: inset 0 1px 3px 0 rgba(0,0,0,0.17) !important;
+  box-shadow: inset 0 1px 3px 0 rgba(0,0,0,0.17) !important;
+  outline: none !important; 
+  background: #fcfcfc url(//s.swiftypecdn.com/assets/embed_mag-115e233edebef5dbcde4c557157b625c.png) no-repeat 7px 7px;
+}
+
+/*! **** About us page *****/
+
+.timeline-section .timelineFlat .item h2 {
+  font-size: 20px;
+  line-height: normal;
+}
+.timeline-section .timelineFlat .item span {
+  font-size: 14px;
+  line-height: normal;
+}
+
+.internal-page.about-us .intro-copy-block {
+  margin-top: 50px;
+}
+/*
+.internal-page.about-us .intro-copy {
+  margin-top: 50px;
+}
+*/
+.helpandsupport .about-us .related-post {
+  padding-top: 50px;
+}
+.about-us .related-post .col .holder .wrap {
+  padding: 0px 175px 10px 25px;
+}
+
+.internal-page.about-us .related-post .col .holder p {
+  margin-top: 15px;
+}
+
+/*! **** PDP pages *****/
+.product #accordion1 .panel-heading.first {
+  padding: 50px 10px 10px;
+}
+
+.product #accordion1 .panel-heading {
+  padding: 50px 10px;
+}
+.product #accordion1 .features:last-child {
+  margin-bottom: 0px;
+}
+
+/*! **** Help & Support page *****/
+
+.helpandsupport .support-section {
+  padding-top: 50px;
+}
+.helpandsupport .support-section .description {
+  padding-bottom: 20px;
+}
+.helpandsupport .support-media ul {
+  margin-bottom: 50px;
+}
+
+/*! **** Reviews page *****/
+
+.all-reviews h3{
+  line-height: auto;
+  margin:0;
+}
+
+.all-reviews .tag-holder p{
+  margin:0 0 10px 0;
+}
+.all-reviews .item-list .pager {
+  margin:0;
+}
+
+/***** Reviews form *****/
+.review-form fieldset#edit-field-review-body-und-0-format,
+.review-form .element-invisible{
+  display:none;
+}
+.review-form .description{
+  font-size: 20px;
+  color: #666;
+}
+.review-form .form-required{
+  color: red;
+}
+.review-form label{
+  display: block;
+}
+.review-form label.option{
+  display: inline;
+}
+.review-form .form-item, .review-form  .field-type-text, 
+.review-form  .field-widget-options-select, 
+.review-form  .field-widget-text-textarea, .review-form .field-widget-options-buttons {
+  margin-bottom: 20px;
+}
+.review-form .form-type-radio {
+  margin-bottom: 0;
+}
+.review-form .form-item input, .review-form .form-item textarea{
+  width: 80%;
+}
+.review-form .form-item textarea{
+  border: 1px solid #bbb;
+  
+}   
+.review-form .form-item input[type='radio']{
+  width: auto;
+}
+
+.fivestar-basic div.fivestar-widget .star, .fivestar-basic div.fivestar-widget .star a,
+div.fivestar-widget-static .star span.off,
+div.fivestar-widget-static .star  {
+  background-image: url('/sites/all/modules/contrib/fivestar/widgets/basic/star.png');
+}
+
+.all-reviews .form-item{
+  margin-top:0;
+}
+
+.all-reviews .comment {
+  padding: 10px;
+  background: #ddd;
+  font-size: 18px;
+}
+/***** Reviews lightbox *****/
+.lbreviews{
+  margin-top: 112px;
+}
+#accordion1 .block {
+  margin-bottom: 0;
+  margin-top: 20px;
+}
+
+.element-invisible {
+  display:none !important; 
+}
+
+
+/* Pager styles */
+.item-list .pager{
+  margin: 25px 0 50px;
+}
+.pager li>a {
+  font-size: 16px;
+  padding: 5px 12px;
+  margin: 5px 0;
+  
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+}
+
+.item-list .pager li.pager-current {
+  font-size: 16px;
+  padding: 5px 12px;  
+}
+
+/*** Custom social media icons for ShareThis widget *****/
+
+.banner .social-networks span,
+#sidebar .social-networks span{
+  display: inline-block;
+  width: 52px;
+  height: 52px;
+  overflow: hidden;
+  margin: 0 10px 5px;
+  padding: 0 7px 5px;
+  cursor: pointer;
+  background: url('../images/sprite.png') no-repeat;
+}
+
+.banner .social-networks span.facebook{
+  background-position: 0 -264px;
+}
+
+.banner .social-networks span.twitter{
+  background-position: -56px -264px;
+}
+
+.banner .social-networks span.pinterest{
+  background-position: -112px -264px;
+}
+
+.banner .social-networks span.google-plus {
+  background-position: -168px -264px;
+}
+
+.banner .social-networks span.linkedin {
+  background-position: -224px -264px;
+}
+
+.banner .social-networks span.email {
+  background-position: -280px -264px;
+}
+
+.banner .social-networks span.share {
+  background-position: -336px -264px;
+}
+
+#sidebar .social-networks span{
+  width: 34px;
+  height: 34px;
+  margin-bottom: 0;
+}
+
+#sidebar .social-networks span.facebook {
+  background-position: -113px 0;
+}
+
+#sidebar .social-networks span.twitter {
+  background-position: -149px 0;
+}
+
+#sidebar .social-networks span.pinterest {
+  background-position: -186px 0;
+}
+
+/*!****** Shot Trampolines fixes *****/
+.products-list {
+  padding-top:0;  
+}
+.products-list .product {
+  margin-top: 20px;  
+}
+
+/*!****** PDP fixes *****/
+.rating-wrap .fivestar-default {
+  display: inline-block;
+  width: 87px;
+  margin-right: 3px;
+  vertical-align: top;
+}
+#twocolumns #sidebar .price {
+  font-size: 63px;
+}
+#twocolumns #sidebar .price sup {
+  font-size: 35px;
+}
+/*
+
+#accordion1 .panel-heading .heading .star span {
+  display: block;
+}
+
+#accordion1 .panel-heading .heading .fivestar-default{
+  float:left;
+}
+*/
+.prod_thumbs_wrap{
+  
+}
+.hero-slide.add .carousel-pagination{
+  max-width: none;
+  padding: 0;
+}
+.prod_thumbs_wrap .brand_gallery,
+.prod_thumbs_wrap .ugc_gallery{
+  width: 50%;  
+  height: 135px;
+  overflow: hidden;
+  margin-top:20px;
+  padding-left:20px;
+}
+.prod_thumbs_wrap .brand_gallery{
+  float: left;
+  
+}
+.prod_thumbs_wrap .ugc_gallery{
+  float:right;
+}
+.ugc_gallery .carousel-pagination li a{
+  height: 100px;
+  width: 100px;
+  text-align: left;
+}
+
+.hero-slide.add .carousel-pagination li{
+  margin: 0 0 20px 20px;
+}
+.hero-slide.add .carousel-pagination li:first-child{
+  margin-left:0;
+}
+.product .hero-slide.add .carousel-pagination li,
+.product .hero-slide.add .carousel-pagination li img {
+  width: auto;
+  height: 100px;
+}
+.prod_thumbs_wrap .src-instagram,
+.prod_thumbs_wrap .src-twitter{
+  background:url('/sites/all/themes/springfree/images/sprite.png') no-repeat;
+  display: inline-block;
+  height:25px;
+  width: 25px;
+  margin-top: 75px;
+  margin-left: 2px;
+}
+.prod_thumbs_wrap .src-instagram{
+  background-position: -160px -83px;
+}
+.prod_thumbs_wrap .src-twitter{
+  background-position: -160px -106px;
+}
+
+/*!****** Shot Trampolines fixes *****/
+.helpandsupport .award-block {
+  padding: 55px 0 75px;
+}
+.helpandsupport .award-block h2 {
+  margin: 0 0 55px;
+}
+
+
+/*!*** Ambassadors ***/
+.ambassadors .preview-box{
+  width: 300px;
+  margin: 0 auto;
+}
+.ambassadors img{
+  width: 100%;
+}
+.ambassadors h3{
+  line-height: normal;
+  margin-top: 75px;
+}
+.ambassadors h4{
+  line-height: normal;
+  font-size: 27px;
+}
+.am-bio img{
+  float:right;
+  margin: 10px 0 0 50px;
+}
+.am-head h3{
+  text-shadow: none;
+}
+
+.am-bio .internal-page .intro-copy{
+  color: #333;
+  font-style: italic;
+  margin-bottom: 50px
+}
+/******* Blog ****/
+.clsImg1 {
+  height: 576px;
+  width: 536px;
+}
+.clsImg2 {
+  width: 536px;
+}
+
+.related-post .col h3 {
+  font-weight: 200;
+}
+
+.related-post .col .holder .wrap {
+  padding: 55px 175px 10px 50px;
+}
+
+.article_one .mask, .article_two .mask,
+.article_three .mask, .article_four .mask, .article_five .mask {
+  margin: 3px 2px 3px 3px;
+}
+
+.article_one, .article_blue{color:white;}
+.article_one .mask, .article_blue .mask{
+  background: -moz-linear-gradient(left,  rgba(0,175,224,1) 0%, rgba(0,175,224,1) 34%, rgba(0,175,224,0.43) 95%, rgba(0,175,224,0.63) 99%, rgba(0,175,224,0.68) 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(0,175,224,1)), color-stop(34%,rgba(0,175,224,1)), color-stop(95%,rgba(0,175,224,0.43)), color-stop(99%,rgba(0,175,224,0.63)), color-stop(100%,rgba(0,175,224,0.68))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(left,  rgba(0,175,224,1) 0%,rgba(0,175,224,1) 34%,rgba(0,175,224,0.43) 95%,rgba(0,175,224,0.63) 99%,rgba(0,175,224,0.68) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(left,  rgba(0,175,224,1) 0%,rgba(0,175,224,1) 34%,rgba(0,175,224,0.43) 95%,rgba(0,175,224,0.63) 99%,rgba(0,175,224,0.68) 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(left,  rgba(0,175,224,1) 0%,rgba(0,175,224,1) 34%,rgba(0,175,224,0.43) 95%,rgba(0,175,224,0.63) 99%,rgba(0,175,224,0.68) 100%); /* IE10+ */
+  background: linear-gradient(to right,  rgba(0,175,224,1) 0%,rgba(0,175,224,1) 34%,rgba(0,175,224,0.43) 95%,rgba(0,175,224,0.63) 99%,rgba(0,175,224,0.68) 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00afe0', endColorstr='#ad00afe0',GradientType=1 ); /* IE6-9 */
+
+}
+
+.article_two .mask, .article_butter .mask {
+  background: -moz-linear-gradient(left,  rgba(241,237,227,1) 0%, rgba(237,234,223,1) 27%, rgba(234,231,220,1) 48%, rgba(231,229,218,0.86) 63%, rgba(231,229,218,0.75) 74%, rgba(231,229,218,0.08) 86%, rgba(231,229,218,0.07) 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(241,237,227,1)), color-stop(27%,rgba(237,234,223,1)), color-stop(48%,rgba(234,231,220,1)), color-stop(63%,rgba(231,229,218,0.86)), color-stop(74%,rgba(231,229,218,0.75)), color-stop(86%,rgba(231,229,218,0.08)), color-stop(100%,rgba(231,229,218,0.07))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(left,  rgba(241,237,227,1) 0%,rgba(237,234,223,1) 27%,rgba(234,231,220,1) 48%,rgba(231,229,218,0.86) 63%,rgba(231,229,218,0.75) 74%,rgba(231,229,218,0.08) 86%,rgba(231,229,218,0.07) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(left,  rgba(241,237,227,1) 0%,rgba(237,234,223,1) 27%,rgba(234,231,220,1) 48%,rgba(231,229,218,0.86) 63%,rgba(231,229,218,0.75) 74%,rgba(231,229,218,0.08) 86%,rgba(231,229,218,0.07) 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(left,  rgba(241,237,227,1) 0%,rgba(237,234,223,1) 27%,rgba(234,231,220,1) 48%,rgba(231,229,218,0.86) 63%,rgba(231,229,218,0.75) 74%,rgba(231,229,218,0.08) 86%,rgba(231,229,218,0.07) 100%); /* IE10+ */
+  background: linear-gradient(to right,  rgba(241,237,227,1) 0%,rgba(237,234,223,1) 27%,rgba(234,231,220,1) 48%,rgba(231,229,218,0.86) 63%,rgba(231,229,218,0.75) 74%,rgba(231,229,218,0.08) 86%,rgba(231,229,218,0.07) 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f1ede3', endColorstr='#12e7e5da',GradientType=1 ); /* IE6-9 */
+
+}
+
+.article_three .mask, .article_yellow .mask {
+  background: -moz-linear-gradient(45deg,  rgba(230,181,105,1) 0%, rgba(219,155,88,1) 27%, rgba(213,142,79,1) 40%, rgba(210,134,74,0.87) 48%, rgba(210,134,74,0.75) 55%, rgba(210,134,74,0.08) 77%, rgba(210,134,74,0.07) 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,rgba(230,181,105,1)), color-stop(27%,rgba(219,155,88,1)), color-stop(40%,rgba(213,142,79,1)), color-stop(48%,rgba(210,134,74,0.87)), color-stop(55%,rgba(210,134,74,0.75)), color-stop(77%,rgba(210,134,74,0.08)), color-stop(100%,rgba(210,134,74,0.07))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(45deg,  rgba(230,181,105,1) 0%,rgba(219,155,88,1) 27%,rgba(213,142,79,1) 40%,rgba(210,134,74,0.87) 48%,rgba(210,134,74,0.75) 55%,rgba(210,134,74,0.08) 77%,rgba(210,134,74,0.07) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(45deg,  rgba(230,181,105,1) 0%,rgba(219,155,88,1) 27%,rgba(213,142,79,1) 40%,rgba(210,134,74,0.87) 48%,rgba(210,134,74,0.75) 55%,rgba(210,134,74,0.08) 77%,rgba(210,134,74,0.07) 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(45deg,  rgba(230,181,105,1) 0%,rgba(219,155,88,1) 27%,rgba(213,142,79,1) 40%,rgba(210,134,74,0.87) 48%,rgba(210,134,74,0.75) 55%,rgba(210,134,74,0.08) 77%,rgba(210,134,74,0.07) 100%); /* IE10+ */
+  background: linear-gradient(45deg,  rgba(230,181,105,1) 0%,rgba(219,155,88,1) 27%,rgba(213,142,79,1) 40%,rgba(210,134,74,0.87) 48%,rgba(210,134,74,0.75) 55%,rgba(210,134,74,0.08) 77%,rgba(210,134,74,0.07) 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e6b569', endColorstr='#12d2864a',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+}
+.article_four .mask, .article_crimson .mask {
+  background: -moz-linear-gradient(left,  rgba(216,58,49,1) 0%, rgba(216,59,51,1) 40%, rgba(216,60,52,0.86) 58%, rgba(220,104,95,0.78) 69%, rgba(231,229,218,0.07) 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(216,58,49,1)), color-stop(40%,rgba(216,59,51,1)), color-stop(58%,rgba(216,60,52,0.86)), color-stop(69%,rgba(220,104,95,0.78)), color-stop(100%,rgba(231,229,218,0.07))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(left,  rgba(216,58,49,1) 0%,rgba(216,59,51,1) 40%,rgba(216,60,52,0.86) 58%,rgba(220,104,95,0.78) 69%,rgba(231,229,218,0.07) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(left,  rgba(216,58,49,1) 0%,rgba(216,59,51,1) 40%,rgba(216,60,52,0.86) 58%,rgba(220,104,95,0.78) 69%,rgba(231,229,218,0.07) 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(left,  rgba(216,58,49,1) 0%,rgba(216,59,51,1) 40%,rgba(216,60,52,0.86) 58%,rgba(220,104,95,0.78) 69%,rgba(231,229,218,0.07) 100%); /* IE10+ */
+  background: linear-gradient(to right,  rgba(216,58,49,1) 0%,rgba(216,59,51,1) 40%,rgba(216,60,52,0.86) 58%,rgba(220,104,95,0.78) 69%,rgba(231,229,218,0.07) 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d83a31', endColorstr='#12e7e5da',GradientType=1 ); /* IE6-9 */
+  
+}
+
+.article_five .mask, .article_ash .mask {
+  background: -moz-linear-gradient(-45deg,  rgba(225,225,225,1) 0%, rgba(200,200,200,1) 40%, rgba(190,190,190,0.88) 55%, rgba(187,187,187,0.84) 60%, rgba(197,196,194,0.78) 69%, rgba(231,229,218,0.07) 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,rgba(225,225,225,1)), color-stop(40%,rgba(200,200,200,1)), color-stop(55%,rgba(190,190,190,0.88)), color-stop(60%,rgba(187,187,187,0.84)), color-stop(69%,rgba(197,196,194,0.78)), color-stop(100%,rgba(231,229,218,0.07))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(-45deg,  rgba(225,225,225,1) 0%,rgba(200,200,200,1) 40%,rgba(190,190,190,0.88) 55%,rgba(187,187,187,0.84) 60%,rgba(197,196,194,0.78) 69%,rgba(231,229,218,0.07) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(-45deg,  rgba(225,225,225,1) 0%,rgba(200,200,200,1) 40%,rgba(190,190,190,0.88) 55%,rgba(187,187,187,0.84) 60%,rgba(197,196,194,0.78) 69%,rgba(231,229,218,0.07) 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(-45deg,  rgba(225,225,225,1) 0%,rgba(200,200,200,1) 40%,rgba(190,190,190,0.88) 55%,rgba(187,187,187,0.84) 60%,rgba(197,196,194,0.78) 69%,rgba(231,229,218,0.07) 100%); /* IE10+ */
+  background: linear-gradient(135deg,  rgba(225,225,225,1) 0%,rgba(200,200,200,1) 40%,rgba(190,190,190,0.88) 55%,rgba(187,187,187,0.84) 60%,rgba(197,196,194,0.78) 69%,rgba(231,229,218,0.07) 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e1e1e1', endColorstr='#12e7e5da',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  
+}
+
+/*
+@media only screen and (max-width: 1199px){
+
+}
+*/
+
+
+/*** Homepage video icons ***/
+
+.video-block .body a:after {
+  width: 120px;
+  height: 86px;
+  background-image: url(",,/images/ico01.png");
+  background: url("../images/ico01.png") no-repeat -9999px -9999px;
+  background-position: 0 0;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  /*-webkit-transform: translate(-50%, -50%); */
+  /*-ms-transform: translate(-50%, -50%);  */
+  /* transform: translate(-50%, -50%); */
+  content: '';
+
+}
+
+
+
+
+@media only screen and (max-width: 991px){
+  
+  
+  /*!*** Hero space copy alignment ****/
+  .shoppage-head .text-content {
+    padding: 120px 10px 100px;
+  }
+  .text-safety {
+    padding-top: 113px !important;
+  }
+
+  /*!*** Homepage video icons ***/
+  
+  .video-block .body a:after {
+    width: 120px;
+    height: 86px;
+    background-image: url("../images/ico01.png");
+    background: url("../images/ico01.png") no-repeat -9999px -9999px;
+    background-position: 0 0;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    /* -webkit-transform: translate(-50%, -50%); */
+    /* -ms-transform: translate(-50%, -50%); */
+    /* transform: translate(-50%, -50%); */
+    content: '';
+
+  }
+  .video-block .body .ilbvid-rods1:after{
+    /* top: 53%;   */
+  }
+  .video-block .body .ilbvid-softedge1:after {
+    /* top: 57%; */
+  }
+  .video-block .body .ilbvid-frame1:after{
+    /* top: 60%; */
+  }
+  .video-block .body .ilbvid-net1:after{
+    /* top: 62%; */
+  }
+
+  .hero-slide.add .carousel-pagination li  {
+    padding: 0px;
+  }
+  
+  /*!**** Main navigation ****/
+  .navbar-header {
+    top: -30px;
+  }
+  #main-nav > .nav,
+  .header-shadow   #main-nav > .nav{
+    padding-top: 0;
+  }
+    .header-shadow   #main-nav > .nav{
+      padding-botton:20px;
+      }
+  .navbar-header, .header-shadow .navbar-header {
+    margin-bottom: -24px;
+  }
+ 
+  #main-nav > .nav > li + li {
+    padding-left: 45px;
+  }
+  .tab-holder .tablist-wrap {
+    width: 117px;  
+  }
+  
+  /*!**** Safety page****/
+  
+  .helpandsupport #accordion1.safety-accordion .panel-body.tips-content {
+    padding: 0 0 50px 0;
+  }
+  
+}
+
+@media only screen and (max-width: 767px){
+
+  /*!**** Main navigation ****/
+  .navbar-header {
+    top: 0;
+  }
+
+  #main-nav > .nav {
+  margin-right: 0; 
+  }
+
+  /*** Hero space copy alignment ****/
+  .text-about-us {
+    padding-top:100px !important;
+  }
+  .shoppage-head .text-content { /*Shop Trampolines hero*/
+    padding: 70px 0 35px;
+  }
+  .text-safety {
+    padding-top: 84px !important;
+  }
+  
+  /*** Homepage video icons ***/
+  
+  .video-block .body a:after {
+    width: 32px;
+    height: 24px;
+    margin-left: 0px;
+    margin-top: -3px;
+    background-image: url("../images/ico01-mobile.png");
+    background: url("../images/ico01-mobile.png") no-repeat -9999px -9999px;
+    background-position: 0 0;
+    position: absolute;
+    left: 50% !important;
+    top: 50% !important;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    content: '';
+
+  }
+
+  .video-block .body .ilbvid-rods1:after,
+  .video-block .body .ilbvid-softedge1:after {
+    top: 53%;  
+  }
+  .video-block .body .ilbvid-frame1:after,
+  .video-block .body .ilbvid-net1:after{
+    top: 55%;
+  }
+  
+  .ambassadors h3 {
+    margin-top: 10px;
+  }
+  .am-bio img{
+    float:right;clear:both;
+    margin: 0 0 50px 0;
+  }
+  .am-bio .shoppage-head h3 {
+    font-size: 18px;
+    line-height: normal;
+  }
+  
+  .lbreviews{
+    margin-top: 61px;
+  }
+
+  .add-nav li a.tel-link span{ 
+    font-size: 14px;
+  }
+
+  .prod_thumbs_wrap .brand_gallery,
+  .prod_thumbs_wrap .ugc_gallery{
+    width:100%;
+    float:none;
+  }  
+  .pager li>a, .item-list .pager li.pager-current {
+    font-size: 12px;
+  }
+  
+  /*** Safety carousel ****/
+  .safety-slide .rsNav.rsBullets {
+    display: none;
+  }
+  .safety-slide .safety-image-holder {
+    width: 100%;
+    margin: 0px auto 10px;
+  }
+  .btn-continue.continue-carousel {
+    top: -20px;
+  }
+
+  .safety-slide .wrapped-frame {
+    top: 13%;
+  }  
+  .helpandsupport .method-block .method-frame .btn-continue {
+    margin-top: 30px;
+  }
+
+  .helpandsupport .method-block .method-frame {
+    border-radius: 60px;
+  }
+  /*** Review tab in PDP ***/
+  .product #accordion1 .panel-heading.first {
+    background: #00afe0;
+    padding: 30px 0 0;
+  }
+  
+  .product #accordion1 .panel.collapsed .first .btn-closed {
+    height: 27px;
+    width: 27px;
+    background: url('../images/sprite-mobile.png') no-repeat -9999px -9999px;
+    background-position: 0 -138px !important;
+  }
+  .product #accordion1 .panel-heading .heading span{
+    line-height: normal;
+    font-weight: 200;
+  }
+  /*************************/
+  .table-responsive>.table>thead>tr>th, .table-responsive>.table>thead>tr>td, 
+  .table-responsive>.table>tbody>tr>th, .table-responsive>.table>tbody>tr>td, 
+  .table-responsive>.table>tfoot>tr>th, .table-responsive>.table>tfoot>tr>td {
+    white-space: normal;
+  }
+  
+  /*!****** Shop Trampolines fixes *****/
+  .helpandsupport .award-block {
+    padding: 55px 0 50px;
+  }
+  .helpandsupport .award-block h2 {
+    margin: 0 0 25px;
+  }
+
+  /*!****** About us*****/
+  .about-us .related-post .col .holder .wrap {
+    padding: 20px 10px 10px 25px;
+  }
+  .internal-page.about-us .related-post .col .holder p {
+    width: 100%;
+    font-size:14px;
+    line-height: auto;
+  }
+  
+  /*!****** PDP page *****/
+  .product #accordion1 .panel-heading {
+    padding: 30px 0px;
+  }
+
+  .model-selector {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+}
+
+@media only screen and (max-width: 320px){
+
+  .helpandsupport .method-block .method-frame .btn-continue {
+    margin-top: 18px;
+  }
+
+}

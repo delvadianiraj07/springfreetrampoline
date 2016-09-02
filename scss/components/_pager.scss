@@ -1,0 +1,63 @@
+/***** Global Pager Styles ****
+
+.item-list .pager li {
+  margin: 0;
+}
+
+.pager li > a, .pager li > span {
+  font-size:  small;
+  padding: 2px 14px;
+  
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+}
+
+
+.item-list .pager li.pager-current{
+  font-weight: bold;
+  color: white;
+  background: #00afe0;
+  border: 1px solid white;
+  font-size: small;
+  padding:8px 14px;
+  
+  -webkit-border-radius: 21px;
+  -moz-border-radius: 21px;
+  border-radius: 21px;
+}
+*/
+
+.item-list {
+  .pager {
+    li {
+      margin: 0;
+
+      &.pager-current{
+        font-weight: bold;
+        color: white;
+        background: #00afe0;
+        border: 1px solid white;
+        font-size: 10px;
+        padding:8px 14px;
+        
+        -webkit-border-radius: 21px;
+        -moz-border-radius: 21px;
+        border-radius: 21px;        
+      }
+    }
+  }
+}
+
+.page{
+  li {
+    > a + > span{
+      font-size:  small;
+      padding: 2px 14px;
+      -webkit-border-radius: 20px;
+      -moz-border-radius: 20px;
+      border-radius: 20px;
+    }
+
+  }
+}

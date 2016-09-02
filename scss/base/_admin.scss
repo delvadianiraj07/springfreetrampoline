@@ -1,0 +1,9 @@
+.admin-menu {
+
+  .breadcrumbs{
+    padding:0;
+    &.add{
+      position:static;
+    }
+  }
+}

@@ -1,0 +1,397 @@
+.header-large h1{font-weight:100;font-size:67px}
+
+
+
+.scene-header h1, .scene-info p,  {
+	//Font-weight:100;
+	
+}
+
+
+.zoomed-button-shape {
+
+	display:inline-block;
+	width:350px;
+	height:350px;
+	border-radius: 50% 50%;
+	z-index:9999;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	 transform: translate(-50%, -50%);
+	 -webkit-transform: translate(-50%, -50%);
+
+	&:after{
+		position: absolute;
+		content: '';
+		background: url("../../images/ico01.png") no-repeat 0 0;
+		width: 121px;
+		height: 86px;
+		opacity:0.9;
+		margin-top: 133px;
+		margin-left: 117px;
+
+	}
+}
+
+
+.how-we-make{
+
+	.body {
+
+		.scroll-btn{
+			text-decoration:none;
+
+			&.contrast-link {
+				color:#fff;
+
+				&:after{
+					background: url('../../images/sprite.png') no-repeat -265px -74px;
+					//left: 45%;
+				}
+			}
+		}
+	}
+}
+
+
+//.how-we-make .body .scroll-btn{text-decoration:none;}
+//.how-we-make .body .scroll-btn.contrast-link {color:#fff;}
+//.skrollable-before .body.next_button {display:none !important;}
+//.how-we-make .body .scroll-btn.contrast-link:after{background: url('../../images/sprite.png') no-repeat -263px -74px;}
+
+.next_button {display:none !important;}
+.stuck .next_button {display:block !important;}
+
+.body.next_button{
+	padding-bottom: 0;
+	width: 170px;
+	display: inline-block;
+	bottom: 6%;
+	position: fixed;
+	z-index: 9999;
+	left: 50%;
+	margin-left: -85px;
+}
+
+	.scene-header {
+		position:relative;	
+		//left:50%;
+		top: 5%;;
+
+		h1 {
+				font-family: 'source_sans_pro',Arial,Helvetica,sans-serif;
+				font-size:60px;
+				font-weight:100;
+				margin:0;
+		}
+	}
+
+	.scene-info {
+		position:relative;	
+		//left:50%;
+		top:57%;
+
+		p {
+			font-family: 'source_sans_pro',Arial,Helvetica,sans-serif;			
+			font-size:30px;
+			font-weight:100;			
+			margin:0;
+		}
+	}
+
+	.scene-four-copy{
+		p, h1 {color:white;}
+	}
+
+
+ .scene-one-copy{
+		p, h1 {color:white;}
+	}
+
+
+//common to both scene-header and scene-info
+.scene-copy-common{
+	z-index:300;
+	width:825px;
+	//margin-left:-412px;
+	margin: auto;
+	text-align:center;
+}
+
+
+#skip-scene{
+	position:relative;
+  top:50%;
+  left:100%;
+  color:white;
+  z-index:99999;
+  //width:100%;
+  height:30px;
+}
+
+#skip-scene a {
+	display:inline-block;
+}
+
+.scene-anchor {
+	position:relative;
+	z-index:99999;
+	display:inline-block;
+	width:1px;
+	height:1px;
+}
+
+
+#animation-view-port.stuck {
+  position:fixed;
+  top:0;
+  z-index:100;
+}
+
+
+#curtain-down{
+ //position:fixed;
+//z-index:9999;
+ //left:50%;
+ //top:50%;
+ height:600px;
+ width:100%;
+ text-align:center;
+ margin-top:20%;
+}
+
+#animation-view-port.unstuck {
+  position:absolute;
+  bottom:0;
+}
+
+#static-panels {
+	display:none; 
+
+	@include breakpoint(320px){
+		margin-top:40px;
+	}
+}
+
+		
+#controls {
+	background:black; 
+	color:white; 
+	width:100%; 
+	height:30px; 
+	position:fixed; 
+	z-index: 99999;
+}
+
+#controls a {color:white;}
+
+
+.scrollpos{
+    position: fixed;
+    z-index: 100;
+    background: #ffffff;
+    top: 0;
+    right: 0;
+}
+
+// Positioned Trampolines Containers: SpriteSheet Image Container & Video Container
+// - - - - - - - - - - - - - - - - - - - - - - - - - - 
+#trampoline-container {
+	position:relative;
+	left: 55%;
+	top: 24%;
+}
+
+#video-dr-keith{
+	position:absolute;
+	z-index:1;
+}
+
+.scene-link.scene-link-active {
+	background: #22b0e2;
+}
+
+.scene-link.scene-link-active.contrast-link {
+	background: #fff ;
+}
+
+
+// Scaled Trampoline SpriteSheet Image Container
+// - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+.image-container {
+	display:inline-block; 
+
+	//sprite-sheet-800
+	transform: scale(0.4); 
+	-webkit-transform: scale(0.4);
+	position: absolute;
+	top: -310px;
+	left: -420px;
+	z-index: 2;
+	//opacity: 0;
+	
+	.image-container img {
+		position: relative;
+	}
+}
+
+
+ /*.position-below {position:relative; top:50%;}*/
+
+		/*************************************
+		trampoline rotate*/
+
+		
+			//sprite-sheet-1200
+			#sprite_image_large {
+				width:1200px;
+				height:1088px;
+				//background-image:url(http://static2.springfree.com/sites/all/themes/springfree/images/sprite-sheet-1200.png);
+				background-image:url('http://static2.springfree.com/sites/springfreetrampoline.com/files/images/home/sprite-sheet-1200.png');				
+			}						
+	
+
+			#body-header {
+				height:1000px;
+				width:100%;
+			}
+
+
+
+			#body-footer {
+				height:1000px;
+				width:100%;
+			}
+
+
+			.inner-container {
+				max-width: 1080px;
+				margin:auto;
+				margin-left:auto;
+				margin-right:auto;
+				min-height: 600px;
+				z-index:1;
+				height:100%;
+			}
+
+
+
+
+			#animation-view-port {
+				width: 100%; 
+				overflow: hidden;  
+				z-index:2; 
+				position: relative; 
+
+			}
+
+
+
+			.scene-link {
+				width: 21px;
+				height: 21px;
+				border-radius: 50% 50%;
+				background: #d7d7d7;
+				cursor:pointer;		
+			}
+
+
+			.circle-mask {
+				width: 350px;
+				height: 350px;
+				border-radius: 50% 50%;
+				
+				border-width:1500px; 
+				border-style:solid; 
+				border-color:#56bdef;
+
+				background: transparent;
+				position: absolute;
+				z-index:3;
+				
+				top: 42%;
+				//left: 46%;
+				margin-left:-1140px;
+				margin-top:-1625px;
+				
+				box-sizing: content-box;
+				-moz-box-sizing: content-box;
+
+
+				opacity: 0.95;
+
+				 transform: scale(20);
+				 -webkit-transform: scale(20);
+
+			}
+
+
+		/*************************************************************************************/
+
+		/**/
+		#animation-container {
+			position:relative;
+		}
+
+		/*bottom-end of view port*/
+		#animation-view-port.bottom_end_viewport{
+			position:absolute;
+			bottom:0;
+		}
+
+
+		/*active view port*/
+		#animation-view-port.stick_top_view{
+			position: fixed;
+			top:0;
+			background-color:white;
+			width:100%;
+		}
+
+
+		/*************************************************************************************/
+
+
+.header-large {
+
+	font-weight:100;
+
+	h1 {
+		font-weight:100;
+		font-size:67px;
+		text-align:left;	
+	}
+
+}
+
+.sub-header {
+	p{
+		padding:20px 0 0 0 ;
+		font-weight:100;
+		font-size:24px;
+		line-height:35px;
+		text-align:left;
+	}		
+}
+
+//psd2html style over-write 
+.how-we-make {
+	background-color:white;
+}
+
+
+
+/*
+quality page
+************/
+
+video#quality-video {
+	position:relative;
+	top: 3px;
+	//left:-3px;
+}
+
+
+//#scene0-shadow-link, #scene1-shadow-link, #scene2-shadow-link, #scene3-shadow-link, #scene4-shadow-link {position:absolute;}

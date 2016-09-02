@@ -1,0 +1,215 @@
+
+// base settings, variables and mixins
+@import "base/fonts";
+@import "helpers/variables";
+@import "helpers/mixins";
+@import "helpers/typefaces";
+
+@import "base/globals";
+@import "base/admin";
+
+//  different components
+@import "components/buttons";
+@import "components/navigation";
+@import "components/dropdown";
+@import "components/lightbox";
+@import "components/breadcrumb";
+@import "components/carousel";
+@import "components/forms";
+@import "components/pager";
+//@import "components/tables";
+
+
+// layouts
+@import "layout/header";
+@import "layout/footer";
+
+// pages styles
+@import "pages/home";
+@import "pages/springfree_shop";
+@import "pages/springfree_productdetail";
+@import "pages/springfree_article";
+@import "pages/springfree_helpandsupport";
+@import "pages/springfree_tryus";
+@import "pages/springfree_blog";
+@import "pages/springfree_safety";
+@import "pages/springfree_installation_videos";
+@import "pages/springfree_ambassador";
+@import "pages/springfree_about";
+@import "pages/springfree_internal";
+@import "pages/springfree_delivery_installation";
+@import "pages/springfree_landing-pages";
+@import "pages/springfree_trampoline_accessories";
+//@import "vendors/royalslider";
+
+html, body, section, h1, h2, h3, h4, h5, h6, p, span {
+	text-rendering:geometricPrecision;
+	-webkit-font-smoothing: antialiased;
+	//transition:1s;
+
+	@include breakpoint($mobile){
+		text-rendering:optimizeSpeed  !important;
+	}
+}
+
+body{
+	min-width: 320px;
+	//max-width: 100%;
+	overflow-x:hidden;
+}
+
+html{
+	height:100%;
+	//max-width: 100%;
+	overflow-x:hidden;
+}
+
+.footer-nav{
+	max-width: 100%;
+}
+
+a:focus{
+	text-decoration: none !important;
+}
+
+.bg-stretch{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+
+	img{
+		width: 100%;
+		height: auto;
+	}
+}
+
+.tel-link{
+	@media screen and (min-width: 1025px){
+		text-decoration: none !important;
+		cursor: default !important;
+		pointer-events: none !important;
+
+		&:hover{
+			text-decoration: none !important;
+		}
+	}
+}
+
+.hero-slide{
+	width: 100%;
+	position: relative;
+}
+
+.visible-mobile{
+	display: none;
+
+	@include breakpoint($mobile){
+		display: block;
+	}
+}
+.hidden-mobile{
+	@include breakpoint($mobile){
+		display: none;
+	}
+}
+
+#wrapper{
+	width: 100%;
+	// overflow: hidden;
+	position: relative;
+}
+
+#main{
+	overflow: hidden;
+}
+
+body.shop-trampolines #fancybox-frame {
+	padding-top: 0 !important;
+}
+
+
+#page-title {
+	display:none;
+
+}
+
+
+// Preloader
+// ==========================================
+
+.preloader-3{
+	position:relative;
+	animation: rotate 0.4s infinite linear;
+	border: 4px solid rgba(0, 0, 0, .25);
+	width: 20px;
+	height: 20px;
+	border-radius: 999px;
+	display:inline-block;
+	//left:50%;
+	margin-right:10px;
+}
+
+.preloader-3 span {
+	position:absolute;
+	width:20px;
+	height:20px;
+	border: 4px solid transparent;
+	border-top: 4px solid #00afe0;
+	top: -4px;
+	left: -4px;
+	border-radius:999px;
+}
+
+@keyframes rotate {
+	0% {transform: rotate(0deg);}
+	100% {transform: rotate(360deg);}
+}
+
+#main-preloader{
+	text-align: center;
+	margin-top: 25%;
+
+	@include breakpoint($mobile){
+		margin-top:0;
+		padding-top: 60%;
+	}
+}
+
+
+/*
+
+// to illustrate different breakpoints in breakpoints.html
+.mobile-show {
+	display:none;
+	@include breakpoint($mobile){
+		display: block;
+	}
+}
+
+.tablet-show {
+	display:none;
+	@include breakpoint($tablet){
+		display: block;
+	}
+
+}
+.desktop-show {
+	display:none;
+	@include breakpoint($desktop){
+		display: block;
+	}
+}
+.large-desktop-show {
+ display:none;
+	@include breakpoint($lg-desktop){
+		display: block;
+	}
+}
+
+*/
+
+//@import "components/animation";
+

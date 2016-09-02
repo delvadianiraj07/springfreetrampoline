@@ -1,0 +1,92 @@
+.breadcrumbs{
+	width: 100%;
+	padding: 26px 0;
+
+	@include breakpoint($mobile){display: none;}
+
+	ul{
+		@extend %listreset;
+		letter-spacing: -4px;
+
+		li{
+			text-transform: uppercase;
+			letter-spacing: 0;
+			display: inline-block;
+			vertical-align: top;
+			color:#00afe0;
+			font-size: 12px;
+			line-height: 16px;
+			font-weight: bold;
+
+			& + li:before{
+				content: '>';
+				display: inline-block;
+				vertical-align: middle;
+				color:#fff;
+				line-height: 1;
+				padding: 0 5px;
+			}
+
+			a{
+				color:#fff;
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.breadcrumbs {
+	li:first-child {
+		a {
+			color:white;
+
+		}
+	}
+
+	li:last-child {
+		a {
+			color:#00afe0;
+
+		}
+	}
+
+	.add {
+
+		li:first-child {
+			a {
+				color:white;
+
+			}
+		}
+
+		li:last-child {
+			a {
+				color:#00afe0;
+
+			}
+		}
+
+	}
+
+
+}

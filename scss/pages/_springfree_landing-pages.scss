@@ -1,0 +1,180 @@
+// FAQ
+.faq-accordion{
+
+  .back-to-top{
+    text-decoration:none;
+    text-transform: uppercase;
+    position:fixed;
+    bottom:30px;
+    right:40px;
+    display:inline-block;
+    font-weight:bold;
+    font-size:17px;
+    z-index:9999;
+    //display:none;
+
+    @include breakpoint($mobile){
+      font-size:14px;
+    }
+  }
+  
+  .accordion-section-title{
+    background:#dcdcdc;
+    color:#333;
+    text-shadow: none;
+    font-weight:400;
+    font-size:20px;
+  }
+
+  .accordion-section-title.active,
+  .accordion-section-title:hover{
+    background:#00afe0;
+    color:#fff;
+    text-shadow: none;
+  }
+
+  .accordion {
+    box-shadow: none;
+  }
+  .answers-list{
+    li {
+      margin:0 0 40px 0 ;
+
+      @include breakpoint($mobile){
+        margin:0 0 20px 0 ;
+
+      }
+    }
+  }
+}
+
+// AU - get-early-book-installation-15
+.content-row {
+  margin-bottom:45px;
+}
+
+.terms{
+  font-style:italic;
+  font-size:13px;
+}
+
+// AU - /wrap-christmas-accessory-bundle
+.wrap-up-christmas{
+
+  .col-sm-3, .col-xs-12{
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+
+  .clsGrey {
+    background-color: #ededed;
+    border: 1px solid #dcdcdc;
+    border-radius: 10px;
+
+    .no-padding {
+      padding:0 !important;
+    }
+  }
+  .price-strike {
+    text-decoration: line-through;
+    color:#ff0000;
+  }
+
+  .bundle {
+    padding:20px;
+    text-align: center;
+    position: relative;
+
+    &.bundle-one{
+      //right:-20px;
+      //z-index: 100;
+    }
+    &.bundle-two{
+      //top:-10px;
+      //z-index: 200;
+    }
+    &.bundle-three{
+      //left:-20px;
+      //z-index: 100;
+    }
+    &.bundle-four{
+      //top:-10px;
+      //z-index: 200;
+    }
+  }
+
+  .bundle-container{
+    @include breakpoint($mobile){
+      margin-bottom:20px;
+    }
+  }
+
+  .main-bundles-cta{
+    text-align:center;
+    margin: 35px 0 65px;
+
+    .or {
+      display:inline-block;
+      margin:0 20px;
+    }
+  }
+
+  .accessory-item{
+    @include breakpoint($mobile){
+      margin-bottom: 15px;
+    }
+  }
+
+  .call-for-bundles{
+    background:url(http://static.springfree.com/sites/springfreetrampoline.com/files/images/misc/Phone_Icon_image_32.jpg) no-repeat 0px 0px;
+    //float:left;
+    height: 35px;
+    padding: 0 0 0 30px;
+    display: inline-block;
+  }
+
+  .list-in-bundle {
+    min-height:135px;
+    @include breakpoint($mobile){
+      min-height:0;
+    }
+  }
+
+  .list-in-bundle li {
+    margin:0;
+    font-size: 18px;
+    text-align:left;
+  }
+
+
+  .bundle-includes{
+    margin:15px 0 0;
+    @include breakpoint($mobile){
+      margin:20px 0;
+    }
+  }
+
+  .bundle-info-box{
+      display:block;
+  }
+
+  ul.list-in-bundle  {
+    list-style: disc;
+    color: red;
+    @include breakpoint($mobile){
+      //text-align: center;
+      display:inline-block;
+      margin:auto;
+    }
+  }
+
+  .accessories-image{
+    display:block;
+  }
+
+  strong.header-adjust{
+      display:block;
+      margin: 40px 0 20px;
+  }
+}

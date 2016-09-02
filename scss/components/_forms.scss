@@ -1,0 +1,263 @@
+#main_form{
+	.input, .inputreadonly, .inputtotalling, .totallingcurrency, .inputreq{
+	 	font-size: 16px !important;
+	}
+}
+
+#main_form{
+	input.input {
+		border-radius: 40px !important;
+  		padding: 0 0 0 11px !important;
+	}
+	input#submit{
+          font-size: 15px;
+          text-transform: uppercase;
+          line-height: 21px;
+          letter-spacing:1px;
+
+          @include breakpoint($tablet){}
+
+          @include breakpoint($mobile){            
+            @include button-pill-mobile();
+
+            &.inline-textbox-submit {
+              padding:10px 15px;
+            }
+          } 
+	}
+}
+
+
+
+.input-group .form-control{
+
+	&.inline-textbox-form-field{
+	  height: 43px;
+	  width: 200px;
+	}
+
+}
+
+.input-textbox-group {
+	@include breakpoint($mobile){
+	  	margin-left: -152px;
+	  	left: 50%;
+	}
+}
+
+
+.inline-textbox-submit{
+  border-radius: 0 20px 20px 0;
+  position: relative;
+  left: 90px;
+  top: -56px;
+  z-index: 60;
+
+  @include breakpoint($mobile){
+  	top: -13px;
+  	left: -1px;
+  }
+}
+
+.lookup-bar {
+	.input-group-btn {
+		top: 24px;
+
+		@include breakpoint($mobile){
+				//top: 18px;
+				  top: 28px;
+  				padding: 0;	
+		}
+
+	}
+}
+
+@mixin form_dropdown(){
+	background: #f1eff0;
+	border-radius: 20px;
+	height: 50px;
+	width: 268px;
+	padding: 10px;
+	font-size: 16px;
+	line-height: 1;
+	border: 0;
+	-webkit-appearance: none;
+}
+
+.form-select-dropdown {
+	&:after{
+		content: '';
+		position: relative;
+		display:inline-block;
+  	top: 0;
+  	left: -40px;
+  	background: url('../../images/sprite.png') no-repeat -219px -97px;
+	  background-position: -144px -74px;
+	  width: 10px;
+	  height: 6px;
+	}
+}
+
+.form-control{
+	border-radius: 35px;
+}
+
+
+select {
+	@include form_dropdown()
+}
+
+
+span.form-required {
+	width:auto;
+}
+
+//NetSuite Email Me Info Form - Establishes the height of the #fancybox-content
+.email-me-info {
+
+	//min-height:400px;
+	height:700px !important;
+
+	@include breakpoint($mobile){
+		height:400px !important;
+	}
+
+	#fancybox-content {
+		overflow:scroll;
+	}
+}
+
+//NetSuite Newsletter Sign Up Form - Establishes the height of the #fancybox-content
+
+.newsletter-signup{
+
+	//min-height:400px;
+	height:700px !important;
+
+	@include breakpoint($mobile){
+		height:400px !important;
+	}
+
+	#fancybox-content {
+		overflow:scroll;
+	}
+}
+
+
+#fancybox-content{
+	 -webkit-overflow-scrolling: touch;
+  	overflow-y: scroll;
+}
+
+
+.hide-fancy {
+	display:none;
+}
+
+//general NetSuite Form Sytling 
+.netsuite-forms{
+	.form-group{
+		padding: 30px 40px;
+		height:500px;
+
+  	@include breakpoint($mobile){
+  		padding:10px 20px;
+  	}
+
+	}
+
+	label{
+		//margin-top:20px;
+
+	}
+
+	input[type="text"] {
+  	margin-bottom: 10px;
+  	font-size:16px !important;
+
+	  	@include breakpoint($mobile){
+	  		margin-bottom: 15px;
+	  		width:80% !important;
+	  	}
+	}
+
+}
+
+
+body.shop-trampolines #fancybox-frame {
+	@include breakpoint($mobile){
+	  padding-top: 0 !important;
+
+	}
+}
+
+input[type="text"], textarea{
+  font-size: 15px;
+  letter-spacing:1px;
+  padding: 0 0 0 11px !important;
+  border: 1px solid #ededed;
+  border-radius: 10px;
+}
+
+
+input[type="text"]{
+  //text-transform: uppercase;
+  line-height: 21px;
+  height:30px;
+  border-radius: 40px;
+
+  @include breakpoint($tablet){}
+
+  @include breakpoint($mobile){            
+    @include button-pill-mobile();
+
+    &.inline-textbox-submit {
+      padding:10px 15px;
+    }
+  } 
+}
+
+label{
+  text-transform: uppercase;
+  font-size:14px;
+
+  @include breakpoint($tablet){
+    font-size:12px;
+  }
+}
+
+.form-hints{
+  font-size: 12px;
+  font-style: italic;
+  font-weight: 400;
+  margin-left: 10px;
+  margin-top:5px;
+  line-height: normal; 
+}
+
+.post-blog-comment{
+  padding:20px;
+}
+
+input[type="submit"]{
+  color: #fff;
+  background: #00afe0;
+
+  font-size: 15px;
+  line-height: 18px;
+  font-weight: 700;
+  
+  border:1px solid transparent;
+  border-radius: 20px;
+  //min-width: 220px;
+  
+  padding: 10px 20px;
+  border-radius: 30px;
+
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+
+

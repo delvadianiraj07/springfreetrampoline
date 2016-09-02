@@ -1,0 +1,9 @@
+In FLAT and CLEAN versions, content is fetched through AJAX.
+It needs to be hosted on server to be able to load.
+
+To see how inline content should be structured, check CARD or DARK demo.
+
+Full documentation on this item is located in documentation.html
+
+Kind regards, 
+Br0

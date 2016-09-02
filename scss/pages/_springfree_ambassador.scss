@@ -1,0 +1,37 @@
+.helpandsupport {
+
+	&.ambassador {
+
+ 		.explanation-block { 
+
+ 			.explaination-article {
+
+				.description {
+
+					padding:0;
+
+				} 				 
+ 			}
+ 		}
+	}
+
+}
+
+.ambassadors-list {
+
+	.list {
+		list-style-type: none;
+		font-size:30px;
+
+		.link {
+
+			color:white;
+
+			&:hover{
+				text-decoration: none;
+			}
+
+		}
+	}
+
+}

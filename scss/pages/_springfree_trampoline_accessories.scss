@@ -1,0 +1,82 @@
+.trampoline-accessories{
+  li{
+    list-style-type: none;
+    padding:60px;
+    @include breakpoint($tablet){
+      padding:20px;
+    }
+    @include breakpoint($mobile){
+      padding:0;
+      margin-top:50px;
+      
+    }    
+  }
+  h2{
+    font-size:25px;
+    line-height:normal;
+  }
+
+  .title{
+    position:relative;
+  }
+
+  .best-seller-badge{
+    position:absolute;
+    top:-20px;
+    @include breakpoint($mobile){
+      margin:0;
+      left:0;
+    }    
+  }
+
+  .tabs, .desc{
+    text-align:center;
+  }
+
+  .tabs{
+    a:nth-child(1){
+      margin-right:20px;
+      display:inline-block;
+    }
+
+    .active{
+      font-weight:400;
+    }
+  }
+
+  .info{
+    display:block;
+    //margin-top:10px;
+    &.price-desc{
+      //margin-top:0;
+    }
+  }
+
+  .price-desc{
+    font-style:italic;
+  }
+
+  .price{
+    font-weight:400;
+    font-size:30px;
+  }
+
+  .other-link{
+    text-transform: uppercase;
+    font-size: 13px;
+    line-height: 17px;
+    font-weight: bold;
+    position: relative;
+    top: 16px;
+    text-align: right;    
+  }
+
+  .atc-container{
+    padding-left:0;
+  }
+
+  .other-link-container{
+    text-align:right;
+  }
+
+}

@@ -1,0 +1,337 @@
+//Stylesheet for Internal and Landing Pages
+
+.pan-am {
+	.ambassadors{
+		img{
+			//width:auto;
+
+			@include breakpoint($tablet){
+							width:100%;
+			}
+
+		}
+		.athletes-image{
+			img{
+				width:100%;
+			}
+		}		
+	 	h3 {
+		  margin-top: 0px;
+		}		
+	}
+
+	.country-flag{
+  	display: inline-block;
+  	height: 15px;
+  	width: 27px;
+  	vertical-align: sub;
+  	background: url('http://static.springfree.com/sites/all/themes/springfree/images/sprite.png') no-repeat;
+  	position: relative;
+  	top: -6px;
+  	
+  	&.canada {
+  		background-position: -84px 0
+  	}
+  	&.us {
+  		background-position: -364px 0;
+  	}
+	}
+
+}
+
+.internal {
+
+	&.color-band {
+
+		.shoppage-head {
+			max-height:none;
+		}
+
+		.breadcrumbs{
+			padding:26px 30px 0;
+			display:none;
+		}
+
+	}
+
+	.blue-contrast{
+		
+		.breadcrumbs{
+			ul{
+				li{
+					color:#00AFDA !important;
+				}
+			}
+		}
+
+	}	
+
+	.shoppage-head{
+		height:auto;
+	}
+
+	.breadcrumbs{
+		//padding:26px 0 0;
+		  padding: 5px 0 0;
+	}
+
+	.breadcrumbs{ 
+		ul {
+			li { 
+				color:white;
+			}
+		}
+	}
+
+	.helpandsupport{
+
+			.shoppage-head { 
+				h1 {
+					@include title-desktop-contrast();
+
+					@include breakpoint($tablet){
+
+						@include title-tablet-contrast();
+					}
+
+					@include breakpoint($mobile){
+						@include header-for-copy-mobile();
+						//@include title-mobile-contrast();
+  					
+
+					}
+
+				}
+			}
+		
+	}
+
+
+	.ambassador{
+
+		.shoppage-head{
+				max-height:320px;
+
+				@include breakpoint($tablet){
+					//height: 300px;
+				}
+
+				@include breakpoint($mobile){
+					max-height:none;
+
+				}		
+			}
+
+	}
+
+	.shoppage-head{
+		max-height:320px;
+
+		@include breakpoint($tablet){
+			//height: 300px;
+		}
+
+		@include breakpoint($mobile){
+			//height: 200px;	
+			max-height:none;		
+
+		}		
+	}
+
+
+
+	.bg-stretch-title{
+		&.bg-stretch {
+			background:#00afe0;
+			height:auto;
+
+			.text-content{
+			  padding-top: 25px !important;
+			  padding-bottom: 25px !important;
+			}
+
+			.wrap {
+				top:31%;
+
+				@include breakpoint($tablet){
+					top: 25%;
+				}
+
+				@include breakpoint($mobile){
+
+					top:40%;			
+
+				}		
+
+			}
+		}
+	}
+
+	&.shop {
+		&.bg-stretch{
+			.text-content	{
+				padding-top: 0px;
+			}
+		} 
+	}
+
+	.content {
+		padding:30px 0;
+
+		@include breakpoint($mobile){
+			padding:0;
+		}
+
+		.copy {
+			//font-size:16px;
+			//font-weight:200;
+
+		}
+
+		.video-content {
+			float:right;
+			margin:20px;
+			margin-right:0;
+		}
+	}
+	
+}
+
+.awards {
+	img {
+		@include breakpoint($mobile){
+			margin-bottom:10px;
+			margin-right:15px;
+			float:left;
+		}
+	}
+}
+
+.delivery {
+	// for /deliver-information page
+	label {
+			font-size: 14px;
+  		line-height: normal;
+
+
+  		@include breakpoint($tablet){
+			//font-size: 18px;
+  		}
+
+  		@include breakpoint($mobile){
+			font-size: 16px;
+  		}
+	}
+
+	.quoter-frame {
+		margin:30px 0;
+	}
+
+	#postalCode, #installQuote, #installCity {
+		margin-bottom:15px;
+	} 
+}
+
+
+//Landing Pages - Q3 AU World's Safest Trampoline Campaign
+.safety{
+	&.landing-pg-safest {
+		
+		strong {
+			@include breakpoint($mobile){
+					font-size: 20px;
+			}			
+		}
+
+		.contact-us {
+			width:100%;
+			height:auto;
+			background-color:#00afe0;
+			padding:40px 20px;
+			text-align:center;
+
+			.btn-default{
+				&.btn{
+					&.button-pill{
+						background:white;
+						background-color:white;
+						color:#00afe0;
+
+					}				
+				}	
+			}
+			a {
+					display:inline-block;
+					margin-bottom:15px;
+					color:white;
+					font-weight:400;
+			}
+		}
+
+		.helpandsupport{
+			.explanation-block{
+				padding:40px;
+
+				@include breakpoint($mobile){
+					padding:0;
+				}
+
+				.description{
+
+					@include breakpoint($mobile){
+						padding-top: 0;
+					}
+
+					.glyphicon{
+						font-size: 15px;
+    				margin-right: 10px;
+    				color: #a7e402;
+					}
+
+					&.adjust-text-align{
+						ul{
+							@include breakpoint($mobile){
+								text-align:left;
+							}
+						}
+					}
+
+				}
+
+				.article-main-header{
+
+					margin-bottom:40px;
+					text-align:center;
+					
+					@include breakpoint($mobile){
+						margin-bottom:0;
+						text-align:center;
+					}	
+
+					&	.article-remarket-main-header{
+						text-align:left;
+
+					}	
+
+
+					h2 {
+						margin:0;
+						margin-left: 30px;
+						margin-top:10px;
+						vertical-align:middle;
+
+						@include breakpoint($mobile){
+							margin-left:0;
+						}			
+					}
+
+				}
+
+
+			}
+		}
+
+
+
+	}
+}

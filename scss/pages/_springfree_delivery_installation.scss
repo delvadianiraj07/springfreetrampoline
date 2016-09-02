@@ -1,0 +1,258 @@
+.calculator-wrapper{
+  background-color:#00afe0;
+  color:white;
+  padding:20px;
+  overflow:hidden;
+  //min-height:383px;
+  
+  @include breakpoint($mobile){
+    margin:20px 0;
+  }
+
+
+
+  .jcf-select{
+    .jcf-select-text{
+      span{
+        color:#333;
+        font-size:14px;
+      }
+    }
+  }
+
+  p, label, span{
+    color:white;
+  }
+
+  input{
+    width:246px;
+    height:40px;
+
+
+    @include breakpoint($mobile){
+      width:100%;
+      font-size:16px;      
+    }
+  }
+
+  option{
+    color:#333;
+  }
+  
+  .button-pill, .button-pill-desktop{
+    background-color:white;
+    color:#00afe0;
+    border:1px solid white;
+  }
+
+  h3{
+    &.instructions{
+      font-size: 20px;
+      margin-bottom:0;
+    }
+  }
+
+
+  .no-result-message{
+    font-size:14px;
+    line-height:normal;
+
+    strong{
+      font-weight:bold;
+    }
+  }
+
+  .instructions{
+    line-height: normal;
+    font-size: 14px;
+    text-rendering: optimizeLegibility;
+    font-weight: 400;
+    //text-transform: uppercase;
+    color:white;
+
+    span {
+      vertical-align:top;
+    }
+
+    strong{
+      font-weight:bold;
+    }
+
+    &.message-replace{
+      font-weight: 600;
+    }
+  }
+
+  .hidden-card{
+    opacity:0;
+    display:none;
+    position:relative;
+    left:-40px;
+  }
+
+  //overwrites hidden card (default hidden-card)
+  .hidden-card.reveal-card{
+    opacity:1;
+    display:block;
+    position:relative;
+    left:0;
+  }
+
+  #installation-price, #shipping-price{
+    font-weight:400;
+  }
+
+  #get-quote-button{
+    margin-top:20px;
+  }
+
+  #postal-code{
+    margin-bottom:10px;
+  }
+
+  #quote-processing-card, #processing-inline{
+    margin-top:25px;
+  }
+
+  .insert-postal-code, .insert-city {
+    font-weight:600;
+  }
+  
+  #error-inline{
+    background-color:#f24444;
+    padding:10px 20px;
+  }
+
+  label {
+    display:block;
+    text-align:left;
+    font-size: 14px;
+    line-height: normal;
+
+    @include breakpoint($mobile){
+      font-size: 14px;
+    }
+  }
+
+
+
+  a.reset{
+    color:white;
+    text-decoration:none;
+    font-size:14px;
+    font-weight:bold;
+    text-transform:uppercase;
+    margin-top:10px;    
+    
+    &.inline{
+      font-size:13px;
+    }
+
+    &:hover{
+      text-decoration:underline;
+    }
+  }
+
+  .input-text{
+    font-weight:400;
+  }
+
+  hr {
+    margin-top: 10px;
+  }
+
+  #postalCode, #installCity, #installQuote {
+    margin-bottom:15px;
+  }
+
+
+}
+
+.jcf-list .jcf-list-content {
+  overflow: scroll;
+  max-height: 250px;
+}  
+
+// Preloader
+// ==========================================
+
+.preloader-3{
+  position:relative;
+  animation: rotate 0.4s infinite linear;
+  border: 4px solid rgba(255, 255, 255, .25);
+  width: 20px;
+  height: 20px;
+  border-radius: 999px;
+  display:inline-block;
+  //left:50%;
+  margin-right:10px;
+}
+
+.preloader-3 span {
+  position:absolute;
+  width:20px;
+  height:20px;
+  border: 4px solid transparent;
+  border-top: 4px solid #fff;
+  top: -4px;
+  left: -4px;
+  border-radius:999px;
+}
+
+@keyframes rotate {
+  0% {transform: rotate(0deg);}
+  100% {transform: rotate(360deg);}
+}
+
+
+.content-section {
+  margin-top:30px;
+
+  @include breakpoint($mobile){
+    margin-top:15px;    
+  }
+}
+
+.delivery {
+  .table-row {
+    
+    display:inline-block;
+
+    .location-row{
+     
+      margin-top:25px;
+
+      @include breakpoint($mobile){
+        //margin-bottom:15px;
+        margin-top:15px;
+      }      
+      
+      p {
+        strong {
+          font-size:12px;
+        }
+      }      
+    }
+
+    .col-xs-12{
+      @include breakpoint($mobile){
+        padding:0;        
+      }
+    }
+
+    .table-row-separator{
+      @include breakpoint($mobile){
+        border-top: 1px solid #eee;
+        padding-top: 20px;        
+      }
+    }
+  }
+
+
+}
+
+.location-header {
+  @include breakpoint($mobile){
+    font-size:18px;    
+  }
+}

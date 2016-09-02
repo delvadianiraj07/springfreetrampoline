@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>jQuery Timeline plugin</title>
+<meta name="description" content="Content Timeline HTML5/jQuery plugin">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="css/light.css" rel="stylesheet" type="text/css" />
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href="css/lightbox.css" rel="stylesheet" type="text/css" />
+
+<!--[if lt IE 9]>
+<link href="css/ie8fix.css" rel="stylesheet" type="text/css" />
+<![endif]-->
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.mCustomScrollbar.js"></script>
+<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="js/jquery.timeline.min.js"></script>
+<script type="text/javascript" src="js/image.js"></script>
+<script type="text/javascript" src="js/lightbox.js"></script>
+
+
+
+
+<script type="text/javascript">
+
+$(window).load(function() {
+	// light
+	$('.timelineLight').timeline({
+		openTriggerClass : '.read_more',
+		startItem : '15/08/2012',
+	});
+});	
+</script>
+</head>
+<body>
+
+<div class="selectors"><a href="index.html">Flat preview</a><a href="light.html" class="active">Light preview</a> <a href="card.html">Card style</a> <a href="dark.html">Dark preview</a><a href="http://www.webmaster-tips.net/Joomla-Extensions/Joomla-Modules/WMT-Content-Timeline-Powerful-Content-Display.html" style="text-decoration: underline;">Joomla! Version</a></div>
+
+<div class="timelineLoader">
+	<img src="images/timeline/loadingAnimation.gif" />
+</div>
+<!-- BEGIN TIMELINE -->
+<div class="timelineLight tl">
+		<div class="item" data-id="04/06/-145" data-description="Lorem ipsum dolor sit amet, consectetur adipiscing elit...">
+			<a class="image_rollover_bottom con_borderImage" data-description="ZOOM IN" href="images/light/timeline_content/1w.jpg" rel="lightbox[timeline]">
+			<img src="images/light/thumbnails/1.jpg" alt=""/>
+			</a>
+			<h2>JUNE, 4</h2>
+			<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exerc...</span>
+			<div class="read_more" data-id="04/06/-145">Read more</div>
+		</div>
+		<div class="item_open" data-id="04/06/-145" data-access="ajax-content.php?item=1">
+			<div class="item_open_content">
+				<img class="ajaxloader" src="images/timeline/loadingAnimation.gif" alt="" />
+			</div>
+		</div>
+		
+		<div class="item" data-id="12/06/-145" data-description="Lorem ipsum dolor sit amet, consectetur adipiscing elit...">
+			<a class="image_rollover_bottom con_borderImage" data-description="ZOOM IN" href="images/light/timeline_content/2w.jpg" rel="lightbox[timeline]">
+			<img src="images/light/thumbnails/2.jpg" alt=""/>
+			</a>
+			<h2>JUNE, 12</h2>
+			<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exerc...</span>
+			<div class="read_more" data-id="12/06/-145">Read more</div>
+		</div>
+		<div class="item_open" data-id="12/06/-145" data-access="ajax-content.php?item=2">
+			<div class="item_open_content">
+				<img class="ajaxloader" src="images/timeline/loadingAnimation.gif" alt="" />
+			</div>
+		</div>
+		
+		<div class="item" data-id="21/06/-145" data-description="Lorem ipsum dolor sit amet, consectetur adipiscing elit...">
+			<a class="image_rollover_bottom con_borderImage" data-description="ZOOM IN" href="images/light/timeline_content/3w.jpg" rel="lightbox[timeline]">
+			<img src="images/light/thumbnails/3.jpg" alt=""/>
+			</a>
+			<h2>JUNE, 21</h2>
+			<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exerc...</span>
+			<div class="read_more" data-id="21/06/-145">Read more</div>
+		</div>
+		<div class="item_open" data-id="21/06/-145" data-access="ajax-content.php?item=3">
+			<div class="item_open_content">
+				<img class="ajaxloader" src="images/timeline/loadingAnimation.gif" alt="" />
+			</div>
+		</div>
+
+
+		<div class="item" data-id="27/06/-145" data-description="Lorem ipsum dolor sit amet, consectetur adipiscing elit...">
+			<a class="image_rollover_bottom con_borderImage" data-description="ZOOM IN" href="images/light/timeline_content/4w.jpg" rel="lightbox[timeline]">
+			<img src="images/light/thumbnails/4.jpg" alt=""/>
+			</a>
+			<h2>JUNE, 27</h2>
+			<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exerc...</span>
+			<div class="read_more" data-id="27/06/-145">Read more</div>
+		</div>
+		<div class="item_open" data-id="27/06/-145" data-access="ajax-content.php?item=4">
+			<div class="item_open_content">
+				<img class="ajaxloader" src="images/timeline/loadingAnimation.gif" alt="" />
+			</div>
+		</div>
+		
+		
+		<div class="item" data-id="03/07/1454" data-description="Lorem ipsum dolor sit amet, consectetur adipiscing elit...">
+			<a class="image_rollover_bottom con_borderImage" data-description="ZOOM IN" href="images/light/timeline_content/5w.jpg" rel="lightbox[timeline]">
+			<img src="images/light/thumbnails/5.jpg" alt=""/>
+			</a>
+			<h2>JULY, 3</h2>
+			<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exerc...</span>
+			<div class="read_more" data-id="03/07/1454">Read more</div>
+		</div>
+		<div class="item_open" data-id="03/07/1454" data-access="ajax-content.php?item=5">
+			<div class="item_open_content">
+				<img class="ajaxloader" src="images/timeline/loadingAnimation.gif" alt="" />
+			</div>
+		</div>
+		
+		
+		
+		<div class="item" data-id="13/07/1454" data-description="Lorem ipsum dolor sit amet, consectetur adipiscing elit...">
+			<a class="image_rollover_bottom con_borderImage" data-description="ZOOM IN" href="images/light/timeline_content/6w.jpg" rel="lightbox[timeline]">
+			<img src="images/light/thumbnails/6.jpg" alt=""/>
+			</a>
+			<h2>JULY, 13</h2>
+			<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exerc...</span>
+			<div class="read_more" data-id="13/07/1454">Read more</div>
+		</div>
+		<div class="item_open" data-id="13/07/1454" data-access="ajax-content.php?item=6">
+			<div class="item_open_content">
+				<img class="ajaxloader" src="images/timeline/loadingAnimation.gif" alt="" />
+			</div>
+		</div>
+		
+		<div class="item" data-id="17/07/2012" data-description="Lorem ipsum dolor sit amet, consectetur adipiscing elit...">
+			<a class="image_rollover_bottom con_borderImage" data-description="ZOOM IN" href="images/light/timeline_content/7w.jpg" rel="lightbox[timeline]">
+			<img src="images/light/thumbnails/7.jpg" alt=""/>
+			</a>
+			<h2>JULY, 17</h2>
+			<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exerc...</span>
+			<div class="read_more" data-id="17/07/2012">Read more</div>
+		</div>
+		<div class="item_open" data-id="17/07/2012" data-access="ajax-content.php?item=7">
+			<div class="item_open_content">
+				<img class="ajaxloader" src="images/timeline/loadingAnimation.gif" alt="" />
+			</div>
+		</div>
+		
+		<div class="item" data-id="25/07/2012" data-description="Lorem ipsum dolor sit amet, consectetur adipiscing elit...">
+			<a class="image_rollover_bottom con_borderImage" data-description="ZOOM IN" href="images/light/timeline_content/8w.jpg" rel="lightbox[timeline]">
+			<img src="images/light/thumbnails/8.jpg" alt=""/>
+			</a>
+			<h2>JULY, 25</h2>
+			<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exerc...</span>
+			<div class="read_more" data-id="25/07/2012">Read more</div>
+		</div>
+		<div class="item_open" data-id="25/07/2012" data-access="ajax-content.php?item=8">
+			<div class="item_open_content">
+				<img class="ajaxloader" src="images/timeline/loadingAnimation.gif" alt="" />
+			</div>
+		</div>
+		
+		<div class="item" data-id="06/08/2012" data-description="Lorem ipsum dolor sit amet, consectetur adipiscing elit...">
+			<a class="image_rollover_bottom con_borderImage" data-description="ZOOM IN" href="images/light/timeline_content/9w.jpg" rel="lightbox[timeline]">
+			<img src="images/light/thumbnails/9.jpg" alt=""/>
+			</a>
+			<h2>AUGUST, 6</h2>
+			<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exerc...</span>
+			<div class="read_more" data-id="06/08/2012">Read more</div>
+		</div>
+		<div class="item_open" data-id="06/08/2012" data-access="ajax-content.php?item=9">
+			<div class="item_open_content">
+				<img class="ajaxloader" src="images/timeline/loadingAnimation.gif" alt="" />
+			</div>
+		</div>
+		
+		<div class="item" data-id="15/08/2012" data-name="August 15th" data-description="Lorem ipsum dolor sit amet, consectetur adipiscing elit...">
+			<a class="image_rollover_bottom con_borderImage" data-description="ZOOM IN" href="images/light/timeline_content/10w.jpg" rel="lightbox[timeline]">
+			<img src="images/light/thumbnails/10.jpg" alt=""/>
+			</a>
+			<h2>AUGUST, 15</h2>
+			<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exerc...</span>
+			<div class="read_more" data-id="15/08/2012">Read more</div>
+		</div>
+		<div class="item_open" data-id="15/08/2012" data-access="ajax-content.php?item=10">
+			<div class="item_open_content">
+				<img class="ajaxloader" src="images/timeline/loadingAnimation.gif" alt="" />
+			</div>
+		</div>
+		
+		<div class="item" data-id="20/08/2012" data-description="Lorem ipsum dolor sit amet, consectetur adipiscing elit...">
+			<a class="image_rollover_bottom con_borderImage" data-description="ZOOM IN" href="images/light/timeline_content/11w.jpg" rel="lightbox[timeline]">
+			<img src="images/light/thumbnails/11.jpg" alt=""/>
+			</a>
+			<h2>AUGUST, 20</h2>
+			<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exerc...</span>
+			<div class="read_more" data-id="20/08/2012">Read more</div>
+		</div>
+		<div class="item_open" data-id="20/08/2012" data-access="ajax-content.php?item=11">
+			<div class="item_open_content">
+				<img class="ajaxloader" src="images/timeline/loadingAnimation.gif" alt="" />
+			</div>
+		</div>
+		
+		<div class="item" data-id="26/08/2012" data-description="Lorem ipsum dolor sit amet, consectetur adipiscing elit...">
+			<a class="image_rollover_bottom con_borderImage" data-description="ZOOM IN" href="images/light/timeline_content/12w.jpg" rel="lightbox[timeline]">
+				<img src="images/light/thumbnails/12.jpg" alt=""/>
+			</a>
+			<h2>AUGUST, 26</h2>
+			<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exerc...</span>
+			<div class="read_more" data-id="26/08/2012">Read more</div>
+		</div>
+		<div class="item_open" data-id="26/08/2012" data-access="ajax-content.php?item=12">
+			<div class="item_open_content">
+				<img class="ajaxloader" src="images/timeline/loadingAnimation.gif" alt="" />
+			</div>
+		</div>
+
+</div> <!-- /END TIMELINE -->
+<div class="selectors"><a href="documentation.html">Documentation</a></div>
+
+</body>
+</html>

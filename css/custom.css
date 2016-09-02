@@ -1,0 +1,294 @@
+/*
+.footer-bottom > div:nth-of-type(1) {
+width: 24%;
+}
+.footer-bottom > div:nth-of-type(2) {
+width: 21.6%;
+}
+.footer-bottom > div:nth-of-type(3) {
+width: 14.8%;
+}
+.footer-bottom > div:nth-of-type(4) {
+width: 11.9%;
+}
+.footer-bottom > div:nth-of-type(5) {
+width: 12.2%;
+}
+.footer-bottom > div:nth-of-type(6) {
+width: 15.5%;
+}
+*/
+
+div.fivestar-widget-static .star span.on, .rating div.fivestar-widget-static .star span.on {
+display: block;
+width: 100%;
+height: 100%;
+background: url(/sites/all/modules/contrib/fivestar/widgets/basic/star.png) no-repeat 0 -32px;
+}
+
+div.fivestar-widget-static .star, .rating div.fivestar-widget-static .star {
+float: left;
+width: 17px;
+height: 15px;
+overflow: hidden;
+text-indent: -999em;
+}
+
+
+.fivestar-default div.fivestar-widget-static .star {
+background-image: url(/sites/all/modules/contrib/fivestar/widgets/basic/star.png);
+}
+
+.article_one .mask, .article_blue .mask
+{
+    background: -webkit-linear-gradient(left top,rgba(0,211,240,1), rgba(127,0,0,0)); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(bottom right, rgba(0,211,240,1), rgba(120,0,0,0)); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(bottom right, rgba(0,211,240,1), rgba(120,0,0,0)); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to bottom right, rgba(0,211,240,1), rgba(120,0,0,0)); /* Standard syntax (must be last) */
+    margin:3px;
+}
+
+.article_two .mask, .article_butter .mask
+{
+    background: -webkit-linear-gradient(left top,rgba(245,236,227,1), rgba(127,0,0,0)); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(bottom right, rgba(245,236,227,1), rgba(120,0,0,0)); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(bottom right, rgba(245,236,227,1), rgba(120,0,0,0)); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to bottom right, rgba(245,236,227,1), rgba(120,0,0,0)); /* Standard syntax (must be last) */
+    margin:3px;
+}
+
+.article_three .mask, .article_yellow .mask
+{
+    background: -webkit-linear-gradient(left top,rgba(209,136,59,1), rgba(127,0,0,0)); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(bottom right, rgba(209,136,59,1), rgba(120,0,0,0)); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(bottom right, rgba(209,136,59,1), rgba(120,0,0,0)); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to bottom right, rgba(209,136,59,1), rgba(120,0,0,0)); /* Standard syntax (must be last) */
+    margin:3px;
+}
+
+.article_four .mask, .article_maroon .mask
+{
+    background: -webkit-linear-gradient(left top,rgba(216,63,45,1), rgba(127,0,0,0)); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(bottom right, rgba(216,63,45,1), rgba(120,0,0,0)); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(bottom right, rgba(216,63,45,1), rgba(120,0,0,0)); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to bottom right, rgba(216,63,45,1), rgba(120,0,0,0)); /* Standard syntax (must be last) */
+    margin:3px;
+}
+
+.article_five .mask, .article_ash .mask
+{
+    background: -webkit-linear-gradient(left top,rgba(230,230,230,1), rgba(127,0,0,0)); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(bottom right, rgba(230,230,230,1), rgba(120,0,0,0)); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(bottom right, rgba(230,230,230,1), rgba(120,0,0,0)); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to bottom right, rgba(230,230,230,1), rgba(120,0,0,0)); /* Standard syntax (must be last) */
+    margin:3px;
+}
+
+.article_featured .mask
+{
+	background: -webkit-linear-gradient(left top,rgba(0,211,240,1), rgba(127,0,0,0)); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(bottom right, rgba(0,211,240,1), rgba(120,0,0,0)); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(bottom right, rgba(0,211,240,1), rgba(120,0,0,0)); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to bottom right, rgba(0,211,240,1), rgba(120,0,0,0)); /* Standard syntax (must be last) */
+    margin:3px;
+	
+}
+
+.clsImg1 {
+	background-size:cover;
+	height:571px;
+	width:537px;	
+}
+
+.clsImg2 {
+	background-size:cover;
+	height:285px;
+	width:538px;	
+}
+.hide-fancy {
+	height:0;
+	position: relative;
+	overflow: hidden;
+}
+.views-table {
+	width:100%;
+}
+
+div.spec-holder
+{
+height: 245px;
+width: 320px;
+background: #F1F1F1;
+border-collapse: separate;
+-moz-border-radius: 10px;
+border-radius: 10px;
+-moz-box-shadow: 0px 0px 5px #666666;
+-webkit-box-shadow: 0px 0px 5px #666666;
+box-shadow: 0px 0px 5px #666666;
+position:absolute;
+z-index:100;
+margin-top:-270px;
+display:none;
+}
+ 
+span.qmark {
+  color: #54bce1;
+  cursor: pointer;
+}
+dl.dl-horizontal dt:hover div,
+table.table tr td:hover div
+ {/*display:inline;*/}
+
+img.spec-pic {
+  margin: 10px;
+}
+/*
+body.clsFancy #fancybox-content {
+	
+	height: auto !important; 
+}
+div#review_form div.form-item-title, div#review_form div.form-item-language, div#review_form div.form-wrapper {
+  margin: 5px 0;
+  clear: both;
+  float: left;
+}
+.clsGallery {
+	clear:both;
+}
+.clsGallery A.lightbox {	
+	margin:10px !important;
+	width:80px !important;
+	height:60px !important;
+}
+*/
+/****************specifications page ****************/
+table.spec {width:auto; margin:0 auto;}
+table.spec tr.section-head { border:0px;}
+table.spec tr {border-bottom: 1px dotted #aaaaaa;}
+table.spec .section-head td {padding: 4px 5px; background: none; color:#ffffff;}
+table.spec td.head-col {background:none;}
+.tab-content table.spec {margin-top:15px;}
+.tab-content table.spec td.head-col{background: none;}
+.tab-content table.spec a.btn{display: none;}
+/* Little Tooltip image window on standalone trampoline pages */
+ul.spec-list{margin:0px; cursor:pointer;}
+ul.spec-list li{display:inline;list-style-type: none;}
+ul.spec-list li:hover div {	display:inline;}
+/**default cameraIcon on sprite**/
+div.camIconSprite {margin-top:3px; width:35px; background:url("/sites/all/themes/springfree/images/heading-ico.png") no-repeat scroll 0 -310px transparent;}
+/*spec page model sprite*/
+a.specModelr54{ width:132px; height:150px; display:block; background:url("/sites/all/themes/springfree/images/spec-model-sprite.png") no-repeat scroll 0 0 transparent; text-decoration:none;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)"; filter: alpha(opacity=100); -moz-opacity:1; -khtml-opacity:1; opacity:1;}
+a.specModelr79{ width:132px; height:150px; display:block; background:url("/sites/all/themes/springfree/images/spec-model-sprite.png") no-repeat scroll 0 -167px transparent; text-decoration:none; -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)"; filter: alpha(opacity=100); -moz-opacity:1; -khtml-opacity:1; opacity:1;}
+a.specModelro77{ width:132px; height:150px; display:block; background:url("/sites/all/themes/springfree/images/spec-model-sprite.png") no-repeat scroll 0 -340px transparent; text-decoration:none;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)"; filter: alpha(opacity=100); -moz-opacity:1; -khtml-opacity:1; opacity:1;}
+a.specModelo92{ width:132px; height:150px; display:block; background:url("/sites/all/themes/springfree/images/spec-model-sprite.png") no-repeat scroll 0 -510px transparent; text-decoration:none;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)"; filter: alpha(opacity=100); -moz-opacity:1; -khtml-opacity:1; opacity:1;}
+a.specModels113{ width:132px; height:150px; display:block; background:url("/sites/all/themes/springfree/images/spec-model-sprite.png") no-repeat scroll 0 -680px transparent; text-decoration:none;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)"; filter: alpha(opacity=100); -moz-opacity:1; -khtml-opacity:1; opacity:1;}
+a.specModels155{ width:132px; height:150px; display:block; background:url("/sites/all/themes/springfree/images/spec-model-sprite.png") no-repeat scroll 0 -850px transparent; text-decoration:none;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)"; filter: alpha(opacity=100); -moz-opacity:1; -khtml-opacity:1; opacity:1;}
+a.specModelr54:hover{-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=80)"; filter: alpha(opacity=80); -moz-opacity:0.8; -khtml-opacity: 0.8; opacity: 0.8;}
+a.specModelr79:hover{-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=80)"; filter: alpha(opacity=80); -moz-opacity:0.8; -khtml-opacity: 0.8; opacity: 0.8;}
+a.specModelro77:hover{-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=80)"; filter: alpha(opacity=80); -moz-opacity:0.8; -khtml-opacity: 0.8; opacity: 0.8;}
+a.specModelo92:hover{-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=80)"; filter: alpha(opacity=80); -moz-opacity:0.8; -khtml-opacity: 0.8; opacity: 0.8;}
+a.specModels113:hover{-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=80)"; filter: alpha(opacity=80); -moz-opacity:0.8; -khtml-opacity: 0.8; opacity: 0.8;}
+a.specModels155:hover{-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=80)"; filter: alpha(opacity=80); -moz-opacity:0.8; -khtml-opacity: 0.8; opacity: 0.8;}
+/*spec page playicon animation and layout*/
+a.specYoutube
+{
+padding:0;
+padding-left:17px;
+width:80px;
+display:block;
+margin:0;
+height:20px;
+margin-left:15px;
+background:url('/sites/all/themes/springfree/images/heading-ico.png') no-repeat scroll 8px -378px transparent;
+text-decoration:none;
+}
+a.specYoutube:hover{
+background:url('/sites/all/themes/springfree/images/heading-ico.png') no-repeat scroll 8px -347px transparent; background-color:#d8d7d7; -moz-border-radius: 2px; -webkit-border-radius: 2px; -khtml-border-radius: 2px;border-radius: 2px;
+}
+/*sprite animation for icons at spec page*/
+ul.spec-list-popup li:hover div.spec-holder {display:inline;}
+ul.spec-list-popup li:hover div.spec-holder-right {display:inline;}
+ul.spec-list-popup li:hover div.camIconSprite {
+background:url("/sites/all/themes/springfree/images/heading-ico.png") no-repeat scroll 0 -273px transparent;
+}
+/* centering number to push aside the sprite icon*/
+ul.spec-list-popup li {display:inline; list-style-type: none; cursor:pointer;}
+ul.spec-list-popup {margin:0px; float:right; margin:-1px 35px 0 -55px; width:20px;}
+div.spec-holder
+{
+height: 245px;
+width: 320px;
+background: #F1F1F1;
+border-collapse: separate;
+-moz-border-radius: 10px;
+border-radius: 10px;
+-moz-box-shadow: 0px 0px 5px #666666;
+-webkit-box-shadow: 0px 0px 5px #666666;
+box-shadow: 0px 0px 5px #666666;
+position:absolute;
+z-index:100;
+margin-top:-270px;
+display:none;
+}
+/*spec page link style*/
+a.TrampolineSizeLink:hover {text-decoration:none;}
+div.trampolineShapeSpec {width:80px; padding-left:25px;}
+/**Sepc Page PopUP absolute postion setting*/
+ul.spec-list-popup {position: relative;}
+div.spec-holder-right
+{
+background: none repeat scroll 0 0 #F1F1F1;
+border-collapse: separate;
+border-radius: 10px 10px 10px 10px;
+box-shadow: 0 0 5px #666666;
+display: none;
+height: 245px;
+margin-top: -270px;
+position: absolute;
+width: 320px;
+z-index: 100;
+left:-305px
+}
+img.spec-pic {margin:10px;}
+/* End little tooltip */
+/*trampoline spec page shapes span sprite*/
+span.r54-shape {height:73px;width:100px;margin-left:15px;margin-top:15px;display:block;background:url("/sites/all/themes/springfree/images/trampoline-shapes-sprite.png") no-repeat scroll 0 0 transparent;}
+span.r79-shape {height:73px;width:100px;margin-left:15px;margin-top:15px;display:block;background:url("/sites/all/themes/springfree/images/trampoline-shapes-sprite.png") no-repeat scroll 0 -93px transparent;}
+span.o77-shape {height:73px;width:100px;margin-left:15px;margin-top:15px;display:block;background:url("/sites/all/themes/springfree/images/trampoline-shapes-sprite.png") no-repeat scroll 0 -186px transparent;}
+span.o92-shape {height:73px;width:100px;margin-left:15px;margin-top:15px;display:block;background:url("/sites/all/themes/springfree/images/trampoline-shapes-sprite.png") no-repeat scroll 0 -279px transparent;}
+span.s113-shape {height:73px;width:100px;margin-left:15px;margin-top:15px;display:block;background:url("/sites/all/themes/springfree/images/trampoline-shapes-sprite.png") no-repeat scroll 0 -372px transparent;}
+span.s155-shape {height:73px;width:100px;margin-left:15px;margin-top:15px;display:block;background:url("/sites/all/themes/springfree/images/trampoline-shapes-sprite.png") no-repeat scroll 0 -465px transparent;}
+/**** Reviews tab in product pages***************/
+
+/* Lazyload Youtube styles */
+.lazyYT-title {z-index: 100!important;
+    color: #fff!important;
+    font-family: sans-serif!important;
+    font-size: 0px!important;
+    top: 10px!important;
+    left: 12px!important;
+    position: absolute!important;
+    margin: 0!important;
+    padding: 0!important;
+    line-height: 1!important;
+    font-style: normal!important;
+    font-weight: normal!important;
+}
+
+.lazyYT-button {
+    margin: 0!important;
+    padding: 0!important;
+    width: 60px!important;
+    height: 41px!important;
+    z-index: 100!important;
+    position: absolute!important;
+    top: 50%!important;
+    margin-top: -22px!important;
+    left: 50%!important;
+    margin-left: -30px!important;
+    line-height: 1!important;
+    font-style: normal!important;
+    font-weight: normal!important;
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAApCAYAAABp50paAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAABV9JREFUeNrcWk1IK1cUvrmZGBOjJvr6xKe+Slvroi6kK6GrUkSxO12IC6GgUFBcuOlC8GdRulERV3VRQV0IKhRU0NJupK3tpi1dCRaxffWHGjWZPJNnNJlMz9FzX+ZNkzylcxP1wMdMZiYz97vnu+ee+2Njmc0GyANwgANQDCgAuABOwGOAG6AAiuh+MV3Lo+fc9KyN3qGYvnEBSAA0QBTwAnBp+P0ccAxQ6bkw/T4HRABn9B+8F6f/ZiRktjJANaCSUE0kkVApoBDgAeQTIeM7dAKjAuiG6+b7wniKstgMv+2m5xMGslgZIUAAEAOcAv4GHAL+BDwDBNMRxvOPAZ8C3iUPOVNUiGaCfgOV3MZe9z5OlSDAUzxzQZXyC+BLwM+pCtMJGCTvCTJxOlpBxGpLVzF2ajqiMvyAzwDfGuXyPuALkmyY5KGZ5GVGri1duXRyVIyOPsA7gO9R/iIYtQLKiSy7Q6T+b2UkSN7vAT4U7QGDz9Mbtp/7SPySjh9gj8EpApeyh2/YoyicuhlvhuBkVU3n2jA/cBkJxyUVjBuipz2HEf0qYcKs5w1ify6DbFVVVbSrq0s9ODhQlpaWClRVdUtWUyqLE0cPEn5CXkhI8HC8ubk5ODw8XJBIJOJNTU2H/f39j/f29jxZDJI2Iowq9nJiLk1KZWWYqcKHOC9pa2t7c21tLdTR0XHgdDo1kng22rdGQaucU2YlraY1TRPJACrIXldXVzU/P+8YHR09rqysVIkwz1JWxjmNZqQRBimbBxdIvLyvr8+7uroabGxs9NP1bAS0fOmE09Q2SsxdX19fsbCw4BgcHNzzeDxhGrDItCJO2s52hiVIO3w+X+nIyEgxRPCjmpqaE8lp7VU/nCeTMASrTO++GrTDM8UQzStB4uHOzs5niqIkJLRrLIeTG2QkpVZtthu9Fgk6amtrn8zMzLgmJyePvV7vmcVl0kUuncfuhumkiIqenh7f4uJiAJKWMwuDmS4krdyxURKOYz0Qvd0NDQ1Ri9+tKIbh050Zx+q6fjg1NaWtr6/7SO5WvTuq0ABZuNyWY7L6ycnJ0dDQ0OXc3FxFJBKxW0w4opCEcmnYrDh4Vd3c3FS7u7t929vbj6ipWT3IuOREOFeeRQ/GQqGQf2xsLNDS0vIIyBbRdU2Cgl5K2pYD+SKpF1tbW0cDAwOu5eXlKkleNdqVpMMyk3eQaioJ6zCo8M/OzsZh6Fi0v79fYsi+ZNpzJByU6WHD4AEJ4QxpfHd392hiYuJyenq64vz8XGGvrlJIHSbix46lavc60xISVjc2NsK9vb0ukHKZYeIhG00I7WpeOirxQ3xnZwc99w90MaHx8fFAa2trMZAtYcl542wYOhbXoU7xox8BvmLJFTxLCRcWFkbb29tVv9+vrKyseOnj2SL6MqUEHAA+QcJ1gDl2PTcdldCexeKXCEq5GIrizOzvgC5OUTrI/rtua1ncYsl1nlzm7CjpCKcTld3vtaQbZVlY+SJoBR4wUeHIPUyykDBOwP8mZgTYw1pQQy755N2fsGlxurgO+JUmAxyGh/V7VgHmMjspNn0D+IEZZhOwDf/FrheOn7Lkdgexkm43vfB18rF8JuQGvYCD4DSUH69/B/gccJSqgG+z630euJb6Fv3JaSCfjpBm6McTFqWKNvbqPg6eIefXSbYXVAbc8PIH4EfA1+x620NGj2Cf7KMOG7cm4fi0hK5XUw0KiG1MeHQTHBZGVrFjJ0znuEXpjIItdnX7FHRPCeLeITPt4LmtBEWNiz1XYj7MxZJbmPIJpSy5pUlUXDrPxAzKiBBJN53vk9fE/q0okY4ZVBS7jaL+FWAA/y++OTUmOgsAAAAASUVORK5CYII=')!important;
+}
+/* Lazyload Youtube styles */
