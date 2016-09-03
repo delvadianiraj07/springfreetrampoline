@@ -1,0 +1,98 @@
+// Mixin
+@mixin gradient-vertical-three($start-color: #fff, $mid-color: #fff, $end-color: #fff, $start-percent: 0%, $mid-percent: 50%, $end-percent: 100%) {
+	background-image: -webkit-linear-gradient(top, $start-color $start-percent, $mid-color $mid-percent, $end-color $end-percent);  // Safari 5.1-6, Chrome 10+
+	background-image: -o-linear-gradient(top, $start-color $start-percent, $mid-color $mid-percent, $end-color $end-percent);  // Opera 12
+	background-image: linear-gradient(to bottom, $start-color $start-percent, $mid-color $mid-percent, $end-color $end-percent); // Standard, IE10, Firefox 16+, Opera 12.10+, Safari 7+, Chrome 26+
+	background-repeat: repeat-x;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#{ie-hex-str($start-color)}', endColorstr='#{ie-hex-str($end-color)}', GradientType=0); // IE9 and down
+}
+.planetx {
+	/*============= HEADER (_header.scss) ==============*/
+	#header-container{
+		height: auto !important;
+	}
+    #header {
+        .top-bar {
+        	display: block;
+            height: auto;
+            background-color: #00afe0;
+            overflow: visible;
+            position: relative;
+    		z-index: 99999;
+
+            .preheader-promo-banner{
+            	margin-bottom: 0px;
+
+            	.preheader-copy{
+            		text-align: left;
+
+            		.glyphicon{
+            			font-size: 11px;
+            		}
+            	}
+            }
+        }
+        .header-holder{
+        	position: absolute;
+        	z-index: 9999;
+        	#nav{
+        		border: none;
+	        	.navbar-header{
+	        		top: -7px;
+
+	        		.logo{
+	        			padding: 0px;
+	        			margin:0px;
+	        		}
+	        	}
+	        	&.navbar-default{
+	        		background: none;
+	        		padding-top: 22px;
+					@include gradient-vertical-three(rgba(0,0,0,1), rgba(0,0,0,0.65), rgba(0,0,0,0), $start-percent: 7%, $mid-percent: 28%, $end-percent: 88%)
+	        	}
+	        	#main-nav{
+	        		>.nav{
+	        			margin: 0px;
+	        			padding: 0px;
+	        			>li{
+	        				>a{
+	        					font-size: 16px;
+	        					color: #fff;
+	        				}
+	        			}
+	        		}
+	        	}
+        	}
+        }
+        .add-nav{
+        	li{
+        		margin-bottom: 0px;
+        		margin-left: 20px;
+        	}
+        	.chat, .sign-in, .tel-link, .cart{
+        		&:before{
+        			display: none;
+        		}
+        		span{
+        			color: #fff;
+        		}
+        	}
+        	.cart{
+				span{
+					font-size: 13px;
+				}
+        	}
+        	.chat{
+				span{
+					font-size: 15px;
+				}
+        	}
+        	.lang-selector{
+        		.dropdown-menu{
+					top: 21px;
+        		}
+        	}
+        }
+    }
+    /*============= HEADER END ==============*/
+}

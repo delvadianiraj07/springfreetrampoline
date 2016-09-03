@@ -12,29 +12,72 @@
     <link type="text/css" rel="stylesheet" href="../../js/vendors/ilightbox/springfree-skin/skin.css" media="all" />
     <link type="text/css" rel="stylesheet" href="../../css/vendors/bootstrap.min.css" media="all" />
     <link type="text/css" rel="stylesheet" href="../../css/minified/main.min.css" media="all" />
+    <link type="text/css" rel="stylesheet" href="../../css/planetx.css" media="all" />
     <link type="text/css" rel="stylesheet" href="../../css/custom-saugar.css" media="all" />
     <script type="text/javascript" src="http://static.springfree.com/sites/all/themes/springfree/js/vendors/jquery-1.11.2.min.js"></script>
     <!-- Pingdom script -->
 
 </head>
 
-<body class="home US-site">
-    <div id="header-container" style="height:182px;">
+<body class="home US-site planetx">
+    <div id="header-container">
         <header id="header" class="homepage-marker">
-            <a href="/national-september-promotion-2016" id="link-preheader-promo-banner" class="link-preheader-promo-banner">
-                <div id="preheader-promo-banner" class="preheader-promo-banner">
-                    <p class="preheader-copy">Save $99. Learn More &rarr;</p>
+            <nav class="top-bar">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6">
+                            <a href="/national-september-promotion-2016" id="link-preheader-promo-banner" class="link-preheader-promo-banner">
+                                <div id="preheader-promo-banner" class="preheader-promo-banner">
+                                    <p class="preheader-copy">Save $99. Learn More <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                            <div class="container-fluid">
+                                <ul class="add-nav">
+                                    <li class="chat-holder hidden-xs ">
+                                        <a href="#" class="olark-chat-button chat" id="olark-chat-button" title="Chat with a Springfree respresentative" onclick="javascript:launchChat();"><span class="glyphicon glyphicon-comment" aria-hidden="true"></span></a>
+                                    </li>
+                                    <li>
+                                        <a href="tel:18775867723" class="tel-link emphasize-link"><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span></a>
+                                    </li>
+                                    <li>
+                                        <a href="http://cart.springfreetrampoline.com/Checkout-US/cart.ssp" class="cart"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span></a>
+                                    </li>
+                                    <li class="dropdown lang-selector"> <a href="/" class="dropdown-toggle language flag-us" data-toggle="dropdown" role="button" aria-expanded="false">USA</a>
+                                        <div class="dropdown-menu" role="menu">
+                                            <div class="container-fluid">
+                                                <ul class="sub-menu">
+                                                    <li><a href="http://www.springfreetrampoline.com.au/"><span class="flag-au language">&nbsp;</span> Australia</a></li>
+                                                    <li><a href="http://www.springfreetrampoline.ca/"><span class="flag-ca language">&nbsp;</span> Canada (EN)</a></li>
+                                                    <li><a href="http://fr.springfreetrampoline.ca/"><span class="flag-ca language">&nbsp;</span> Canada (FR)</a></li>
+                                                    <li><a href="http://www.springfreetrampoline.co.nz/"><span class="flag-nz language">&nbsp;</span> New Zealand</a></li>
+                                                    <li><a href="http://www.springfree.com/"><span class="flag-otherlanguage">&nbsp;</span>Other Regions</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <!-- <li class="hidden-xs "><a href="https://checkout.springfreetrampoline.com/Checkout-US/my_account.ssp?sc=6&ext=F" class="sign-in hidden-xs"><span>sign-in</span></a></li> -->
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </a>
-            <a id="close-preheader" href="#" class="close-preheader"></a>
+                <a id="close-preheader" href="#" class="close-preheader"></a>
+            </nav>
+            
+            
             <div class="header-holder">
                 <nav id="nav" class="navbar navbar-default varnish-desktop">
-                    <div class="container-fluid full-width">
+                    <div class="container">
                         <div class="navbar-header">
                             <div class="logo navbar-brand">
-                                <a href="/"> <span data-picture data-alt="springfree &reg; the world's safest trampoline"><span data-src="http://static.springfree.com/sites/springfreetrampoline.com/files/images/misc/SFT_Tagline_274x79_R.png" data-width="274" data-height="79"></span><span data-src="http://static.springfree.com/sites/springfreetrampoline.com/files/images/SFT_Tagline_180x52_R.png" data-media="(max-width:991px)" data-width="166" data-height="30"></span>
-                                    <noscript><img src="http://static.springfree.com/sites/springfreetrampoline.com/files/images/misc/SFT_Tagline_274x79_R.png" width="274" height="79" alt="springfree &trade; the world's safest trampoline" /> </noscript>
-                                    </span>
+                                <a href="/">
+                                <span data-picture data-alt="springfree &reg; the world's safest trampoline">
+                                    <span data-src="../../images/logo.png" data-width="166"></span>
+                                    <span data-src="../../images/logo.png" data-media="(max-width:991px)" data-width="166" data-height="30"></span>
+                                    <noscript><img src="../../images/logo.png" width="166" alt="springfree &trade; the world's safest trampoline" /> </noscript>
+                                </span>
                                 </a>
                             </div>
                             <div id="nav-icon4" class="visible-xs"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span></div>
@@ -43,7 +86,8 @@
                             <ul class="mobile-nav">
                                 <a href="/trampolines">
                                     <li class="mobile-nav-items col-xs-4">Trampolines</li>
-                                </a> <a href="/tgoma" <li class="mobile-nav-items col-xs-4"><span id="tgoma-menu-holder" class="tgoma-menu-holder"><span id="tgoma-menu" class="tgoma-menu" href="/tgoma">tgoma</span></span></li> </a>
+                                </a> 
+                                <a href="/tgoma" <li class="mobile-nav-items col-xs-4"><span id="tgoma-menu-holder" class="tgoma-menu-holder"><span id="tgoma-menu" class="tgoma-menu" href="/tgoma">tgoma</span></span></li> </a>
                                 <a href="/experience-center-locator">
                                     <li class="mobile-nav-items col-xs-4">Visit Us</li>
                                 </a>
@@ -82,7 +126,9 @@
                         </div>
                         <div class="collapse navbar-collapse" id="main-nav">
                             <ul class="nav navbar-nav navbar-right">
-                                <li> <a href="/trampolines" class="has-dropdown">Trampolines</a> <a href="#" class="dropdown-toggle is-drowdown" data-toggle="dropdown" role="button" aria-expanded="false" onclick="javascript:lazyloadimages();">&nbsp;</a>
+                                <li>
+                                    <a href="/trampolines" class="has-dropdown">Trampolines</a>
+                                    <a href="#" class="dropdown-toggle is-drowdown" data-toggle="dropdown" role="button" aria-expanded="false" onclick="javascript:lazyloadimages();">&nbsp;</a>
                                     <div class="dropdown-menu" role="menu">
                                         <div class="container-fluid tab-holder">
                                             <div class="tablist-wrap"> <span class="title">browse by</span>
@@ -183,29 +229,7 @@
                         </div>
                     </div>
                 </nav>
-                <nav class="top-bar">
-                    <div class="container-fluid">
-                        <ul class="add-nav">
-                            <li> <a href="http://cart.springfreetrampoline.com/Checkout-US/cart.ssp" class="cart"><span>cart</span> </a></li>
-                            <li class="hidden-xs "><a href="https://checkout.springfreetrampoline.com/Checkout-US/my_account.ssp?sc=6&ext=F" class="sign-in hidden-xs"><span>sign-in</span></a></li>
-                            <li class="chat-holder hidden-xs "><a href="#" class="olark-chat-button chat" id="olark-chat-button" title="Chat with a Springfree respresentative" onclick="javascript:launchChat();">click to chat</a></li>
-                            <li><a href="tel:18775867723" class="tel-link emphasize-link"><span>1 (877) 586-7723</span></a></li>
-                            <li class="dropdown lang-selector"> <a href="/" class="dropdown-toggle language flag-us" data-toggle="dropdown" role="button" aria-expanded="false">USA</a>
-                                <div class="dropdown-menu" role="menu">
-                                    <div class="container-fluid">
-                                        <ul class="sub-menu">
-                                            <li><a href="http://www.springfreetrampoline.com.au/"><span class="flag-au language">&nbsp;</span> Australia</a></li>
-                                            <li><a href="http://www.springfreetrampoline.ca/"><span class="flag-ca language">&nbsp;</span> Canada (EN)</a></li>
-                                            <li><a href="http://fr.springfreetrampoline.ca/"><span class="flag-ca language">&nbsp;</span> Canada (FR)</a></li>
-                                            <li><a href="http://www.springfreetrampoline.co.nz/"><span class="flag-nz language">&nbsp;</span> New Zealand</a></li>
-                                            <li><a href="http://www.springfree.com/"><span class="flag-otherlanguage">&nbsp;</span>Other Regions</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </nav>
+                
             </div>
         </header>
     </div>

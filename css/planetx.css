@@ -1,0 +1,57 @@
+.planetx {
+  /*============= HEADER (_header.scss) ==============*/
+  /*============= HEADER END ==============*/ }
+  .planetx #header-container {
+    height: auto !important; }
+  .planetx #header .top-bar {
+    display: block;
+    height: auto;
+    background-color: #00afe0;
+    overflow: visible;
+    position: relative;
+    z-index: 99999; }
+    .planetx #header .top-bar .preheader-promo-banner {
+      margin-bottom: 0px; }
+      .planetx #header .top-bar .preheader-promo-banner .preheader-copy {
+        text-align: left; }
+        .planetx #header .top-bar .preheader-promo-banner .preheader-copy .glyphicon {
+          font-size: 11px; }
+  .planetx #header .header-holder {
+    position: absolute;
+    z-index: 9999; }
+    .planetx #header .header-holder #nav {
+      border: none; }
+      .planetx #header .header-holder #nav .navbar-header {
+        top: -7px; }
+        .planetx #header .header-holder #nav .navbar-header .logo {
+          padding: 0px;
+          margin: 0px; }
+      .planetx #header .header-holder #nav.navbar-default {
+        background: none;
+        padding-top: 22px;
+        background-image: -webkit-linear-gradient(top, black 7%, rgba(0, 0, 0, 0.65) 28%, transparent 88%);
+        background-image: -o-linear-gradient(top, black 7%, rgba(0, 0, 0, 0.65) 28%, transparent 88%);
+        background-image: linear-gradient(to bottom, black 7%, rgba(0, 0, 0, 0.65) 28%, transparent 88%);
+        background-repeat: repeat-x;
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF000000', endColorstr='#00000000', GradientType=0); }
+      .planetx #header .header-holder #nav #main-nav > .nav {
+        margin: 0px;
+        padding: 0px; }
+        .planetx #header .header-holder #nav #main-nav > .nav > li > a {
+          font-size: 16px;
+          color: #fff; }
+  .planetx #header .add-nav li {
+    margin-bottom: 0px;
+    margin-left: 20px; }
+  .planetx #header .add-nav .chat:before, .planetx #header .add-nav .sign-in:before, .planetx #header .add-nav .tel-link:before, .planetx #header .add-nav .cart:before {
+    display: none; }
+  .planetx #header .add-nav .chat span, .planetx #header .add-nav .sign-in span, .planetx #header .add-nav .tel-link span, .planetx #header .add-nav .cart span {
+    color: #fff; }
+  .planetx #header .add-nav .cart span {
+    font-size: 13px; }
+  .planetx #header .add-nav .chat span {
+    font-size: 15px; }
+  .planetx #header .add-nav .lang-selector .dropdown-menu {
+    top: 21px; }
+
+/*# sourceMappingURL=planetx.css.map */
