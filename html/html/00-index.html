@@ -15,6 +15,7 @@
     <link type="text/css" rel="stylesheet" href="../../css/planetx.css" media="all" />
     <link type="text/css" rel="stylesheet" href="../../css/custom-saugar.css" media="all" />
     <script type="text/javascript" src="http://static.springfree.com/sites/all/themes/springfree/js/vendors/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="../../js/vendors/jquery.cookie.js"></script>
     <!-- Pingdom script -->
 
 </head>
@@ -22,15 +23,16 @@
 <body class="home US-site planetx">
     <div id="header-container">
         <header id="header" class="homepage-marker">
+            <div id="promo-banner" class="promo-banner">
+                <img src="http://static.springfree.com/sites/springfreetrampoline.com/files/images/headers/SC078289_NA_Q3-Promo-Assets_1560x620_USnational_SEPT.jpg" alt="Promo Banner">
+            </div>
             <nav class="top-bar">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-6 col-md-6">
-                            <a href="/national-september-promotion-2016" id="link-preheader-promo-banner" class="link-preheader-promo-banner">
-                                <div id="preheader-promo-banner" class="preheader-promo-banner">
-                                    <p class="preheader-copy">Save $99. Learn More <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></p>
-                                </div>
-                            </a>
+                            <div id="preheader-promo-banner" class="preheader-promo-banner">
+                                <p class="preheader-copy">Save $99. Learn More <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></p>
+                            </div>
                         </div>
                         <div class="col-lg-6 col-md-6">
                             <div class="container-fluid">
@@ -65,8 +67,7 @@
                 </div>
                 <a id="close-preheader" href="#" class="close-preheader"></a>
             </nav>
-            
-            
+
             <div class="header-holder">
                 <nav id="nav" class="navbar navbar-default varnish-desktop">
                     <div class="container">
@@ -128,88 +129,33 @@
                             <ul class="nav navbar-nav navbar-right">
                                 <li>
                                     <a href="/trampolines" class="has-dropdown">Trampolines</a>
-                                    <a href="#" class="dropdown-toggle is-drowdown" data-toggle="dropdown" role="button" aria-expanded="false" onclick="javascript:lazyloadimages();">&nbsp;</a>
+                                    <a href="#" class="dropdown-toggle is-drowdown" data-toggle="dropdown" role="button" aria-expanded="false" onclick="javascript:lazyloadimages();"><span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></a>
                                     <div class="dropdown-menu" role="menu">
-                                        <div class="container-fluid tab-holder">
-                                            <div class="tablist-wrap"> <span class="title">browse by</span>
-                                                <ul class="tab-list">
-                                                    <li class="active"><a href="#tab01">Trampolines</a></li>
-                                                    <li><a href="#tab04">tgoma</a></li>
-                                                    <li><a href="#tab02">Accessories</a></li>
-                                                </ul>
-                                            </div>
-                                            <div class="tab-content">
-                                                <div id="tab01">
-                                                    <div class="visible-xs-block">
-                                                        <p>Trampolines</p>
-                                                    </div>
-                                                    <ul class="product-wrap product-wrap01" id="non_mobile_tramp">
-                                                        <li>
-                                                            <a href="/trampolines/jumbo-square-trampoline" class="img-wrap" data-sku="sku-S155" data-listname="Header navigation"><img class="tramp_gif" id="trampoline_s155" src="http://static.springfree.com/sites/springfreetrampoline.com/files/images/misc/1px_image.gif" width="120" height="120" alt="Jumbo Square Trampoline"> <span class="product-title">Jumbo Square Trampoline</span> </a> <span class="best-seller-badge pos-badge-header">best seller</span>
-                                                            <br>
-                                                        </li>
-                                                        <li>
-                                                            <a href="/trampolines/large-square-trampoline" class="img-wrap" data-sku="sku-S113" data-listname="Header navigation"><img class="tramp_gif" id="trampoline_s113" src="http://static.springfree.com/sites/springfreetrampoline.com/files/images/misc/1px_image.gif" width="120" height="120" alt="Large Square Trampoline"> <span class="product-title">Large Square Trampoline</span> </a> <span class="best-seller-badge pos-badge-header">best seller</span>
-                                                            <br>
-                                                        </li>
-                                                        <li>
-                                                            <a href="/trampolines/large-oval-trampoline" class="img-wrap" data-sku="sku-O92" data-listname="Header navigation"><img class="tramp_gif" id="trampoline_o92" src="http://static.springfree.com/sites/springfreetrampoline.com/files/images/misc/1px_image.gif" width="120" height="120" alt="Large Oval Trampoline"> <span class="product-title">Large Oval Trampoline</span> </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="/trampolines/medium-oval-trampoline" class="img-wrap" data-sku="sku-O77" data-listname="Header navigation"><img class="tramp_gif" id="trampoline_o77" src="http://static.springfree.com/sites/springfreetrampoline.com/files/images/misc/1px_image.gif" width="120" height="120" alt="Medium Oval Trampoline"> <span class="product-title">Medium Oval Trampoline</span> </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="/trampolines/medium-round-trampoline" class="img-wrap" data-sku="sku-R79" data-listname="Header navigation"><img class="tramp_gif" id="trampoline_r79" src="http://static.springfree.com/sites/springfreetrampoline.com/files/images/misc/1px_image.gif" width="120" height="120" alt="Medium Round Trampoline"> <span class="product-title">Medium Round Trampoline</span> </a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                                <div id="tab02">
-                                                    <div class="visible-xs-block">
-                                                        <p>Accessories</p>
-                                                    </div>
-                                                    <ul class="product-wrap product-wrap02" id="non_mobile_access">
-                                                        <li>
-                                                            <a href="/trampoline-accessories/flexrhoop" class="img-wrap" data-sku="sku-SF0100101" data-listname="Header navigation"><img class="mobile_gif" id="access_hoop" src="http://static.springfree.com/sites/springfreetrampoline.com/files/images/misc/1px_image.gif" width="120" height="120" alt="FlexrHoop"><span class="product-title">FlexrHoop</span></a> <span class="best-seller-badge pos-badge-header">best seller</span>
-                                                            <br>
-                                                        </li>
-                                                        <li>
-                                                            <a href="/trampoline-accessories/flexrstep" class="img-wrap" data-sku="sku-SF0009201" data-listname="Header navigation"><img class="mobile_gif" id="access_step" src="http://static.springfree.com/sites/springfreetrampoline.com/files/images/misc/1px_image.gif" width="120" height="120" alt="FlexrStep"><span class="product-title">FlexrStep</span></a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="/trampoline-accessories/ground-anchor" class="img-wrap" data-sku="sku-SF0104501" data-listname="Header navigation"><img class="mobile_gif" id="access_anchor" src="http://static.springfree.com/sites/springfreetrampoline.com/files/images/misc/1px_image.gif" width="120" height="120" alt="Ground Anchor"><span class="product-title">Ground Anchor</span></a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="/trampoline-accessories/shifting-wheels" class="img-wrap" data-sku="sku-SF0009301" data-listname="Header navigation"><img class="mobile_gif" id="access_wheels" src="http://static.springfree.com/sites/springfreetrampoline.com/files/images/misc/1px_image.gif" width="120" height="120" style="top: 16px;position: relative;" alt="Shifting Wheels"><span class="product-title">Shifting Wheels</span></a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                                <div id="tab04" class="tgoma-only-tab-content" style="display: block;">
-                                                    <div class="visible-xs-block">
-                                                        <p>tgoma</p>
-                                                    </div>
-                                                    <div class="col-xs-4">
-                                                        <ul class="product-wrap" id="non_mobile_access">
-                                                            <li>
-                                                                <a href="/interactive-trampoline-gaming-system/tgoma" data-sku="sku-tgoma" class="img-wrap" data-listname="Header navigation"><img class="mobile_gif" id="tgoma_product" src="/sites/springfreetrampoline.com/files/images/accessories/tgoma-acc-tab.png" width="250" height="auto" alt="FlexrHoop"> </a>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                    <a href="/interactive-trampoline-gaming-system/tgoma" class="img-wrap" data-sku="sku-tgoma" data-listname="Header navigation"></a>
-                                                    <div class="col-xs-8">
-                                                        <a href="/interactive-trampoline-gaming-system/tgoma" class="img-wrap" data-sku="sku-tgoma" data-listname="Header navigation"></a>
-                                                        <h4> <a href="/interactive-trampoline-gaming-system/tgoma" data-sku="sku-tgoma" class="img-wrap" data-listname="Header navigation"></a> <a href="/interactive-trampoline-gaming-system/tgoma" data-sku="sku-tgoma" title="Interactive digital gaming system">tgoma</a></h4>
-                                                        <p>tgoma turns your Springfree into the first outdoor interactive digital game system designed for a trampoline.</p>
-                                                    </div>
-                                                </div>
-                                            </div>
+                                        <div class="container-fluid tab-holder">                                            
+                                            <ul>
+                                                <li><a href="#"><span>Explore All The</span>Trampolines</a></li>
+                                                <li><a href="#"><span>Doulble the Fun with</span>Accessories</a></li>
+                                                <li><a href="#"><span>Need a Hand?</span>Services</a></li>
+                                            </ul>
                                         </div>
                                     </div>
                                 </li>
                                 <li id="tgoma-menu-holder" class="tgoma-menu-holder"> <a id="tgoma-menu" class="tgoma-menu" href="/tgoma">tgoma</a></li>
                                 <li> <a href="/safety-benefits">Safety</a></li>
-                                <li> <a href="/quality" class="dropdown-toggle">Quality</a></li>
+                                <li>
+                                    <a href="/quality" class="dropdown-toggle">Quality</a>
+                                    <a href="#" class="dropdown-toggle is-drowdown" data-toggle="dropdown" role="button" aria-expanded="false" onclick="javascript:lazyloadimages();"><span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></a>
+                                    <div class="dropdown-menu" role="menu">
+                                        <div class="container-fluid tab-holder">                                            
+                                            <ul>
+                                                <li><a href="#"><span>A Dad's</span>Story</a></li>
+                                                <li><a href="#"><span>Awarded for</span>Safety</a></li>
+                                                <li><a href="#"><span>Commitment to</span>Quality</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
                                 <li class="store_CTA_li"> <a href="/experience-center-locator" class="dropdown-toggle store_CTA_A">Visit us</a></li>
-                                <li> <a href="/owners" class="dropdown-toggle">Support</a></li>
                             </ul>
                         </div>
                     </div>
@@ -349,7 +295,11 @@
                             <div class="copy-layer tgoma">
                                 <div class="hero-cta tgoma-hero-cta "> <a href="/tgoma" class="btn btn-default buttton-pill">Learn More</a></div>
                             </div>
-                            <div class="bg-stretch"> <span data-picture data-alt="tgoma - a new way to play"> <span data-src="http://static.springfree.com/sites/springfreetrampoline.com/files/files/tgoma/images/tgoma_landing_1560x620.jpg" class="desktop_1"></span> <span data-src="/sites/springfreetrampoline.com/files/images/headers/tgoma_landing_767x575.jpg" data-media="(max-width:767px)" class="mobile_1"></span> <span data-src="/sites/springfreetrampoline.com/files/images/headers/tgoma_landing_767x575.jpg" data-media="(max-width:767px) and (orientation:landscape)" data-width="320" data-height="175" class="homepage-slider-adjust"></span>
+                            <div class="bg-stretch"> 
+                            <span data-picture data-alt="tgoma - a new way to play">
+                            <span data-src="http://static.springfree.com/sites/springfreetrampoline.com/files/files/tgoma/images/tgoma_landing_1560x620.jpg" class="desktop_1"></span>
+                            <span data-src="/sites/springfreetrampoline.com/files/images/headers/tgoma_landing_767x575.jpg" data-media="(max-width:767px)" class="mobile_1"></span>
+                            <span data-src="/sites/springfreetrampoline.com/files/images/headers/tgoma_landing_767x575.jpg" data-media="(max-width:767px) and (orientation:landscape)" data-width="320" data-height="175" class="homepage-slider-adjust"></span>
                                 <noscript><img src="http://static.springfree.com/sites/springfreetrampoline.com/files/files/tgoma/images/tgoma_landing_1560x620.jpg" width="1920" height="620" alt="tgoma - a new way to play"></noscript>
                                 </span>
                             </div>
@@ -418,19 +368,89 @@
                     </div>
                 </div>
             </section>
+
+            
             <div id="static-panels" class="static-panels">
+                <section class="intro-togma">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-lg-6 col-lg-offset-3 text-center">
+                                <h1>Introducing<img src="../../images/tgoma_logo.png" class="tgoma"></h1>
+                                <p>Springfree Trampoline featuring tgoma is the
+                                <strong>FIRST OUTDOOR INTERACTIVE DIGITAL GAME SYSTEM</strong>
+                                that encourages kids to go outside and be active - introducing a new way to play.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="intro-togma-bg">
+                        <div class="container-fluid">
+                            <div class="text-center">
+                                <a href="http://www.youtube.com/embed/q5rcx1PuGGU?autoplay=1&amp;autohide=1&amp;fs=1&amp;rel=0&amp;hd=1&amp;wmode=opaque&amp;enablejsapi=1&amp;showinfo=0" class="ilbvid-tgoma" data-options="width:1920, height:1080" title="The Springfree Difference">
+                                    <span data-picture="" data-alt="Play video">
+                                        <span data-src="http://static.springfree.com/sites/all/themes/springfree/images/ico01.png" data-width="121" data-height="86">
+                                            <img alt="Play video" width="121" height="86" src="http://static.springfree.com/sites/all/themes/springfree/images/ico01.png">
+                                        </span>
+                                        <span data-src="http://static.springfree.com/sites/all/themes/springfree/images/ico01-mobile@2x.png" data-media="(max-width:767px)" data-width="64" data-height="48"></span>
+                                        <span data-src="http://static.springfree.com/sites/all/themes/springfree/images/ico01-mobile@2x.png" data-media="(max-width:767px) and (orientation:landscape)" data-width="64" data-height="48"></span>
+                                        <noscript><img src="http://static.springfree.com/sites/all/themes/springfree/images/ico01.png" width="121" height="86" alt="Play video"></noscript>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="jump-calories-wrap">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-lg-10 col-lg-offset-1 col-md-12">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="title">Jumps counted:</div>
+                                                <div class="count">
+                                                    <span>3</span>
+                                                    <span>3</span>,
+                                                    <span>3</span>
+                                                    <span>3</span>
+                                                    <span>3</span>,
+                                                    <span>3</span>
+                                                    <span>3</span>
+                                                    <span>3</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="title">Calories brunt:</div>
+                                                <div class="count">
+                                                    <span>3</span>
+                                                    <span>3</span>,
+                                                    <span>3</span>
+                                                    <span>3</span>
+                                                    <span>3</span>,
+                                                    <span>3</span>
+                                                    <span>3</span>
+                                                    <span>3</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
                 <section class="how-we-make">
                     <div class="container-fluid">
                         <div class="row">
                             <article class="col-lg-12">
                                 <header class="header">
-                                    <h1>How did we make the world’s safest trampoline?</h1>
-                                    <p>It began with a simple wish, a dad who wanted a safe trampoline for his daughter. That dad was Dr. Keith Alexander, mechanical engineer and university professor.</p>
+                                    <h1>How did we make the world's safest trampoline?</h1>
+                                    <div class="row">
+                                        <div class="col-lg-10 col-lg-offset-1">
+                                            <p>It began with a simple wish, a dad who wanted a safe trampoline for his daughter. That dad was Dr. Keith Alexander, mechanical engineer and university professor.</p>
+                                        </div>
+                                    </div>                                    
                                 </header>
-                                <div class="body hidden-xs"> <a class="scroll-btn" href="#scroll-continue">Click to continue</a></div>
-                                <div class="img-wrap"> <img class="lazy hidden-xs" data-src="/sites/springfreetrampoline.com/files/images/home/trampoline-with-tgoma-teaser.png" src="http://static.springfree.com/sites/springfreetrampoline.com/files/images/misc/1053x215.png" width="1053" height="215" alt="How did we make the world’s safest trampoline?" /> <img class="lazy hidden-sm hidden-md hidden-lg" data-src="/sites/springfreetrampoline.com/files/images/home/trampoline-with-tgoma-teaser-sm.png" src="http://static.springfree.com/sites/springfreetrampoline.com/files/images/misc/294x40.png" width="294" height="40" alt="How did we make the world’s safest trampoline?" />
-                                    <noscript><img src="http://static.springfree.com/sites/springfreetrampoline.com/files/images/home/trampoline-with-tgoma-teaser.png" width="1053" height="215" alt="How did we make the world’s safest trampoline?" /></noscript>
-                                </div>
+                                <div class="trampoline-hotspot">
+                                    <img src="../../images/home-trampoline.png">
+                                </div>                               
                             </article>
                         </div>
                     </div>
@@ -941,6 +961,8 @@
         <!-- Custom Scripts : HTML TPL -->
         <!-- CCK script section 2 -->
         
+        <!-- New planex script -->
+        <script type="text/javascript" src="../../js/scripts/planetx.js"></script>
 </body>
 
 </html>

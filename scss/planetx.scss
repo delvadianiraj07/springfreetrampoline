@@ -6,12 +6,33 @@
 	background-repeat: repeat-x;
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#{ie-hex-str($start-color)}', endColorstr='#{ie-hex-str($end-color)}', GradientType=0); // IE9 and down
 }
+@mixin vertical-align($position: relative) {
+  position: $position;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+@mixin centered{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
 .planetx {
 	/*============= HEADER (_header.scss) ==============*/
 	#header-container{
 		height: auto !important;
 	}
     #header {
+    	.promo-banner{
+    		display: none;
+    		img{
+    			width: 100%;
+    		}
+    	}
         .top-bar {
         	display: block;
             height: auto;
@@ -22,6 +43,8 @@
 
             .preheader-promo-banner{
             	margin-bottom: 0px;
+				cursor: pointer;
+				display: inline-block;
 
             	.preheader-copy{
             		text-align: left;
@@ -38,7 +61,8 @@
         	#nav{
         		border: none;
 	        	.navbar-header{
-	        		top: -7px;
+	        		top: 0;
+    				padding-top: 17px;
 
 	        		.logo{
 	        			padding: 0px;
@@ -47,7 +71,6 @@
 	        	}
 	        	&.navbar-default{
 	        		background: none;
-	        		padding-top: 22px;
 					@include gradient-vertical-three(rgba(0,0,0,1), rgba(0,0,0,0.65), rgba(0,0,0,0), $start-percent: 7%, $mid-percent: 28%, $end-percent: 88%)
 	        	}
 	        	#main-nav{
@@ -55,13 +78,89 @@
 	        			margin: 0px;
 	        			padding: 0px;
 	        			>li{
+	        				padding-left: 0px;
+	        				&.open{
+	        					background: rgba(255,255,255,0.5);
+	        					@include gradient-vertical-three(rgba(0,0,0,1), rgba(0,0,0,0.65), rgba(0,0,0,0), $start-percent: 7%, $mid-percent: 28%, $end-percent: 88%)
+	        				}
 	        				>a{
 	        					font-size: 16px;
 	        					color: #fff;
+	        					padding: 17px 22px;
+	        					display: inline-block;
+	        					&:after{
+	        						display: none;
+	        					}
+	        					&.tgoma-menu{
+									top: 8px;
+	        					}
+	        					&.is-drowdown{
+	        						background: none;
+									padding: 0px;
+									display: inline;
+									margin-left: -9px;
+	        					}
+	        					span{
+	        						font-size: 9px;
+	        					}
+	        				}
+	        			}
+	        		}
+	        		.nav{
+	        			li{
+	        				margin-bottom: 0px;
+	        				a{
+	        					&:hover{
+	        						text-decoration: none;
+	        					}
 	        				}
 	        			}
 	        		}
 	        	}
+	        	.dropdown-menu{
+	        		border: none;
+	        		box-shadow: none;
+	        		background: rgba(255,255,255,0.5);
+	        		padding: 35px 0px;
+				    height: auto;
+				    min-height: initial;
+
+	        		ul{
+	        			list-style: none;
+	        			padding-left: 0px; 
+	        			li{
+	        				display: inline-block;
+	        				margin: 0px 58px;
+
+	        				a{
+								font-size: 30px;
+								color: #fff;
+								text-transform: uppercase;
+								&:hover{
+									color: #00afe0;
+								}
+								span{
+									font-size: 14px;
+									font-weight: 500;
+									display: block;
+								}
+	        				}
+	        			}
+	        		}
+	        		.tab-holder{
+	        			text-align: center;
+	        		}
+	        		.container-fluid{
+	        			min-height: initial;
+	        		}
+	        	}
+        	}
+        	&.header-shadow{
+        		#nav{
+					position: fixed;
+					top: 0;
+					width: 100%;
+        		}
         	}
         }
         .add-nav{
@@ -95,4 +194,76 @@
         }
     }
     /*============= HEADER END ==============*/
+
+    /* ============ HOME MAIN SLIDER ========== */
+    #homepage-hero-carousel{
+    	.grab-cursor{
+			.slide-item{
+	    		height: calc(100vh - 30px);
+	    	}
+    	}
+    	.rsNav.rsBullets{
+    		display: none;
+    	}
+    	.carousel-block{
+    		.slide-wrap{
+    			@include centered;
+    		}
+    		.header{
+			    padding: 0px;
+    		}
+    	}
+    }
+    /* ============ END HOME MAIN SLIDER ========== */
+    .intro-togma{
+    	padding-top: 60px;
+    	h1{
+    		color: #e30040;
+    	}
+    	img.tgoma{
+    	    max-width: 172px;
+    	}
+    	p{
+    		font-size: 20px;
+    		color: #333333;
+    		line-height: 27px;
+    		margin: 28px 0;
+    		strong{
+    			display: block;
+    			color: #00afe0;
+    			font-weight: 600;
+    		}
+    	}
+    	.intro-togma-bg{
+			background: url(../images/_RGB2950.jpg) no-repeat top center; 
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			background-size: cover;
+			.jump-calories-wrap{
+				background: rgba(0,0,0,0.3);
+				padding: 28px 0 35px 0;
+				margin-top: 43%;
+				.title{
+					font-size: 30px;
+					color: #fff;
+					line-height: 27px;
+    				margin-bottom: 12px;
+				}
+				.count{
+					color: #fff;
+					font-size: 30px;
+					span{
+						padding: 3px 10px;
+					    border-radius: 3px;
+					    background-color: #00afe0;
+					    display: inline-block;
+					}
+				}
+			}
+    	}
+    }
+    .how-we-make{
+    	background: #f7f1e9;
+    }
 }
