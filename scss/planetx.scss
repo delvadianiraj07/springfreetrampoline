@@ -213,10 +213,16 @@
 			    padding: 0px;
     		}
     	}
+    	.rsArrow{
+    		@include vertical-align(absolute);
+    	}
     }
     /* ============ END HOME MAIN SLIDER ========== */
     .intro-togma{
     	padding-top: 60px;
+    	height: 100vh;
+    	position: relative;
+    	overflow: hidden;
     	h1{
     		color: #e30040;
     	}
@@ -240,10 +246,13 @@
 			-moz-background-size: cover;
 			-o-background-size: cover;
 			background-size: cover;
+			height: 100%;
 			.jump-calories-wrap{
 				background: rgba(0,0,0,0.3);
 				padding: 28px 0 35px 0;
-				margin-top: 43%;
+				position: absolute;
+			    width: 100%;
+			    bottom: 0;
 				.title{
 					font-size: 30px;
 					color: #fff;
@@ -265,5 +274,162 @@
     }
     .how-we-make{
     	background: #f7f1e9;
+    	padding-bottom: 68px;
+    }
+    .quality{
+    	padding: 64px 0 80px 0;
+    	.header{
+    		margin-bottom: 66px;
+    	}
+		.double-life{
+			margin-top: 24px;
+			img{
+				float: left;
+				max-width: 66px;
+				margin-right: 26px;
+			}
+			.double-life-txt{
+				float: left;
+				width: calc(100% - 66px - 26px);
+				h6{
+					font-size: 20px;
+					text-transform: uppercase;
+					color: #666666;
+					border-bottom: 1px solid #666666;
+					font-weight: 700;
+					display: inline-block;
+					margin: 0px 0 5px 0; 
+				}
+				p{
+					font-size: 14px;
+					text-transform: uppercase;
+					font-weight: 500;
+					margin: 0;
+    				line-height: 17px;
+				}
+			}
+		}
+		@media only screen and (min-width: 768px){
+			.center-flex{
+				display: flex;
+				align-items: center;
+			}
+		}
+    }
+
+    .awarded{
+    	padding: 44px 0;
+    	background: #00afe0;
+    	.header{
+    		h1{
+    			margin-bottom: 36px;
+    		}
+    	}
+    	.award-year{
+    		ul{
+    			list-style: none;
+    			padding: 0px;
+    			li{
+    				display: inline-block;
+    				width: calc(100% / 8 - 52px);
+    				margin: 0 20px;
+    				a{
+    					display: block;
+    					&:hover{
+    						text-decoration: none;
+    					}
+    				}
+    				img{
+						max-width: 100%;
+						margin-bottom: 10px;
+    				}
+    				p{
+    					color: #fff;
+    					margin: 0px;
+    				}
+    			}
+    		}
+    	}
+    }
+
+	.reviews{
+		padding: 60px 0;
+		.header{
+			margin-bottom: 36px;
+		}
+	    .vid-testimonial{
+			.preview-box{
+				border: 3px solid #fff;
+			    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.16);
+			    box-shadow: 0 0 10px rgba(0, 0, 0, 0.16);
+			    position: relative;
+			    margin: 6px;
+			    .image-holder{
+			    	position: relative;
+			    	img{
+			    		width: 100%;
+					    height: auto;
+					    vertical-align: top;
+			    	}
+			    	.icon-play{
+			    		width: 54px;
+					    height: 40px;
+					    position: absolute;
+					    bottom: 12px;
+					    right: 12px;
+					    margin: 0;
+			    	}
+			    }
+			}
+			.vid-testimonial-bx{
+				p{
+					margin-bottom: 0px;
+				}
+				p.auth,.auth-post{
+					text-transform: uppercase;
+				}
+				p.auth{
+					margin-top: 22px;
+				}
+			}
+			.rsBullets{
+				position: absolute;
+    			bottom: -30px;
+    			text-align: center;
+    			width: 100%;
+				.rsNavItem{
+					display: inline-block;
+					cursor: pointer;
+					margin: 0 4px;
+					span{
+						height: 12px;
+					    width: 12px;
+					    background: #d7d7d7;
+					    display: inline-block;
+					    border-radius: 50%;
+					}
+					&.rsNavSelected, &:hover{
+						span{
+							background: #00afe0;
+						}
+					}
+				}
+			}
+	    }
+	    .approved-rvw{
+	    	border-left: 1px solid #e1e1e1;
+	    }
+    }
+
+	.model-selector {
+	    background: #fbfafa;
+	}
+
+    .shodow-border{
+    	img{
+    		max-width: 100%;
+			box-shadow: 0px 0px 13px rgba(0,0,0,0.3);
+			border: 2px solid #fff;
+    	}
     }
 }
