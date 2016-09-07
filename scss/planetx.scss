@@ -1,3 +1,30 @@
+$mobile: 767px;  // mobile 767px and less 
+$tablet: 991px;  // mobile 767px and less 
+$desktop: 1199px; // tablet 1025px {desctop - 1} and less 
+$lg-desktop: 1299px; // tablet 1025px {desctop - 1} and less 
+$retina: 1.5;    // standart retina > 1.5x
+$retina-hd: 2.5; // hd retina > 2.5x
+
+// breakpoints mixin
+@mixin breakpoint($rule, $orientation:""){
+	@if ($rule == $retina or $rule == $retina-hd){
+		@media only screen and ( min-resolution : #{$retina*96} ), ( -webkit-min-device-pixel-ratio : #{$retina} ){
+			@content;
+		}
+	}
+	@if ($orientation == "landscape" ){
+		@media only screen and (max-width: #{$rule}) and (orientation: #{$orientation}){
+			@content;
+		}
+	}
+	@else{
+		@media only screen and (max-width: #{$rule}){
+			@content;
+		}
+	}
+}
+
+
 // Mixin
 @mixin gradient-vertical-three($start-color: #fff, $mid-color: #fff, $end-color: #fff, $start-percent: 0%, $mid-percent: 50%, $end-percent: 100%) {
 	background-image: -webkit-linear-gradient(top, $start-color $start-percent, $mid-color $mid-percent, $end-color $end-percent);  // Safari 5.1-6, Chrome 10+
@@ -13,6 +40,12 @@
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }
+@mixin transition($time: 0.2s){
+	transition: $time ease-in-out;
+    -moz-transition: $time ease-in-out;
+    -ms-transition: $time ease-in-out;
+    -webkit-transition: $time ease-in-out;
+}
 @mixin centered{
 	position: absolute;
 	top: 50%;
@@ -21,7 +54,68 @@
   -ms-transform: translate(-50%,-50%);
   transform: translate(-50%,-50%);
 }
+@-webkit-keyframes cd-pulse {
+    0% {
+        -webkit-transform: scale(1);
+        box-shadow: inset 0 0 1px 1px rgba(0, 175, 224, 1);
+    }
+    50% {
+        box-shadow: inset 0 0 1px 1px rgba(0, 175, 224, 0.8);
+    }
+    100% {
+        -webkit-transform: scale(1.6);
+        box-shadow: inset 0 0 1px 1px rgba(0, 175, 224, 0);
+    }
+}
+
+@-moz-keyframes cd-pulse {
+    0% {
+        -moz-transform: scale(1);
+        box-shadow: inset 0 0 1px 1px rgba(0, 175, 224, 1);
+    }
+    50% {
+        box-shadow: inset 0 0 1px 1px rgba(0, 175, 224, 0.8);
+    }
+    100% {
+        -moz-transform: scale(1.6);
+        box-shadow: inset 0 0 1px 1px rgba(0, 175, 224, 0);
+    }
+}
+
+@keyframes cd-pulse {
+    0% {
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+        transform: scale(1);
+        box-shadow: inset 0 0 1px 1px rgba(0, 175, 224, 1);
+    }
+    50% {
+        box-shadow: inset 0 0 1px 1px rgba(0, 175, 224, 0.8);
+    }
+    100% {
+        -webkit-transform: scale(1.6);
+        -moz-transform: scale(1.6);
+        -ms-transform: scale(1.6);
+        -o-transform: scale(1.6);
+        transform: scale(1.6);
+        box-shadow: inset 0 0 1px 1px rgba(0, 175, 224, 0);
+    }
+}
+
+
 .planetx {
+	/* ============= typography ============ */
+	h1 {
+	  @include breakpoint($tablet){}
+
+	  @include breakpoint($mobile){
+	    font-size:35px;
+	    line-height: 40px;
+	  }
+	}
+
 	/*============= HEADER (_header.scss) ==============*/
 	#header-container{
 		height: auto !important;
@@ -45,9 +139,15 @@
             	margin-bottom: 0px;
 				cursor: pointer;
 				display: inline-block;
+				@include breakpoint($mobile){
+					display: block;
+				}
 
             	.preheader-copy{
             		text-align: left;
+            		@include breakpoint($mobile){
+						text-align: center;
+            		}
 
             		.glyphicon{
             			font-size: 11px;
@@ -60,6 +160,36 @@
         	z-index: 9999;
         	#nav{
         		border: none;
+        		#mobile-nav-wrapper{
+        			margin-top: 10px;
+        			.mobile-nav{
+        				li{
+        					color: #fff;
+        					a{
+								color: #fff;
+        					}        					
+        				}
+        			}
+        			.tri-sub-menu{
+        				margin-top: 0px;
+        				a{
+        					color: #fff;
+        					margin: 0 17px;
+        					.glyphicon{
+        						margin-right: 5px;
+        					}
+        				}
+        			}
+        			.mobile-nav-menu{
+						.dropdown{
+							.language{
+								&:before{
+									right: 0;
+								}
+							}
+						}
+        			}
+        		}
 	        	.navbar-header{
 	        		top: 0;
     				padding-top: 17px;
@@ -67,6 +197,11 @@
 	        		.logo{
 	        			padding: 0px;
 	        			margin:0px;
+	        		}
+	        		@include breakpoint($mobile){
+		        		#nav-icon4{
+		        			right: 0px;
+		        		}
 	        		}
 	        	}
 	        	&.navbar-default{
@@ -88,6 +223,11 @@
 	        					color: #fff;
 	        					padding: 17px 22px;
 	        					display: inline-block;
+	        					@include breakpoint($tablet){
+	        						padding-left: 16px;
+	        						padding-right: 16px;
+	        						font-size: 14px;
+	        					}
 	        					&:after{
 	        						display: none;
 	        					}
@@ -200,6 +340,9 @@
     	.grab-cursor{
 			.slide-item{
 	    		height: calc(100vh - 30px);
+	    		@include breakpoint($mobile){
+					height: 100vh;
+	    		}
 	    	}
     	}
     	.rsNav.rsBullets{
@@ -208,6 +351,9 @@
     	.carousel-block{
     		.slide-wrap{
     			@include centered;
+    			@include breakpoint($mobile){
+    				width: 95%;
+    			}
     		}
     		.header{
 			    padding: 0px;
@@ -218,16 +364,29 @@
     	}
     }
     /* ============ END HOME MAIN SLIDER ========== */
+    #static-panels{
+    	@include breakpoint($mobile){
+	    	section.intro-togma{
+	    		height: 100vh;
+	    	}
+    	}
+    }
     .intro-togma{
     	padding-top: 60px;
     	height: 100vh;
     	position: relative;
     	overflow: hidden;
+    	@include breakpoint($mobile){
+			padding-top: 0px;
+    	}
     	h1{
     		color: #e30040;
     	}
     	img.tgoma{
     	    max-width: 172px;
+    	    @include breakpoint($mobile){
+				max-width: 108px;
+    	    }
     	}
     	p{
     		font-size: 20px;
@@ -258,15 +417,26 @@
 					color: #fff;
 					line-height: 27px;
     				margin-bottom: 12px;
+    				@include breakpoint($mobile){
+						font-size: 22px;
+						margin-bottom: 0px;
+					}
 				}
 				.count{
 					color: #fff;
 					font-size: 30px;
+					@include breakpoint($mobile){
+						font-size: 18px;
+					}
 					span{
 						padding: 3px 10px;
 					    border-radius: 3px;
 					    background-color: #00afe0;
 					    display: inline-block;
+					    @include breakpoint($mobile){
+							padding: 4px 6px 2px 6px;
+    						line-height: 20px;
+					    }
 					}
 				}
 			}
@@ -275,11 +445,139 @@
     .how-we-make{
     	background: #f7f1e9;
     	padding-bottom: 68px;
+    	@include breakpoint($mobile){
+			padding-bottom: 46px;
+		}
+    	.trampoline-hotspot{
+    		.hotspot-wrap{
+				display: inline-block;
+				position: relative;
+				img{
+					@include breakpoint($mobile){
+						width: 100%;
+					}
+				}
+    		}
+    		.hotspot-point{
+    			position: absolute;
+    			overflow: hidden;
+    			height: 56px;
+			    width: 56px;
+			    display: flex;
+			    align-items: center;
+
+    			&:hover{
+    				overflow: visible;
+    				.hotspot-tooltip{
+				    	opacity: 1;
+				    	z-index: 999;
+				    	@include transition(0.4s);
+				    }
+    			} 
+    			.plus-icon{
+					font-family: serif;
+				    background: #00afe0;
+				    color: #fff;
+				    padding: 5px 8px 6px 9px;
+				    border-radius: 50%;
+				    font-size: 30px;
+				    line-height: 24px;
+				    cursor: pointer;
+				    position: relative;
+    				z-index: 99;
+    				left: 11px;
+    				@include breakpoint($mobile){
+						font-size: 24px;
+    					line-height: 20px;
+    				}
+    				&:after{
+    					content: '';
+					    position: absolute;
+					    z-index: 1;
+					    width: 100%;
+					    height: 100%;
+					    top: 0;
+					    left: 0;
+					    border-radius: inherit;
+					    background-color: transparent;
+					    -webkit-animation: cd-pulse 2s infinite;
+					    -moz-animation: cd-pulse 2s infinite;
+					    animation: cd-pulse 2s infinite;
+    				}			    
+    			}
+    			.hs-tooltip-w{
+    				width: 268px;
+				    position: absolute;
+				    height: 100%;
+				    top: 0;
+    			}
+    			.hotspot-tooltip{
+    				width: 268px;
+    				margin-left: 74px;
+	    			border: 2px solid #00afe0;
+	    			position: absolute;
+				    left: 0;
+				    bottom: -37px;
+				    opacity: 0;
+				    @include transition(0.4s);
+				    &:before{
+				    	content: '';
+				    	display: block;
+						position: absolute;
+					    bottom: 50px;
+					    left: -41px;
+					    width: 41px;
+					    height: 2px;
+					    background: #00afe0;
+					    margin: 13px 0px;
+				    }
+					.preview-box{
+						.image-holder{
+							position: relative;
+							img{
+								width: 100%;
+								height: auto;
+								vertical-align: top;
+							}
+							.icon-play{
+								width: 54px;
+								height: 40px;
+								position: absolute;
+								bottom: 12px;
+								right: 12px;
+								margin: 0;
+							}
+						}
+					}
+					.details{
+	    				background: #e7e7e7;
+	    				p{
+	    					margin: 0px;
+	    					font-size: 17px;
+	    					font-weight: 300;
+	    					line-height: 20px;
+	    					padding: 20px 16px;
+	    					strong{
+	    						text-transform: uppercase;
+	    						font-weight: 600;
+	    					}
+	    				}
+	    			}
+    			}
+    		}
+    	}
     }
     .quality{
     	padding: 64px 0 80px 0;
+    	@include breakpoint($mobile){
+			padding-bottom: 48px;
+			padding-top: 26px;
+    	}
     	.header{
     		margin-bottom: 66px;
+    		@include breakpoint($mobile){
+				margin-bottom: 16px;
+			}
     	}
 		.double-life{
 			margin-top: 24px;
@@ -315,11 +613,19 @@
 				align-items: center;
 			}
 		}
+		@include breakpoint($mobile){
+			.shodow-border{
+				margin-top: 20px;
+			}
+		}
     }
 
     .awarded{
     	padding: 44px 0;
     	background: #00afe0;
+    	@include breakpoint($mobile){
+			padding: 9px 0;
+    	}
     	.header{
     		h1{
     			margin-bottom: 36px;
@@ -333,6 +639,13 @@
     				display: inline-block;
     				width: calc(100% / 8 - 52px);
     				margin: 0 20px;
+    				@include breakpoint($tablet){
+						width: calc(100% / 4 - 52px);
+    				}
+    				@include breakpoint($mobile){
+						width: calc(100% / 3 - 52px);
+    				}
+    				
     				a{
     					display: block;
     					&:hover{
@@ -342,6 +655,9 @@
     				img{
 						max-width: 100%;
 						margin-bottom: 10px;
+						@include breakpoint($mobile){
+							margin-bottom: 0px;
+						}
     				}
     				p{
     					color: #fff;
@@ -354,8 +670,14 @@
 
 	.reviews{
 		padding: 60px 0;
+		@include breakpoint($mobile){
+			padding: 30px 0;
+		}
 		.header{
 			margin-bottom: 36px;
+			@include breakpoint($mobile){
+				margin-bottom: 10px;
+			}
 		}
 	    .vid-testimonial{
 			.preview-box{
@@ -378,10 +700,17 @@
 					    bottom: 12px;
 					    right: 12px;
 					    margin: 0;
+					    @include breakpoint($mobile){
+							width: 32px;
+    						height: 24px;   
+						}
 			    	}
 			    }
 			}
 			.vid-testimonial-bx{
+				@include breakpoint($mobile){
+					text-align: center;  
+				}
 				p{
 					margin-bottom: 0px;
 				}
@@ -418,6 +747,9 @@
 	    }
 	    .approved-rvw{
 	    	border-left: 1px solid #e1e1e1;
+	    	@include breakpoint($mobile){
+				margin-top: 40px;
+			}
 	    }
     }
 

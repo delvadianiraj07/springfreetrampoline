@@ -21,6 +21,9 @@
       $promoBanner.find('.glyphicon').toggleClass("glyphicon-menu-down glyphicon-menu-up");
       });
     });
+    $('#close-preheader').click(function(event) {
+      $('#promo-banner').slideUp('slow');
+    });
 
     // ================= Home
     $(".ilbvid-tgoma").iLightBox({
@@ -39,6 +42,40 @@
         autoPlay: {
             enabled: !0,
             delay: 5e3
+        }
+    });
+
+    // ========= Trampoline Hotspot box
+    $('#trmp-hotspots .hotspot-point').each(function(index, el) {
+      var x_pos = $(this).data('x');
+      var y_pos = $(this).data('y');
+      $(this).css({
+        top: x_pos + '%',
+        left: y_pos + '%'
+      });
+    });
+    $(".ilbvid-trampo-1").iLightBox({
+        skin: "springfree",
+        controls: {
+            fullscreen: !1
+        }
+    });
+    $(".ilbvid-trampo-2").iLightBox({
+        skin: "springfree",
+        controls: {
+            fullscreen: !1
+        }
+    });
+    $(".ilbvid-trampo-3").iLightBox({
+        skin: "springfree",
+        controls: {
+            fullscreen: !1
+        }
+    });
+    $(".ilbvid-trampo-4").iLightBox({
+        skin: "springfree",
+        controls: {
+            fullscreen: !1
         }
     });
 
