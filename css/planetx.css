@@ -81,6 +81,8 @@
           color: #fff; }
           .planetx #header .header-holder #nav #mobile-nav-wrapper .mobile-nav li a {
             color: #fff; }
+        .planetx #header .header-holder #nav #mobile-nav-wrapper .mobile-nav .tgoma-menu {
+          background-image: url("../images/tgoma_logo_white.png"); }
         .planetx #header .header-holder #nav #mobile-nav-wrapper .tri-sub-menu {
           margin-top: 0px; }
           .planetx #header .header-holder #nav #mobile-nav-wrapper .tri-sub-menu a {
@@ -90,6 +92,23 @@
               margin-right: 5px; }
         .planetx #header .header-holder #nav #mobile-nav-wrapper .mobile-nav-menu .dropdown .language:before {
           right: 0; }
+        .planetx #header .header-holder #nav #mobile-nav-wrapper .mobile-nav-menu .dropdown .dropdown-menu {
+          padding: 0px;
+          background: #fff; }
+          .planetx #header .header-holder #nav #mobile-nav-wrapper .mobile-nav-menu .dropdown .dropdown-menu ul {
+            margin: 0px; }
+            .planetx #header .header-holder #nav #mobile-nav-wrapper .mobile-nav-menu .dropdown .dropdown-menu ul li {
+              display: block; }
+              .planetx #header .header-holder #nav #mobile-nav-wrapper .mobile-nav-menu .dropdown .dropdown-menu ul li a {
+                text-transform: uppercase;
+                font-size: 12px;
+                line-height: 16px;
+                color: #919191;
+                margin: 0px; }
+                .planetx #header .header-holder #nav #mobile-nav-wrapper .mobile-nav-menu .dropdown .dropdown-menu ul li a span {
+                  display: inline-block; }
+                .planetx #header .header-holder #nav #mobile-nav-wrapper .mobile-nav-menu .dropdown .dropdown-menu ul li a:hover:after {
+                  display: none; }
       .planetx #header .header-holder #nav .navbar-header {
         top: 0;
         padding-top: 17px; }
@@ -131,7 +150,8 @@
             .planetx #header .header-holder #nav #main-nav > .nav > li > a:after {
               display: none; }
             .planetx #header .header-holder #nav #main-nav > .nav > li > a.tgoma-menu {
-              top: 8px; }
+              top: 8px;
+              background-image: url("../images/tgoma_logo_white.png"); }
             .planetx #header .header-holder #nav #main-nav > .nav > li > a.is-drowdown {
               background: none;
               padding: 0px;
@@ -172,7 +192,7 @@
           min-height: initial; }
     .planetx #header .header-holder.header-shadow #nav {
       position: fixed;
-      top: 0;
+      top: 11px;
       width: 100%; }
   .planetx #header .add-nav li {
     margin-bottom: 0px;
@@ -338,6 +358,9 @@
         position: absolute;
         height: 100%;
         top: 0; }
+        @media only screen and (max-width: 767px) {
+          .planetx .how-we-make .trampoline-hotspot .hotspot-point .hs-tooltip-w {
+            display: none; } }
       .planetx .how-we-make .trampoline-hotspot .hotspot-point .hotspot-tooltip {
         width: 268px;
         margin-left: 74px;
@@ -384,6 +407,40 @@
             .planetx .how-we-make .trampoline-hotspot .hotspot-point .hotspot-tooltip .details p strong {
               text-transform: uppercase;
               font-weight: 600; }
+    .planetx .how-we-make .trampoline-hotspot #hotspots-item {
+      display: none; }
+      @media only screen and (max-width: 767px) {
+        .planetx .how-we-make .trampoline-hotspot #hotspots-item {
+          display: block;
+          margin-top: 20px; }
+          .planetx .how-we-make .trampoline-hotspot #hotspots-item .hotspot-tooltip .preview-box {
+            width: 30%;
+            float: left;
+            border: 2px solid #00afe0;
+            box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.3); }
+            .planetx .how-we-make .trampoline-hotspot #hotspots-item .hotspot-tooltip .preview-box .image-holder {
+              position: relative; }
+              .planetx .how-we-make .trampoline-hotspot #hotspots-item .hotspot-tooltip .preview-box .image-holder img.lazy {
+                width: 100%;
+                height: auto; }
+              .planetx .how-we-make .trampoline-hotspot #hotspots-item .hotspot-tooltip .preview-box .image-holder .icon-play {
+                width: 32px;
+                position: absolute;
+                bottom: 8px;
+                right: 8px;
+                margin: 0; }
+          .planetx .how-we-make .trampoline-hotspot #hotspots-item .hotspot-tooltip .details {
+            width: 65%;
+            float: right;
+            text-align: left; }
+            .planetx .how-we-make .trampoline-hotspot #hotspots-item .hotspot-tooltip .details p {
+              font-size: 16px;
+              line-height: 20px;
+              margin-bottom: 0; }
+          .planetx .how-we-make .trampoline-hotspot #hotspots-item:after {
+            content: '';
+            clear: both;
+            display: block; } }
   .planetx .quality {
     padding: 64px 0 80px 0; }
     @media only screen and (max-width: 767px) {
@@ -520,6 +577,9 @@
           background: #00afe0; }
     .planetx .reviews .approved-rvw {
       border-left: 1px solid #e1e1e1; }
+      @media only screen and (max-width: 991px) {
+        .planetx .reviews .approved-rvw {
+          margin-top: 40px; } }
       @media only screen and (max-width: 767px) {
         .planetx .reviews .approved-rvw {
           margin-top: 40px; } }

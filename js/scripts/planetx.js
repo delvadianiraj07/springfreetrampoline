@@ -17,12 +17,25 @@
     
     // Promo Banner Toggle
     $promoBanner.click(function(event) {
-      $('#promo-banner').toggle( "slow", function() {
-      $promoBanner.find('.glyphicon').toggleClass("glyphicon-menu-down glyphicon-menu-up");
-      });
+      var open_bnr = $(this).data('open');
+      if (open_bnr) {
+         $('#promo-banner').slideUp('slow', function() {           
+           $promoBanner.find('.glyphicon').addClass('glyphicon-menu-down').removeClass('glyphicon-menu-up');
+         });
+      } else {
+         $('#promo-banner').slideDown('slow', function() {
+           $promoBanner.find('.glyphicon').addClass('glyphicon-menu-up').removeClass('glyphicon-menu-down');
+         });
+      }
+      $(this).data("open", !open_bnr);
+
+      /*$('#promo-banner').toggle( "slow", function() {
+        $promoBanner.find('.glyphicon').toggleClass("glyphicon-menu-down glyphicon-menu-up");
+      });*/
+
     });
     $('#close-preheader').click(function(event) {
-      $('#promo-banner').slideUp('slow');
+      $promoBanner.trigger('click')
     });
 
     // ================= Home
@@ -53,7 +66,13 @@
         top: x_pos + '%',
         left: y_pos + '%'
       });
+
+      $(this).click(function(event) {
+        var hs_item = $(this).find('.hs-tooltip-w').html();
+        $('#hotspots-item').html(hs_item);
+      });
     });
+
     $(".ilbvid-trampo-1").iLightBox({
         skin: "springfree",
         controls: {
