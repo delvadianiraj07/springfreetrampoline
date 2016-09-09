@@ -4,6 +4,28 @@
 
 
   $(document).ready(function(){
+
+    var s = $("#header .header-holder");
+    var pos = s.position();                    
+    $(window).scroll(function() {
+        var windowpos = $(window).scrollTop();
+        if (windowpos >= pos.top) {
+            s.addClass("stick");
+        } else {
+            s.removeClass("stick"); 
+        }
+
+        var main_content = $('#static-panels');
+        var topDistance = main_content.offset().top;
+
+        if ( (topDistance) < windowpos ) {
+          $('#header #nav').addClass('trans-header');
+        }
+        else{
+          $('#header #nav').removeClass('trans-header');
+        }
+     
+    });
   
     // ============= header top banner =================
     // set cookie for banner for first visit
@@ -68,6 +90,10 @@
       });
 
       $(this).click(function(event) {
+        $(this).css('overflow', 'visible');
+        $(this).siblings().css('overflow', 'hidden');
+        $(this).find('.hotspot-tooltip').css('opacity', '1').css('z-index', '999');
+        $(this).siblings().find('.hotspot-tooltip').css('opacity', '0').css('z-index', '9');
         var hs_item = $(this).find('.hs-tooltip-w').html();
         $('#hotspots-item').html(hs_item);
       });

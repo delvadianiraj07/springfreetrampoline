@@ -75,6 +75,8 @@
     z-index: 9999; }
     .planetx #header .header-holder #nav {
       border: none; }
+      .planetx #header .header-holder #nav.trans-header {
+        background: rgba(0, 0, 0, 0.5) !important; }
       .planetx #header .header-holder #nav #mobile-nav-wrapper {
         margin-top: 10px; }
         .planetx #header .header-holder #nav #mobile-nav-wrapper .mobile-nav li {
@@ -191,9 +193,14 @@
         .planetx #header .header-holder #nav .dropdown-menu .container-fluid {
           min-height: initial; }
     .planetx #header .header-holder.header-shadow #nav {
+      margin-top: 0px; }
+    .planetx #header .header-holder.stick {
       position: fixed;
-      top: 11px;
-      width: 100%; }
+      top: 0; }
+      @media only screen and (max-width: 767px) {
+        .planetx #header .header-holder.stick {
+          position: absolute;
+          top: initial; } }
   .planetx #header .add-nav li {
     margin-bottom: 0px;
     margin-left: 20px; }
@@ -207,6 +214,43 @@
     font-size: 15px; }
   .planetx #header .add-nav .lang-selector .dropdown-menu {
     top: 21px; }
+  .planetx .home-hero-banner {
+    position: relative;
+    height: calc(100vh - 30px);
+    background-image: url("../images/home/hero-banner.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; }
+    @media only screen and (max-width: 767px) {
+      .planetx .home-hero-banner {
+        height: 100vh; } }
+    .planetx .home-hero-banner .banner-wrap {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%); }
+      @media only screen and (max-width: 991px) {
+        .planetx .home-hero-banner .banner-wrap {
+          width: 72%; } }
+      @media only screen and (max-width: 767px) {
+        .planetx .home-hero-banner .banner-wrap {
+          width: 95%; } }
+      .planetx .home-hero-banner .banner-wrap .header {
+        margin-bottom: 54px; }
+        @media only screen and (max-width: 767px) {
+          .planetx .home-hero-banner .banner-wrap .header {
+            margin-bottom: 20px; } }
+        .planetx .home-hero-banner .banner-wrap .header .hero-header {
+          font-weight: 200;
+          line-height: 70px; }
+          @media only screen and (max-width: 767px) {
+            .planetx .home-hero-banner .banner-wrap .header .hero-header {
+              line-height: 46px; } }
   .planetx #homepage-hero-carousel .grab-cursor .slide-item {
     height: calc(100vh - 30px); }
     @media only screen and (max-width: 767px) {
@@ -237,9 +281,11 @@
       height: 100vh; } }
   .planetx .intro-togma {
     padding-top: 60px;
-    height: 100vh;
     position: relative;
     overflow: hidden; }
+    @media only screen and (max-width: 991px) {
+      .planetx .intro-togma {
+        height: 100vh; } }
     @media only screen and (max-width: 767px) {
       .planetx .intro-togma {
         padding-top: 0px; } }
@@ -259,43 +305,52 @@
         display: block;
         color: #00afe0;
         font-weight: 600; }
-    .planetx .intro-togma .intro-togma-bg {
-      background: url(../images/_RGB2950.jpg) no-repeat top center;
-      -webkit-background-size: cover;
-      -moz-background-size: cover;
-      -o-background-size: cover;
-      background-size: cover;
-      height: 100%; }
-      .planetx .intro-togma .intro-togma-bg .jump-calories-wrap {
-        background: rgba(0, 0, 0, 0.3);
-        padding: 28px 0 35px 0;
-        position: absolute;
-        width: 100%;
-        bottom: 0; }
-        .planetx .intro-togma .intro-togma-bg .jump-calories-wrap .title {
-          font-size: 30px;
-          color: #fff;
-          line-height: 27px;
-          margin-bottom: 12px; }
+    @media only screen and (max-width: 991px) {
+      .planetx .intro-togma .intro-togma-bg {
+        background: url(../images/_RGB2950.jpg) no-repeat top center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        height: 100%; } }
+    .planetx .intro-togma .intro-togma-bg .jump-calories-wrap {
+      background: rgba(0, 0, 0, 0.3);
+      padding: 28px 0 35px 0;
+      position: absolute;
+      width: 100%;
+      bottom: 0; }
+      .planetx .intro-togma .intro-togma-bg .jump-calories-wrap .title {
+        font-size: 30px;
+        color: #fff;
+        line-height: 27px;
+        margin-bottom: 12px; }
+        @media only screen and (max-width: 767px) {
+          .planetx .intro-togma .intro-togma-bg .jump-calories-wrap .title {
+            font-size: 22px;
+            margin-bottom: 0px; } }
+      .planetx .intro-togma .intro-togma-bg .jump-calories-wrap .count {
+        color: #fff;
+        font-size: 30px; }
+        @media only screen and (max-width: 767px) {
+          .planetx .intro-togma .intro-togma-bg .jump-calories-wrap .count {
+            font-size: 18px; } }
+        .planetx .intro-togma .intro-togma-bg .jump-calories-wrap .count span {
+          padding: 3px 10px;
+          border-radius: 3px;
+          background-color: #00afe0;
+          display: inline-block; }
           @media only screen and (max-width: 767px) {
-            .planetx .intro-togma .intro-togma-bg .jump-calories-wrap .title {
-              font-size: 22px;
-              margin-bottom: 0px; } }
-        .planetx .intro-togma .intro-togma-bg .jump-calories-wrap .count {
-          color: #fff;
-          font-size: 30px; }
-          @media only screen and (max-width: 767px) {
-            .planetx .intro-togma .intro-togma-bg .jump-calories-wrap .count {
-              font-size: 18px; } }
-          .planetx .intro-togma .intro-togma-bg .jump-calories-wrap .count span {
-            padding: 3px 10px;
-            border-radius: 3px;
-            background-color: #00afe0;
-            display: inline-block; }
-            @media only screen and (max-width: 767px) {
-              .planetx .intro-togma .intro-togma-bg .jump-calories-wrap .count span {
-                padding: 4px 6px 2px 6px;
-                line-height: 20px; } }
+            .planetx .intro-togma .intro-togma-bg .jump-calories-wrap .count span {
+              padding: 4px 6px 2px 6px;
+              line-height: 20px; } }
+    @media only screen and (max-width: 991px) {
+      .planetx .intro-togma .home-tgoma {
+        display: none; } }
+    @media only screen and (max-width: 767px) {
+      .planetx .intro-togma .home-tgoma {
+        display: block; } }
+    .planetx .intro-togma .home-tgoma img {
+      width: 100%; }
   .planetx .how-we-make {
     background: #f7f1e9;
     padding-bottom: 68px; }
@@ -316,14 +371,12 @@
       display: flex;
       align-items: center; }
       .planetx .how-we-make .trampoline-hotspot .hotspot-point:hover {
-        overflow: visible; }
-        .planetx .how-we-make .trampoline-hotspot .hotspot-point:hover .hotspot-tooltip {
-          opacity: 1;
-          z-index: 999;
-          transition: 0.4s ease-in-out;
-          -moz-transition: 0.4s ease-in-out;
-          -ms-transition: 0.4s ease-in-out;
-          -webkit-transition: 0.4s ease-in-out; }
+    				/*overflow: visible;
+    				.hotspot-tooltip{
+				    	opacity: 1;
+				    	z-index: 999;
+				    	@include transition(0.4s);
+				    }*/ }
       .planetx .how-we-make .trampoline-hotspot .hotspot-point .plus-icon {
         font-family: serif;
         background: #00afe0;
@@ -502,7 +555,8 @@
             width: calc(100% / 4 - 52px); } }
         @media only screen and (max-width: 767px) {
           .planetx .awarded .award-year ul li {
-            width: calc(100% / 3 - 52px); } }
+            width: calc(100% / 4 - 23px);
+            margin: 0 10px; } }
         .planetx .awarded .award-year ul li a {
           display: block; }
           .planetx .awarded .award-year ul li a:hover {

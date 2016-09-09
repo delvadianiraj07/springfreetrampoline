@@ -54,6 +54,16 @@ $retina-hd: 2.5; // hd retina > 2.5x
   -ms-transform: translate(-50%,-50%);
   transform: translate(-50%,-50%);
 }
+@mixin cover-background($img-uri, $background-top:"center", $background-left:"center", $background-attachment:"") {
+  background-image: url($img-uri);
+  background-repeat: no-repeat; 
+  background-position: unquote($background-top) unquote($background-left);
+  background-attachment: unquote($background-attachment);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;  
+}
 @-webkit-keyframes cd-pulse {
     0% {
         -webkit-transform: scale(1);
@@ -160,6 +170,9 @@ $retina-hd: 2.5; // hd retina > 2.5x
         	z-index: 9999;
         	#nav{
         		border: none;
+        		&.trans-header{
+        			background: rgba(0,0,0,0.5) !important;
+        		}
         		#mobile-nav-wrapper{
         			margin-top: 10px;
         			.mobile-nav{
@@ -217,6 +230,7 @@ $retina-hd: 2.5; // hd retina > 2.5x
 							}
 						}
         			}
+
         		}
 	        	.navbar-header{
 	        		top: 0;
@@ -326,11 +340,18 @@ $retina-hd: 2.5; // hd retina > 2.5x
         	}
         	&.header-shadow{
         		#nav{
-					position: fixed;
-					top: 11px;
-					width: 100%;
+					margin-top: 0px;
         		}
         	}
+        	&.stick{
+				position: fixed;
+				top: 0;
+				@include breakpoint($mobile){
+					position: absolute;
+					top: initial;
+				}
+        	}
+
         }
         .add-nav{
         	li{
@@ -365,6 +386,36 @@ $retina-hd: 2.5; // hd retina > 2.5x
     /*============= HEADER END ==============*/
 
     /* ============ HOME MAIN SLIDER ========== */
+    .home-hero-banner{
+    	position: relative;
+    	height: calc(100vh - 30px);
+		@include cover-background('../images/home/hero-banner.jpg');
+		@include breakpoint($mobile){
+			height: 100vh;
+		}
+    	.banner-wrap{
+			@include centered;
+			@include breakpoint($tablet){
+				width: 72%;
+			}
+			@include breakpoint($mobile){
+				width: 95%;
+			}
+			.header{
+				margin-bottom: 54px;
+				@include breakpoint($mobile){
+					margin-bottom: 20px;
+				}
+				.hero-header{
+					font-weight: 200;
+					line-height: 70px;
+					@include breakpoint($mobile){
+						line-height: 46px;
+					}
+				}
+			}
+		}
+    }
     #homepage-hero-carousel{
     	.grab-cursor{
 			.slide-item{
@@ -402,9 +453,11 @@ $retina-hd: 2.5; // hd retina > 2.5x
     }
     .intro-togma{
     	padding-top: 60px;
-    	height: 100vh;
     	position: relative;
     	overflow: hidden;
+    	@include breakpoint($tablet){
+			height: 100vh;
+    	}
     	@include breakpoint($mobile){
 			padding-top: 0px;
     	}
@@ -429,12 +482,14 @@ $retina-hd: 2.5; // hd retina > 2.5x
     		}
     	}
     	.intro-togma-bg{
+    		@include breakpoint($tablet){
 			background: url(../images/_RGB2950.jpg) no-repeat top center; 
 			-webkit-background-size: cover;
 			-moz-background-size: cover;
 			-o-background-size: cover;
 			background-size: cover;
 			height: 100%;
+			}
 			.jump-calories-wrap{
 				background: rgba(0,0,0,0.3);
 				padding: 28px 0 35px 0;
@@ -470,6 +525,17 @@ $retina-hd: 2.5; // hd retina > 2.5x
 				}
 			}
     	}
+    	.home-tgoma{
+    		@include breakpoint($tablet){
+				display: none;
+    		}
+    		@include breakpoint($mobile){
+				display: block;
+    		}
+    		img{
+    			width: 100%;
+    		}
+    	}
     }
     .how-we-make{
     	background: #f7f1e9;
@@ -496,12 +562,12 @@ $retina-hd: 2.5; // hd retina > 2.5x
 			    align-items: center;
 
     			&:hover{
-    				overflow: visible;
+    				/*overflow: visible;
     				.hotspot-tooltip{
 				    	opacity: 1;
 				    	z-index: 999;
 				    	@include transition(0.4s);
-				    }
+				    }*/
     			} 
     			.plus-icon{
 					font-family: serif;
@@ -720,7 +786,8 @@ $retina-hd: 2.5; // hd retina > 2.5x
 						width: calc(100% / 4 - 52px);
     				}
     				@include breakpoint($mobile){
-						width: calc(100% / 3 - 52px);
+						width: calc(100% / 4 - 23px);
+    					margin: 0 10px;
     				}
     				
     				a{
