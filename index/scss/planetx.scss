@@ -238,6 +238,7 @@ $retina-hd: 2.5; // hd retina > 2.5x
 	        	.navbar-header{
 	        		top: 0;
     				padding-top: 17px;
+    				height: 62px;
 
 	        		.logo{
 	        			padding: 0px;
@@ -340,6 +341,20 @@ $retina-hd: 2.5; // hd retina > 2.5x
 	        			min-height: initial;
 	        		}
 	        	}
+	        	&.trans-header{
+	        		#main-nav{
+	        			ul{
+	        				li{
+	        					&.open{
+	        						background: rgba(0,0,0,0.34);
+	        					}
+	        					.dropdown-menu{
+	        						background: rgba(0,0,0,0.67);
+	        					}
+	        				}
+	        			}
+	        		}
+	        	}
         	}
         	&.header-shadow{
         		#nav{
@@ -354,6 +369,7 @@ $retina-hd: 2.5; // hd retina > 2.5x
 					top: initial;
 				}
         	}
+        	
 
         }
         .add-nav{

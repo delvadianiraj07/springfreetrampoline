@@ -116,7 +116,8 @@
                   display: none; }
       .planetx #header .header-holder #nav .navbar-header {
         top: 0;
-        padding-top: 17px; }
+        padding-top: 17px;
+        height: 62px; }
         .planetx #header .header-holder #nav .navbar-header .logo {
           padding: 0px;
           margin: 0px; }
@@ -195,6 +196,10 @@
           text-align: center; }
         .planetx #header .header-holder #nav .dropdown-menu .container-fluid {
           min-height: initial; }
+      .planetx #header .header-holder #nav.trans-header #main-nav ul li.open {
+        background: rgba(0, 0, 0, 0.34); }
+      .planetx #header .header-holder #nav.trans-header #main-nav ul li .dropdown-menu {
+        background: rgba(0, 0, 0, 0.67); }
     .planetx #header .header-holder.header-shadow #nav {
       margin-top: 0px; }
     .planetx #header .header-holder.stick {
