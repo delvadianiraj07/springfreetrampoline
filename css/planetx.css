@@ -45,6 +45,9 @@
       line-height: 40px; } }
   .planetx #header-container {
     height: auto !important; }
+  @media only screen and (max-width: 767px) {
+    .planetx #header {
+      position: initial; } }
   .planetx #header .promo-banner {
     display: none; }
     .planetx #header .promo-banner img {
@@ -388,11 +391,15 @@
         cursor: pointer;
         position: relative;
         z-index: 99;
-        left: 11px; }
+        left: 11px;
+        height: 35px;
+        width: 35px; }
         @media only screen and (max-width: 767px) {
           .planetx .how-we-make .trampoline-hotspot .hotspot-point .plus-icon {
             font-size: 24px;
-            line-height: 20px; } }
+            line-height: 20px;
+            height: auto;
+            width: auto; } }
         .planetx .how-we-make .trampoline-hotspot .hotspot-point .plus-icon:after {
           content: '';
           position: absolute;
@@ -460,36 +467,41 @@
             .planetx .how-we-make .trampoline-hotspot .hotspot-point .hotspot-tooltip .details p strong {
               text-transform: uppercase;
               font-weight: 600; }
+@-moz-document url-prefix() {
+  .planetx .how-we-make .trampoline-hotspot .hotspot-point .hotspot-tooltip {
+    margin-left: 50px; } }
     .planetx .how-we-make .trampoline-hotspot #hotspots-item {
       display: none; }
       @media only screen and (max-width: 767px) {
         .planetx .how-we-make .trampoline-hotspot #hotspots-item {
           display: block;
           margin-top: 20px; }
-          .planetx .how-we-make .trampoline-hotspot #hotspots-item .hotspot-tooltip .preview-box {
-            width: 30%;
-            float: left;
-            border: 2px solid #00afe0;
-            box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.3); }
-            .planetx .how-we-make .trampoline-hotspot #hotspots-item .hotspot-tooltip .preview-box .image-holder {
-              position: relative; }
-              .planetx .how-we-make .trampoline-hotspot #hotspots-item .hotspot-tooltip .preview-box .image-holder img.lazy {
-                width: 100%;
-                height: auto; }
-              .planetx .how-we-make .trampoline-hotspot #hotspots-item .hotspot-tooltip .preview-box .image-holder .icon-play {
-                width: 32px;
-                position: absolute;
-                bottom: 8px;
-                right: 8px;
-                margin: 0; }
-          .planetx .how-we-make .trampoline-hotspot #hotspots-item .hotspot-tooltip .details {
-            width: 65%;
-            float: right;
-            text-align: left; }
-            .planetx .how-we-make .trampoline-hotspot #hotspots-item .hotspot-tooltip .details p {
-              font-size: 16px;
-              line-height: 20px;
-              margin-bottom: 0; }
+          .planetx .how-we-make .trampoline-hotspot #hotspots-item .hotspot-tooltip {
+            margin-bottom: 20px; }
+            .planetx .how-we-make .trampoline-hotspot #hotspots-item .hotspot-tooltip .preview-box {
+              width: 30%;
+              float: left;
+              border: 2px solid #00afe0;
+              box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.3); }
+              .planetx .how-we-make .trampoline-hotspot #hotspots-item .hotspot-tooltip .preview-box .image-holder {
+                position: relative; }
+                .planetx .how-we-make .trampoline-hotspot #hotspots-item .hotspot-tooltip .preview-box .image-holder img.lazy {
+                  width: 100%;
+                  height: auto; }
+                .planetx .how-we-make .trampoline-hotspot #hotspots-item .hotspot-tooltip .preview-box .image-holder .icon-play {
+                  width: 32px;
+                  position: absolute;
+                  bottom: 8px;
+                  right: 8px;
+                  margin: 0; }
+            .planetx .how-we-make .trampoline-hotspot #hotspots-item .hotspot-tooltip .details {
+              width: 65%;
+              float: right;
+              text-align: left; }
+              .planetx .how-we-make .trampoline-hotspot #hotspots-item .hotspot-tooltip .details p {
+                font-size: 16px;
+                line-height: 20px;
+                margin-bottom: 0; }
           .planetx .how-we-make .trampoline-hotspot #hotspots-item:after {
             content: '';
             clear: both;
@@ -643,5 +655,16 @@
     max-width: 100%;
     box-shadow: 0px 0px 13px rgba(0, 0, 0, 0.3);
     border: 2px solid #fff; }
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  ::i-block-chrome, .planetx .awarded .award-year ul li {
+    width: 10%;
+    margin: 0 1%; }
+
+  ::i-block-chrome, .planetx .quality .double-life .double-life-txt {
+    width: 80%; }
+
+  ::i-block-chrome, .planetx .how-we-make .trampoline-hotspot .hotspot-point .hotspot-tooltip {
+    bottom: -27px; } }
 
 /*# sourceMappingURL=planetx.css.map */

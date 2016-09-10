@@ -131,6 +131,9 @@ $retina-hd: 2.5; // hd retina > 2.5x
 		height: auto !important;
 	}
     #header {
+    	@include breakpoint($mobile){
+			position: initial;
+    	}
     	.promo-banner{
     		display: none;
     		img{
@@ -581,9 +584,13 @@ $retina-hd: 2.5; // hd retina > 2.5x
 				    position: relative;
     				z-index: 99;
     				left: 11px;
+    				height: 35px;
+					width: 35px;
     				@include breakpoint($mobile){
 						font-size: 24px;
     					line-height: 20px;
+    					height: auto;
+						width: auto;
     				}
     				&:after{
     					content: '';
@@ -662,6 +669,11 @@ $retina-hd: 2.5; // hd retina > 2.5x
 	    				}
 	    			}
     			}
+    			@-moz-document url-prefix() { 
+					.hotspot-tooltip{
+						margin-left: 50px;
+					}
+    			}
     		}
     		
     		#hotspots-item{
@@ -670,6 +682,7 @@ $retina-hd: 2.5; // hd retina > 2.5x
     				display: block;
     				margin-top: 20px;
 	    			.hotspot-tooltip{
+	    				margin-bottom: 20px;
 	    				.preview-box{
 	    					width: 30%;
 	    					float: left;
@@ -781,6 +794,7 @@ $retina-hd: 2.5; // hd retina > 2.5x
     			li{
     				display: inline-block;
     				width: calc(100% / 8 - 52px);
+
     				margin: 0 20px;
     				@include breakpoint($tablet){
 						width: calc(100% / 4 - 52px);
@@ -807,7 +821,7 @@ $retina-hd: 2.5; // hd retina > 2.5x
     					color: #fff;
     					margin: 0px;
     				}
-    			}
+    			}    			
     		}
     	}
     }
@@ -911,4 +925,17 @@ $retina-hd: 2.5; // hd retina > 2.5x
 			border: 2px solid #fff;
     	}
     }
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) { 
+	::i-block-chrome,.planetx .awarded .award-year ul li{
+		width: 10%;
+		margin: 0 1%;
+	}
+	::i-block-chrome,.planetx .quality .double-life .double-life-txt{
+		width: 80%;
+	}
+	::i-block-chrome,.planetx .how-we-make .trampoline-hotspot .hotspot-point .hotspot-tooltip{
+		bottom: -27px;
+	}
 }

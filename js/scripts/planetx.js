@@ -82,21 +82,35 @@
 
     // ========= Trampoline Hotspot box
     $('#trmp-hotspots .hotspot-point').each(function(index, el) {
-      var x_pos = $(this).data('x');
-      var y_pos = $(this).data('y');
-      $(this).css({
-        top: x_pos + '%',
-        left: y_pos + '%'
-      });
+        var x_pos = $(this).data('x');
+        var y_pos = $(this).data('y');
+        $(this).css({
+            top: x_pos + '%',
+            left: y_pos + '%'
+        });
 
-      $(this).click(function(event) {
-        $(this).css('overflow', 'visible');
-        $(this).siblings().css('overflow', 'hidden');
-        $(this).find('.hotspot-tooltip').css('opacity', '1').css('z-index', '999');
-        $(this).siblings().find('.hotspot-tooltip').css('opacity', '0').css('z-index', '9');
+        $(this).click(function(event) {
+            event.preventDefault();
+            $(this).css('overflow', 'visible');
+            $(this).siblings().css('overflow', 'hidden');
+            $(this).find('.hotspot-tooltip').css('opacity', '1').css('z-index', '999');
+            $(this).siblings().find('.hotspot-tooltip').css('opacity', '0').css('z-index', '9');
+
+            //var hs_item = $(this).find('.hs-tooltip-w').html();
+            //$('#hotspots-item').html(hs_item);
+
+            $(this).find('.hotspot-tooltip').click( function(ev){
+                ev.stopPropagation();
+            }); 
+            event.stopPropagation();  
+        });
         var hs_item = $(this).find('.hs-tooltip-w').html();
-        $('#hotspots-item').html(hs_item);
-      });
+        $('#hotspots-item').append(hs_item);
+    });
+    $(document).click( function(e){
+        var $all_hotspot = $('#trmp-hotspots .hotspot-point');
+        $all_hotspot.css('overflow', 'hidden');
+        $all_hotspot.find('.hotspot-tooltip').css('opacity', '0').css('z-index', '9');
     });
 
     $(".ilbvid-trampo-1").iLightBox({
