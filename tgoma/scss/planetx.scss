@@ -377,6 +377,105 @@
 }
 
 
+
+
+/*===========================  14-09-2016  ====================*/
+
+
+.tab_popup{
+    background-color: #fff;
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 35px 20px;
+    border-radius: 10px;
+	.owl-controls{
+		line-height:0;
+		.owl-buttons {
+			div{
+				position: absolute;
+				background-color:transparent;
+				top: 50%;
+				transform:translateY(-50%);
+				width: 18px;	
+				&.owl-next{
+					right:-10px;
+				}
+				&.owl-prev{
+					left:-10px;
+				}
+			}
+		}
+	}
+	h3{
+		font-size:32px;
+		color:#FAE029;
+		display:flex;
+		display: flex;
+		font-weight:300;
+		align-items: center;
+		span{
+			padding-left:20px;
+		}
+	}
+	p.addIcon{
+		line-height:32px;
+		.fa{
+			font-size:30px;
+			margin-right: 15px;
+			position: relative;
+			top: 3px;
+		}
+	}
+}
+
+
+#cboxContent {
+    background: #fff;
+    overflow: visible;
+    border-radius: 10px;
+}
+
+
+#cboxTopLeft, #cboxTopCenter, #cboxTopRight {
+	display:none;
+}
+
+#colorbox #cboxClose {
+    right: 7px;
+    background: url(../images/planetx/control.png) 0px 0px;
+    top: 3px;
+}
+#colorbox  #cboxClose:hover {
+    right: 7px;
+    background: url(../images/planetx/control.png) 0px -25px;
+    top: 3px;
+}
+#cboxMiddleRight, #cboxMiddleLeft{
+	display:none;
+}
+
+
+#colorbox, #colorbox #cboxWrapper, #colorbox #cboxWrapper #cboxContent, #colorbox #cboxWrapper #cboxContent #cboxLoadedContent, #colorbox #cboxWrapper #cboxContent #cboxLoadedContent{
+	max-width:1170px;
+    width: 100% !important;
+}
+
+@media screen and (min-width: 768px) {
+	#colorbox{
+		left:50% !important;
+		top: 50% !important;
+		transform:translate(-50% , -50%);
+		-moz-transform:translate(-50% , -50%);
+		-o-transform:translate(-50% , -50%);
+		-ms-transform:translate(-50% , -50%);
+		-webkit-transform:translate(-50% , -50%);
+	}
+}
+
+
+
+
+
 @media screen and (max-width: 1024px) and (min-width: 768px) {
 	.planetx{
 		font-size:16px;
@@ -449,6 +548,10 @@
 				font-size:100%;
 			}
 		}	
+	}
+	#colorbox, #colorbox #cboxWrapper, #colorbox #cboxWrapper #cboxContent, #colorbox #cboxWrapper #cboxContent #cboxLoadedContent, #colorbox #cboxWrapper #cboxContent #cboxLoadedContent{
+		max-width:750px;
+		width: 100% !important;
 	}
 }
 
@@ -598,12 +701,41 @@
 			}
 		}	
 	}
+	.tab_popup{
+		padding:10px 0px 15px;
+	    border-radius: 5px;
+		h3{
+			font-size:20px;
+			img{
+			    width:65px;
+			}	
+		}
+		p.addIcon{
+			line-height:26px;
+			.fa{
+				font-size:20px;
+				margin-right: 8px;
+				top: 1px;
+			}
+		}
+	}
+	#colorbox, #colorbox #cboxWrapper, #colorbox #cboxWrapper #cboxContent, #colorbox #cboxWrapper #cboxContent #cboxLoadedContent, #colorbox #cboxWrapper #cboxContent #cboxLoadedContent{
+		max-width:460px;
+		width: 100% !important;
+	}
+	#colorbox{
+		left:50% !important;
+		transform:translateX(-50%);
+		-moz-transform:translateX(-50%);
+		-o-transform:translateX(-50%);
+		-ms-transform:translateX(-50%);
+		-webkit-transform:translateX(-50%);
+	}
 }
 
 
 @media screen and (max-width: 480px) {
-	.planetx{
-		
+	.planetx{		
 		#block1.intro-togma {
 			.jump-calories-wrap{
 				 .count {
@@ -656,4 +788,18 @@
 			 }
 		}
 	}
+	#colorbox, #colorbox #cboxWrapper, #colorbox #cboxWrapper #cboxContent, #colorbox #cboxWrapper #cboxContent #cboxLoadedContent, #colorbox #cboxWrapper #cboxContent #cboxLoadedContent{
+		max-width:310px;
+		width: 100% !important;
+	}	
+	#colorbox{
+		left:50% !important;
+		top: 50% !important;
+		transform:translate(-50% , -50%);
+		-moz-transform:translate(-50% , -50%);
+		-o-transform:translate(-50% , -50%);
+		-ms-transform:translate(-50% , -50%);
+		-webkit-transform:translate(-50% , -50%);
+	}
 }
+

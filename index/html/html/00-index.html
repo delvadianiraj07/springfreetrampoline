@@ -133,8 +133,9 @@
                         <div class="collapse navbar-collapse" id="main-nav">
                             <ul class="nav navbar-nav navbar-right">
                                 <li>
-                                    <a href="/trampolines" class="has-dropdown">Trampolines</a>
-                                    <a href="#" class="dropdown-toggle is-drowdown" data-toggle="dropdown" role="button" aria-expanded="false" onclick="javascript:lazyloadimages();"><span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></a>
+                                    <a href="#" class="dropdown-toggle is-drowdown" data-toggle="dropdown" role="button" aria-expanded="false" onclick="javascript:lazyloadimages();">
+                                        Trampolines<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>
+                                    </a>
                                     <div class="dropdown-menu" role="menu">
                                         <div class="container-fluid tab-holder">                                            
                                             <ul>
@@ -145,11 +146,27 @@
                                         </div>
                                     </div>
                                 </li>
-                                <li id="tgoma-menu-holder" class="tgoma-menu-holder"> <a id="tgoma-menu" class="tgoma-menu" href="/tgoma">tgoma</a></li>
-                                <li> <a href="/safety-benefits">Safety</a></li>
+                                <li id="tgoma-menu-holder" class="tgoma-menu-holder">
+                                    <a id="tgoma-menu" class="tgoma-menu" href="/tgoma">tgoma</a>
+                                </li>
                                 <li>
-                                    <a href="/quality" class="dropdown-toggle">Quality</a>
-                                    <a href="#" class="dropdown-toggle is-drowdown" data-toggle="dropdown" role="button" aria-expanded="false" onclick="javascript:lazyloadimages();"><span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></a>
+                                    <a href="#" class="dropdown-toggle is-drowdown" data-toggle="dropdown" role="button" aria-expanded="false" onclick="javascript:lazyloadimages();">
+                                        Safety<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>
+                                    </a>
+                                    <div class="dropdown-menu" role="menu">
+                                        <div class="container-fluid tab-holder">                                            
+                                            <ul>
+                                                <li><a href="#"><span>A Dad's</span>Story</a></li>
+                                                <li><a href="#"><span>Awarded for</span>Safety</a></li>
+                                                <li><a href="#"><span>Commitment to</span>Quality</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#" class="dropdown-toggle is-drowdown" data-toggle="dropdown" role="button" aria-expanded="false" onclick="javascript:lazyloadimages();">
+                                        Quality<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>
+                                    </a>
                                     <div class="dropdown-menu" role="menu">
                                         <div class="container-fluid tab-holder">                                            
                                             <ul>
@@ -344,20 +361,13 @@
                                         <div class="row">
                                             <div class="col-sm-6 col-md-6">
                                                 <div class="title">Jumps counted:</div>
-                                                <div class="count">
-                                                    <span>3</span>
-                                                    <span>3</span>,
-                                                    <span>3</span>
-                                                    <span>3</span>
-                                                    <span>3</span>,
-                                                    <span>3</span>
-                                                    <span>3</span>
-                                                    <span>3</span>
+                                                <div class="count" id="jumpCount">
+                                                    
                                                 </div>
                                             </div>
                                             <div class="col-sm-6 col-md-6">
                                                 <div class="title">Calories brunt:</div>
-                                                <div class="count">
+                                                <div class="count" id="caloriCount">
                                                     <span>3</span>
                                                     <span>3</span>,
                                                     <span>3</span>
@@ -374,9 +384,9 @@
                             </div>
                         </div>                        
                     </div>
-                    <div class="home-tgoma">
+                    <!-- <div class="home-tgoma">
                         <img src="../../images/_RGB2950.jpg" alt="">
-                    </div>
+                    </div> -->
                 </section>
 
                 <section class="how-we-make">
@@ -397,75 +407,83 @@
                                         <div class="trmp-hotspots">
                                             <div data-x="39" data-y="71" data-label-align="bottom" class="hotspot-point" >
                                                 <div class="plus-icon">+</div>
-                                                <div class="hs-tooltip-w">
-                                                    <div class="hotspot-tooltip clearfix">
-                                                        <div class="preview-box">
-                                                            <div class="image-holder">
-                                                                <img class="lazy" src="../../images/animated-hotspot-preview-gif.gif" width="438" height="343" alt="">
-                                                                <a class="ilbvid-trampo-1 icon-play" href="http://www.youtube.com/embed/ReyP39sNtxE?autoplay=1&amp;autohide=1&amp;fs=1&amp;rel=0&amp;hd=1&amp;wmode=opaque&amp;enablejsapi=1&amp;showinfo=0" data-options="width:1920, height:1080" title="Springfree vs Spring-Based Trampoline">
-                                                                <img class="lazy hidden-xs" src="http://static.springfree.com/sites/all/themes/springfree/images/ico01.png" width="121" height="86" alt="Play video" style="display: inline-block;">
-                                                                <img class="lazy hidden-sm hidden-md hidden-lg" data-src="http://static.springfree.com/sites/all/themes/springfree/images/ico01-mobile.png" src="http://static.springfree.com/sites/all/themes/springfree/images/ico01-mobile.png" width="32" height="24" alt="Play video"> <noscript>&lt;img src="http://static.springfree.com/sites/all/themes/springfree/images/ico01.png" width="121" height="86" alt="Play video" &gt;</noscript> </a>
-                                                            </div>
-                                                        </div>
-                                                        <div class="details">
-                                                            <p><strong>FLEXINET</strong> enclosure cushions jumpers and prevents falls.</p>
+                                                <div class="hotspot-tooltip clearfix">
+                                                    <div class="preview-box">
+                                                        <div class="image-holder">
+                                                            <img class="lazy" src="../../images/animated-hotspot-preview-gif.gif" width="438" height="343" alt="">
+                                                            <a class="ilbvid-trampo-1 icon-play" href="http://www.youtube.com/embed/ReyP39sNtxE?autoplay=1&amp;autohide=1&amp;fs=1&amp;rel=0&amp;hd=1&amp;wmode=opaque&amp;enablejsapi=1&amp;showinfo=0" data-options="width:1920, height:1080" title="Springfree vs Spring-Based Trampoline">
+                                                            <img class="lazy hidden-xs" src="http://static.springfree.com/sites/all/themes/springfree/images/ico01.png" width="121" height="86" alt="Play video" style="display: inline-block;">
+                                                            <img class="lazy hidden-sm hidden-md hidden-lg" data-src="http://static.springfree.com/sites/all/themes/springfree/images/ico01-mobile.png" src="http://static.springfree.com/sites/all/themes/springfree/images/ico01-mobile.png" width="32" height="24" alt="Play video"> <noscript>&lt;img src="http://static.springfree.com/sites/all/themes/springfree/images/ico01.png" width="121" height="86" alt="Play video" &gt;</noscript> </a>
                                                         </div>
                                                     </div>
-                                                </div>   
+                                                    <div class="details">
+                                                        <p><strong>FLEXINET</strong> enclosure cushions jumpers and prevents falls.</p>
+                                                    </div>
+                                                </div>
                                             </div>
                                             <div data-x="62" data-y="62" data-label-align="bottom" class="hotspot-point" >
-                                                <div class="plus-icon">+</div>
-                                                <div class="hs-tooltip-w">                                                
-                                                    <div class="hotspot-tooltip clearfix">
-                                                        <div class="preview-box">
-                                                            <div class="image-holder">
-                                                                <img class="lazy" src="../../images/animated-hotspot-preview-gif.gif" width="438" height="343" alt="">
-                                                                <a class="ilbvid-trampo-2 icon-play" href="http://www.youtube.com/embed/ReyP39sNtxE?autoplay=1&amp;autohide=1&amp;fs=1&amp;rel=0&amp;hd=1&amp;wmode=opaque&amp;enablejsapi=1&amp;showinfo=0" data-options="width:1920, height:1080" title="Springfree vs Spring-Based Trampoline">
-                                                                <img class="lazy hidden-xs" src="http://static.springfree.com/sites/all/themes/springfree/images/ico01.png" width="121" height="86" alt="Play video" style="display: inline-block;">
-                                                                <img class="lazy hidden-sm hidden-md hidden-lg" data-src="http://static.springfree.com/sites/all/themes/springfree/images/ico01-mobile.png" src="http://static.springfree.com/sites/all/themes/springfree/images/ico01-mobile.png" width="32" height="24" alt="Play video"> <noscript>&lt;img src="http://static.springfree.com/sites/all/themes/springfree/images/ico01.png" width="121" height="86" alt="Play video" &gt;</noscript> </a>
-                                                            </div>
-                                                        </div>
-                                                        <div class="details">
-                                                            <p><strong>FLEXINET</strong> enclosure cushions jumpers and prevents falls.</p>
-                                                        </div>
-                                                    </div> 
-                                                </div>   
-                                            </div>
-                                            <div data-x="74" data-y="74" data-label-align="bottom" class="hotspot-point" >
-                                                <div class="plus-icon">+</div>
-                                                <div class="hs-tooltip-w">                                               
-                                                    <div class="hotspot-tooltip clearfix">
-                                                        <div class="preview-box">
-                                                            <div class="image-holder">
-                                                                <img class="lazy" src="../../images/animated-hotspot-preview-gif.gif" width="438" height="343" alt="">
-                                                                <a class="ilbvid-trampo-3 icon-play" href="http://www.youtube.com/embed/ReyP39sNtxE?autoplay=1&amp;autohide=1&amp;fs=1&amp;rel=0&amp;hd=1&amp;wmode=opaque&amp;enablejsapi=1&amp;showinfo=0" data-options="width:1920, height:1080" title="Springfree vs Spring-Based Trampoline">
-                                                                <img class="lazy hidden-xs" src="http://static.springfree.com/sites/all/themes/springfree/images/ico01.png" width="121" height="86" alt="Play video" style="display: inline-block;">
-                                                                <img class="lazy hidden-sm hidden-md hidden-lg" data-src="http://static.springfree.com/sites/all/themes/springfree/images/ico01-mobile.png" src="http://static.springfree.com/sites/all/themes/springfree/images/ico01-mobile.png" width="32" height="24" alt="Play video"> <noscript>&lt;img src="http://static.springfree.com/sites/all/themes/springfree/images/ico01.png" width="121" height="86" alt="Play video" &gt;</noscript> </a>
-                                                            </div>
-                                                        </div>
-                                                        <div class="details">
-                                                            <p><strong>FLEXINET</strong> enclosure cushions jumpers and prevents falls.</p>
+                                                <div class="plus-icon">+</div>                                       
+                                                <div class="hotspot-tooltip clearfix">
+                                                    <div class="preview-box">
+                                                        <div class="image-holder">
+                                                            <img class="lazy" src="../../images/animated-hotspot-preview-gif.gif" width="438" height="343" alt="">
+                                                            <a class="ilbvid-trampo-2 icon-play" href="http://www.youtube.com/embed/ReyP39sNtxE?autoplay=1&amp;autohide=1&amp;fs=1&amp;rel=0&amp;hd=1&amp;wmode=opaque&amp;enablejsapi=1&amp;showinfo=0" data-options="width:1920, height:1080" title="Springfree vs Spring-Based Trampoline">
+                                                            <img class="lazy hidden-xs" src="http://static.springfree.com/sites/all/themes/springfree/images/ico01.png" width="121" height="86" alt="Play video" style="display: inline-block;">
+                                                            <img class="lazy hidden-sm hidden-md hidden-lg" data-src="http://static.springfree.com/sites/all/themes/springfree/images/ico01-mobile.png" src="http://static.springfree.com/sites/all/themes/springfree/images/ico01-mobile.png" width="32" height="24" alt="Play video"> <noscript>&lt;img src="http://static.springfree.com/sites/all/themes/springfree/images/ico01.png" width="121" height="86" alt="Play video" &gt;</noscript> </a>
                                                         </div>
                                                     </div>
-                                                </div>   
+                                                    <div class="details">
+                                                        <p><strong>FLEXINET</strong> enclosure cushions jumpers and prevents falls.</p>
+                                                    </div>
+                                                </div> 
+                                            </div>
+                                            <div data-x="74" data-y="74" data-label-align="bottom" class="hotspot-point" >
+                                                <div class="plus-icon">+</div>                                       
+                                                <div class="hotspot-tooltip clearfix">
+                                                    <div class="preview-box">
+                                                        <div class="image-holder">
+                                                            <img class="lazy" src="../../images/animated-hotspot-preview-gif.gif" width="438" height="343" alt="">
+                                                            <a class="ilbvid-trampo-3 icon-play" href="http://www.youtube.com/embed/ReyP39sNtxE?autoplay=1&amp;autohide=1&amp;fs=1&amp;rel=0&amp;hd=1&amp;wmode=opaque&amp;enablejsapi=1&amp;showinfo=0" data-options="width:1920, height:1080" title="Springfree vs Spring-Based Trampoline">
+                                                            <img class="lazy hidden-xs" src="http://static.springfree.com/sites/all/themes/springfree/images/ico01.png" width="121" height="86" alt="Play video" style="display: inline-block;">
+                                                            <img class="lazy hidden-sm hidden-md hidden-lg" data-src="http://static.springfree.com/sites/all/themes/springfree/images/ico01-mobile.png" src="http://static.springfree.com/sites/all/themes/springfree/images/ico01-mobile.png" width="32" height="24" alt="Play video"> <noscript>&lt;img src="http://static.springfree.com/sites/all/themes/springfree/images/ico01.png" width="121" height="86" alt="Play video" &gt;</noscript> </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="details">
+                                                        <p><strong>FLEXINET</strong> enclosure cushions jumpers and prevents falls.</p>
+                                                    </div>
+                                                </div>
                                             </div>
                                             <div data-x="68" data-y="16" data-label-align="bottom" class="hotspot-point" >
                                                 <div class="plus-icon">+</div>
-                                                <div class="hs-tooltip-w">
-                                                    <div class="hotspot-tooltip clearfix">
-                                                        <div class="preview-box">
-                                                            <div class="image-holder">
-                                                                <img class="lazy" src="../../images/animated-hotspot-preview-gif.gif" width="438" height="343" alt="">
-                                                                <a class="ilbvid-trampo-4 icon-play" href="http://www.youtube.com/embed/ReyP39sNtxE?autoplay=1&amp;autohide=1&amp;fs=1&amp;rel=0&amp;hd=1&amp;wmode=opaque&amp;enablejsapi=1&amp;showinfo=0" data-options="width:1920, height:1080" title="Springfree vs Spring-Based Trampoline">
-                                                                <img class="lazy hidden-xs" src="http://static.springfree.com/sites/all/themes/springfree/images/ico01.png" width="121" height="86" alt="Play video" style="display: inline-block;">
-                                                                <img class="lazy hidden-sm hidden-md hidden-lg" data-src="http://static.springfree.com/sites/all/themes/springfree/images/ico01-mobile.png" src="http://static.springfree.com/sites/all/themes/springfree/images/ico01-mobile.png" width="32" height="24" alt="Play video"> <noscript>&lt;img src="http://static.springfree.com/sites/all/themes/springfree/images/ico01.png" width="121" height="86" alt="Play video" &gt;</noscript> </a>
-                                                            </div>
-                                                        </div>
-                                                        <div class="details">
-                                                            <p><strong>FLEXINET</strong> enclosure cushions jumpers and prevents falls.</p>
+                                                <div class="hotspot-tooltip clearfix">
+                                                    <div class="preview-box">
+                                                        <div class="image-holder">
+                                                            <img class="lazy" src="../../images/animated-hotspot-preview-gif.gif" width="438" height="343" alt="">
+                                                            <a class="ilbvid-trampo-4 icon-play" href="http://www.youtube.com/embed/ReyP39sNtxE?autoplay=1&amp;autohide=1&amp;fs=1&amp;rel=0&amp;hd=1&amp;wmode=opaque&amp;enablejsapi=1&amp;showinfo=0" data-options="width:1920, height:1080" title="Springfree vs Spring-Based Trampoline">
+                                                            <img class="lazy hidden-xs" src="http://static.springfree.com/sites/all/themes/springfree/images/ico01.png" width="121" height="86" alt="Play video" style="display: inline-block;">
+                                                            <img class="lazy hidden-sm hidden-md hidden-lg" data-src="http://static.springfree.com/sites/all/themes/springfree/images/ico01-mobile.png" src="http://static.springfree.com/sites/all/themes/springfree/images/ico01-mobile.png" width="32" height="24" alt="Play video"> <noscript>&lt;img src="http://static.springfree.com/sites/all/themes/springfree/images/ico01.png" width="121" height="86" alt="Play video" &gt;</noscript> </a>
                                                         </div>
                                                     </div>
-                                                </div>  
+                                                    <div class="details">
+                                                        <p><strong>FLEXINET</strong> enclosure cushions jumpers and prevents falls.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div data-x="28" data-y="48" data-label-align="bottom" class="hotspot-point" >
+                                                <div class="plus-icon">+</div>
+                                                <div class="hotspot-tooltip clearfix">
+                                                    <div class="preview-box">
+                                                        <div class="image-holder">
+                                                            <img class="lazy" src="../../images/animated-hotspot-preview-gif.gif" width="438" height="343" alt="">
+                                                            <a class="ilbvid-trampo-5 icon-play" href="http://www.youtube.com/embed/ReyP39sNtxE?autoplay=1&amp;autohide=1&amp;fs=1&amp;rel=0&amp;hd=1&amp;wmode=opaque&amp;enablejsapi=1&amp;showinfo=0" data-options="width:1920, height:1080" title="Springfree vs Spring-Based Trampoline">
+                                                            <img class="lazy hidden-xs" src="http://static.springfree.com/sites/all/themes/springfree/images/ico01.png" width="121" height="86" alt="Play video" style="display: inline-block;">
+                                                            <img class="lazy hidden-sm hidden-md hidden-lg" data-src="http://static.springfree.com/sites/all/themes/springfree/images/ico01-mobile.png" src="http://static.springfree.com/sites/all/themes/springfree/images/ico01-mobile.png" width="32" height="24" alt="Play video"> <noscript>&lt;img src="http://static.springfree.com/sites/all/themes/springfree/images/ico01.png" width="121" height="86" alt="Play video" &gt;</noscript> </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="details">
+                                                        <p><strong>FLEXINET</strong> enclosure cushions jumpers and prevents falls.</p>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>                                        
                                     </div>

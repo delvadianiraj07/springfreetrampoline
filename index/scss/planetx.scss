@@ -25,7 +25,7 @@ $retina-hd: 2.5; // hd retina > 2.5x
 }
 
 
-// Mixin //
+// Mixin
 @mixin gradient-vertical-three($start-color: #fff, $mid-color: #fff, $end-color: #fff, $start-percent: 0%, $mid-percent: 50%, $end-percent: 100%) {
 	background-image: -webkit-linear-gradient(top, $start-color $start-percent, $mid-color $mid-percent, $end-color $end-percent);  // Safari 5.1-6, Chrome 10+
 	background-image: -o-linear-gradient(top, $start-color $start-percent, $mid-color $mid-percent, $end-color $end-percent);  // Opera 12
@@ -283,12 +283,27 @@ $retina-hd: 2.5; // hd retina > 2.5x
 	        					}
 	        					&.is-drowdown{
 	        						background: none;
-									padding: 0px;
-									display: inline;
-									margin-left: -9px;
+	        						width: auto;
+	        						height: auto;
+	        						margin-left: 0px;
+	        						position: relative;
 	        					}
 	        					span{
 	        						font-size: 9px;
+	        						margin-left: 10px;
+	        						position: absolute;
+								    top: 50%;
+								    right: 6px;
+								    -ms-transform: translateY(-50%);
+									-webkit-transform: translateY(-50%);
+									transform: translateY(-50%);
+	        					}
+	        				}
+	        				&.open{
+	        					>a{
+	        						span{
+										display: none;
+	        						}
 	        					}
 	        				}
 	        			}
@@ -474,8 +489,16 @@ $retina-hd: 2.5; // hd retina > 2.5x
     	padding-top: 60px;
     	position: relative;
     	overflow: hidden;
-    	@include breakpoint($tablet){
-			height: 100vh;
+    	background: #edfcff url(../images/home-tgoma-bg.jpg) no-repeat center 280px; 
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+		height: 100vh;
+		max-width: 1107px;
+		margin: 0 auto;
+    	@include breakpoint($desktop){    		
+			height: 120vh;
     	}
     	@include breakpoint($mobile){
 			padding-top: 0px;
@@ -501,20 +524,22 @@ $retina-hd: 2.5; // hd retina > 2.5x
     		}
     	}
     	.intro-togma-bg{
-    		@include breakpoint($tablet){
-			background: url(../images/_RGB2950.jpg) no-repeat top center; 
-			-webkit-background-size: cover;
-			-moz-background-size: cover;
-			-o-background-size: cover;
-			background-size: cover;
-			height: 100%;
-			}
+    		//@include breakpoint($tablet){
+			
+			/*@media only screen and (min-width: #{$desktop}){
+				max-width: 1107px;
+				margin: 0 auto;
+	    	}*/
+			//}
 			.jump-calories-wrap{
 				background: rgba(0,0,0,0.3);
 				padding: 28px 0 35px 0;
 				position: absolute;
 			    width: 100%;
 			    bottom: 0;
+			    @media only screen and (min-width: #{$desktop}){
+					max-width: 1107px;
+	    		}
 				.title{
 					font-size: 30px;
 					color: #fff;
@@ -536,6 +561,7 @@ $retina-hd: 2.5; // hd retina > 2.5x
 					    border-radius: 3px;
 					    background-color: #00afe0;
 					    display: inline-block;
+					    margin: 0px 4px;
 					    @include breakpoint($mobile){
 							padding: 4px 6px 2px 6px;
     						line-height: 20px;
@@ -574,7 +600,7 @@ $retina-hd: 2.5; // hd retina > 2.5x
     		}
     		.hotspot-point{
     			position: absolute;
-    			overflow: hidden;
+    			//overflow: hidden;
     			height: 56px;
 			    width: 56px;
 			    display: flex;
@@ -623,7 +649,7 @@ $retina-hd: 2.5; // hd retina > 2.5x
 					    animation: cd-pulse 2s infinite;
     				}			    
     			}
-    			.hs-tooltip-w{
+    			/*.hs-tooltip-w{
     				width: 268px;
 				    position: absolute;
 				    height: 100%;
@@ -631,7 +657,7 @@ $retina-hd: 2.5; // hd retina > 2.5x
 				    @include breakpoint($mobile){
 						display: none;
 				    }
-    			}
+    			}*/
     			.hotspot-tooltip{
     				width: 268px;
     				margin-left: 74px;
@@ -639,8 +665,19 @@ $retina-hd: 2.5; // hd retina > 2.5x
 	    			position: absolute;
 				    left: 0;
 				    bottom: -37px;
-				    opacity: 0;
-				    @include transition(0.4s);
+				    z-index: 9;
+
+				    transform: scale(0);
+				    -ms-transform: scale(0);
+				    -webkit-transform: scale(0);
+
+					@include transition(0.4s);
+				    // opacity: 0;
+				    
+					@include breakpoint($mobile){
+						display: none;
+				    }
+
 				    &:before{
 				    	content: '';
 				    	display: block;
@@ -651,6 +688,7 @@ $retina-hd: 2.5; // hd retina > 2.5x
 					    height: 2px;
 					    background: #00afe0;
 					    margin: 13px 0px;
+					    z-index: -1;
 				    }
 					.preview-box{
 						.image-holder{
@@ -689,6 +727,14 @@ $retina-hd: 2.5; // hd retina > 2.5x
 					.hotspot-tooltip{
 						margin-left: 50px;
 					}
+    			}
+    			&.open-preview{
+    				.hotspot-tooltip{
+    					z-index: 999;
+						transform: scale(1);
+					    -ms-transform: scale(1);
+					    -webkit-transform: scale(1);
+    				}
     			}
     		}
     		

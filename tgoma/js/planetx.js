@@ -27,3 +27,14 @@ jQuery("#award-Slider").owlCarousel({
 		navigationText : ["&#xf060;","&#xf061;"],
 		pagination: false		
 	});
+	
+	
+	
+$(".game").colorbox({inline:true, width:"100%"});
+$(document).bind('cbox_complete', function(){
+  setTimeout( function(){	
+  var c_height = $('#cboxLoadedContent .tab_popup').outerHeight();
+  $('#cboxContent').css('height',c_height);
+  $('#cboxLoadedContent, #cboxWrapper, #colorbox').css('height',c_height);
+  },500);
+});
