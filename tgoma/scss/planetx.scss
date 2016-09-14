@@ -1,0 +1,805 @@
+/* Scss Document */
+
+@import 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i,600,600i,700,700i,900,900i';
+
+.planetx{
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size:20px;
+	h1.content_title{
+		font-size:60px;
+	}
+	
+	.border_box{
+		border: 3px solid #fff;
+		box-shadow: 0px 0px 8px rgba(0,0,0,0.20);
+	}
+	.spacer{
+		padding: 60px 0;
+	}
+	
+	#block1.intro-togma {
+		h1 {
+			color: #e30040;
+		}
+		p {
+			
+			color: #333333;
+			line-height: 27px;
+			margin: 28px 0 0;
+			strong {
+				display: block;
+				color: #00afe0;
+				font-weight: 400;
+				text-transform:uppercase;
+			}
+		}
+		img.tgoma {
+			max-width: 172px;
+		}
+		
+		.jump-calories-wrap {
+			background: rgb(56, 146, 216);
+			padding: 28px 0 35px 0;
+			width: 100%;
+			.title {
+				font-size: 30px;
+				color: #fff;
+				line-height: 27px;
+				margin-bottom: 16px;
+				font-weight:300;
+			}
+			.count {
+				color: #fff;
+				font-size: 30px;
+				span {
+					padding: 3px 10px;
+					border-radius: 3px;
+					background-color: #0492b7;
+					display: inline-block;
+					line-height:1.2;
+				}
+			}
+		}
+	}
+	
+	#block2.spacer.testimonials {
+		padding-top: 70px;
+		padding-bottom: 100px;			
+		background-color:#f7f1e9;
+		h1{
+			margin-bottom:22px;
+			color:#6e1c8f;
+		}	
+		.entry {
+			margin-bottom:60px;
+			p{
+		    	
+				color:#333 !important;
+			}
+		}
+		.row{
+			> div{
+				float:none;
+				display:inline-block;
+				vertical-align:top;
+			}
+		}
+		.preview-box {
+			border: 3px solid #fff;
+			-webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.16);
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.16);
+			position: relative;
+			margin: 6px;
+			.image-holder {
+				position: relative;
+				 img {
+					width: 100%;
+					height: auto;
+					vertical-align: top;
+				}
+				.icon-play {
+					width: 66px;
+					height: 48px;
+					position: absolute;
+					bottom: 12px;
+					right: 12px;
+					margin: 0;
+					top: auto;
+					left: auto;
+				}
+			}
+		}
+		.comment{
+			font-weight:300;
+			line-height: 28px;		
+			font-style: italic;
+			
+			text-align:left;
+			color:#333;
+		}
+		h4{
+			font-size:20px;
+			font-weight:400;
+			text-align:left; 
+			color:#6e1c8f;
+		}
+		#testi-carousel {
+			.owl-controls {
+				 position: static; 
+				 width: auto; 
+				 z-index: 99; 
+				 margin-top: 0px; 
+			     height: 0;
+			}
+			.owl-buttons {
+				div{
+					position: absolute;
+					width: 31px;
+					height: 86px;
+					top:50%;
+					border-radius:0;
+					z-index: 99;
+					transform:translateY(-50%);
+					-webkit-transform:translateY(-50%);
+					-moz-transform:translateY(-50%);
+					-ms-transform:translateY(-50%);
+					background:url(../images/planetx/left-right-arr.png) no-repeat;
+					margin:0;
+					font-size:0;
+					img{
+						display:none;
+					}
+					&.owl-prev{
+						background-position:0px 0px;
+						left:-20px;	
+					}
+					&.owl-next{
+						background-position:-31px 0px;
+						right:-20px;
+					}
+				}
+			}
+			.owl-pagination { 			
+				.owl-page {
+				    margin-top: 16px;
+					span{
+						background-color:#00afe0;
+						margin: 0 5px;
+					}
+					&.active{
+						span{
+							background-color:#fff;
+						}
+					}
+				}
+			}
+		}
+	
+	}
+	
+	#block3.spacer.games_apps {
+		padding-top: 70px;
+		padding-bottom: 50px;
+		
+		 h1{
+			color: #FAE029;
+		}	
+		.appStore {
+			padding-top: 65px;
+		}
+		#appTab {
+			.nav-tabs {				
+				> li {
+					margin:0 30px;
+					a{
+						border-radius:0;
+						background-color:transparent;
+						padding:0;
+						h5{
+							font-size:25px;
+							font-weight:700;
+							color:#FAE029 ;
+							border-bottom:1px solid transparent;
+							display:inline-block;
+							line-height:1;
+							padding-bottom:5px;
+							text-transform:uppercase;
+							margin:0;
+							transition:0.4s ease-in-out;
+							-webkit-transition:0.4s ease-in-out;
+							-moz-transition:0.4s ease-in-out;
+							-ms-transition:0.4s ease-in-out;
+							&:hover{								
+								color:#fff;
+								border-bottom:1px solid #fff;
+							}
+						}
+					}
+					&.active{
+						a{
+							border-radius:0;
+							background-color:transparent;
+							h5{
+								color:#fff ;
+								border-bottom:1px solid #fff;
+							}
+						}
+					}
+				}
+			}
+			.tab-content{
+				background-color:transparent;
+				> .tab-pane{
+					color:#fff;
+					background-color:transparent;
+				    padding: 50px 0 0;
+					.entry{
+						width: 75%;
+						margin: 0 auto;	
+						p{
+							
+							font-weight:300;
+							color:#fff;
+						}
+					}
+					ul{
+						list-style: none;
+						max-width: 720px;
+						margin: 50px auto 0; 
+						padding:0;
+						&.game_apps{
+							li{
+								display:inline-block;
+								margin:0 25px 25px;
+								img{
+									cursor:pointer;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		.appStore{
+			p{
+				font-size:18px;
+			}
+		}	
+	}
+	
+	#block4.spacer.benefits{
+		background-color:#f3f3f3;
+		padding:70px 0;
+		h1{
+			color:#e85933;
+		}
+		.container{
+			padding-bottom:0;
+		}
+		.textBox{
+			text-align:left;
+			img{
+				margin-bottom:18px;
+			}
+			p{
+				font-weight:300;
+				color:#333;
+				line-height:1.3;
+			}
+		}
+		#moreText.spacer {
+			padding-top: 65px;
+			padding-bottom: 60px;
+		}
+	}
+	
+	#block5.spacer.features{
+	    padding: 90px 0 100px;
+		h1{
+			color:#2BA953;
+		}
+		.entry{
+			width:72%;
+			margin:0 auto 0px;
+			p{
+				font-weight:300;
+			}
+		}
+		.phone_previews{
+			margin-top:10px;
+		}
+	}
+	
+	#block6.spacer.awards{
+	    padding: 80px 0;
+		h1{
+		    color: #FAE029;
+		}
+		.award-box{
+			.awward-icon{
+				display:block;
+				margin:0 auto; 
+			}
+			p{
+				color:#fff;
+				font-weight:300;
+				text-align:center;
+				strong{
+					font-weight:700;
+				}
+			}
+		}
+	}
+	
+	#block7.spacer.in_media{
+	    padding: 80px 0 40px;
+		background-color:#2ba951;
+		h1{
+		    color: #fae029;
+			margin-bottom:60px;
+		}		
+		#media-list{
+			width:80%;
+			margin:0 auto;
+			ul{
+				list-style:none;
+				padding-left:0;
+				li{
+					display:inline-block;
+					margin:0px 30px 40px;
+					width:170px;
+					img{
+						max-width:100%;	
+					}
+				}
+			}
+		}
+	}
+	
+	#block8.faq{
+		padding:50px 0;
+		h1.content_title {
+			margin-bottom: 0;
+			line-height:1;
+			a{
+				color:#fff;
+			}			
+		}
+		.icon-plus {
+			width: 45px;
+			height: 45px;
+			border: 2px solid #fff;
+		}
+	}
+	.cd-vertical-nav a::after {
+		background: url(../images/planetx/cd-nav-icons.png) no-repeat transparent;
+	}
+}
+
+
+
+
+/*===========================  14-09-2016  ====================*/
+
+
+.tab_popup{
+    background-color: #fff;
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 35px 20px;
+    border-radius: 10px;
+	.owl-controls{
+		line-height:0;
+		.owl-buttons {
+			div{
+				position: absolute;
+				background-color:transparent;
+				top: 50%;
+				transform:translateY(-50%);
+				width: 18px;	
+				&.owl-next{
+					right:-10px;
+				}
+				&.owl-prev{
+					left:-10px;
+				}
+			}
+		}
+	}
+	h3{
+		font-size:32px;
+		color:#FAE029;
+		display:flex;
+		display: flex;
+		font-weight:300;
+		align-items: center;
+		span{
+			padding-left:20px;
+		}
+	}
+	p.addIcon{
+		line-height:32px;
+		.fa{
+			font-size:30px;
+			margin-right: 15px;
+			position: relative;
+			top: 3px;
+		}
+	}
+}
+
+
+#cboxContent {
+    background: #fff;
+    overflow: visible;
+    border-radius: 10px;
+}
+
+
+#cboxTopLeft, #cboxTopCenter, #cboxTopRight {
+	display:none;
+}
+
+#colorbox #cboxClose {
+    right: 7px;
+    background: url(../images/planetx/control.png) 0px 0px;
+    top: 3px;
+}
+#colorbox  #cboxClose:hover {
+    right: 7px;
+    background: url(../images/planetx/control.png) 0px -25px;
+    top: 3px;
+}
+#cboxMiddleRight, #cboxMiddleLeft{
+	display:none;
+}
+
+
+#colorbox, #colorbox #cboxWrapper, #colorbox #cboxWrapper #cboxContent, #colorbox #cboxWrapper #cboxContent #cboxLoadedContent, #colorbox #cboxWrapper #cboxContent #cboxLoadedContent{
+	max-width:1170px;
+    width: 100% !important;
+}
+
+@media screen and (min-width: 768px) {
+	#colorbox{
+		left:50% !important;
+		top: 50% !important;
+		transform:translate(-50% , -50%);
+		-moz-transform:translate(-50% , -50%);
+		-o-transform:translate(-50% , -50%);
+		-ms-transform:translate(-50% , -50%);
+		-webkit-transform:translate(-50% , -50%);
+	}
+}
+
+
+
+
+
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+	.planetx{
+		font-size:16px;
+		h1.content_title{
+			font-size:44px;
+		}
+		#block1.intro-togma {			
+			img.tgoma {
+				max-width: 132px;
+			}
+		}
+		#block2.spacer.testimonials {
+			.entry {
+				margin-bottom: 50px;
+			}
+			.row > div{
+				float:left;
+			}
+		}
+		#block3.spacer.games_apps{
+			 .appStore {
+				padding-top: 45px;
+			 }
+			 #appTab {
+				 .nav-tabs { 
+					 > li {
+						margin: 0 12px;
+					 }
+				 }
+			}
+		}
+		#block4.spacer.benefits {
+			padding: 55px 0;
+		}
+		#block5.spacer.features {
+			padding:70px 0 80px;
+		}
+		#block6.spacer.awards{
+		    padding: 60px 0;
+			.award-box {
+				margin-top:0px;
+			}
+		}
+		#block7.spacer.in_media {
+		    padding: 60px 0 30px;
+			#media-list{
+			    width: 90%;	
+				ul{
+					li{
+						width:140px;
+						margin: 0px 25x 30px;
+					}
+				}				
+			}
+		}
+		#block8.faq {
+			padding: 40px 0;
+			.icon-plus {
+				width: 35px;
+				height: 35px;
+				background-position: -30px 1px;
+				background-size: 60px;
+				position: relative;
+				top: 5px;
+			}
+		}	
+		.cd-vertical-nav a {
+			padding: 20px 0 0;
+			.label{
+				font-size:100%;
+			}
+		}	
+	}
+	#colorbox, #colorbox #cboxWrapper, #colorbox #cboxWrapper #cboxContent, #colorbox #cboxWrapper #cboxContent #cboxLoadedContent, #colorbox #cboxWrapper #cboxContent #cboxLoadedContent{
+		max-width:750px;
+		width: 100% !important;
+	}
+}
+
+
+
+
+
+@media screen and (max-width: 767px) {
+	.planetx{
+		font-size:16px;
+		h1.content_title{
+			font-size:36px;
+		}
+		#block1.intro-togma {
+			h1 {
+				margin: 30px 0 0;
+			}	
+			.border_box{
+				margin-top:30px;
+			}		
+			img.tgoma {
+				max-width: 110px;
+			}
+			.jump-calories-wrap{
+			    padding: 0px 0 35px 0;
+				.title{
+					margin-top:30px;
+				}
+			}
+		}
+		#block2.spacer.testimonials {
+		    padding: 50px 0 80px;
+			.entry {
+				margin-bottom:40px;
+			}
+			.row > div{
+				float:left;
+			}
+			.comment{
+				text-align:center;
+			}
+			.preview-box{
+				margin:0 auto 20px;	
+			    width: 60%;
+			}
+			h4{
+				text-align:center;
+			}
+			#testi-carousel{
+				 .owl-item {
+					padding: 0 0px;
+					> .item{
+						> .row{
+							text-align:center;
+							> div{
+								display:inline-block;
+								float:none;
+							}						
+						}
+					}
+				}
+				.owl-buttons {
+					div{
+						width:16px;
+						&.owl-next {
+   							background-position: -46px 0px;
+						}
+					} 
+				}
+			}
+		}
+		#block3.spacer.games_apps{
+			padding:60px 0 40px;
+			 .appStore {
+				padding-top: 25px;
+			 }
+			 #appTab{
+				.tab-content {
+					> .tab-pane {
+						padding: 30px 0 0;
+						.entry {
+							width: 90%;
+						}
+						ul.game_apps {
+							li {
+								display: inline-block;
+								margin: 0 5px 15px;
+								width: 60px;
+							}
+						}
+					}
+				}
+			   .nav-tabs{ 
+				  > li{ 
+				  	margin:0 20px;
+					  a{
+						 h5 {
+						    font-size: 20px;
+						 }
+					  }
+				  }
+			   }
+		   }
+		}
+		#block4.spacer.benefits {
+			padding:50px 0 35px;
+		}
+		#block5.spacer.features {
+		    padding: 50px 0 30px;
+		}
+		#block6.spacer.awards{
+		    padding:45px 0;
+			.award-box {
+				margin-top:0px;
+			}
+		}
+		#block7.spacer.in_media {
+		    padding: 60px 0 30px;
+			 h1 {
+				margin-bottom: 40px;
+			 }
+			#media-list{
+			    width:100%;	
+				ul{
+					li{
+						width:100px;
+						margin: 0px 15px 20px;
+					}
+				}				
+			}
+		}
+		#block8.faq {
+			padding: 40px 0;
+			.icon-plus {
+				width: 35px;
+				height: 35px;
+				background-position: -30px 1px;
+				background-size: 60px;
+				position: relative;
+				top: 5px;
+			}
+		}	
+		.cd-vertical-nav a {
+			padding: 20px 0 0;
+			.label{
+				font-size:100%;
+			}
+		}	
+	}
+	.tab_popup{
+		padding:10px 0px 15px;
+	    border-radius: 5px;
+		h3{
+			font-size:20px;
+			img{
+			    width:65px;
+			}	
+		}
+		p.addIcon{
+			line-height:26px;
+			.fa{
+				font-size:20px;
+				margin-right: 8px;
+				top: 1px;
+			}
+		}
+	}
+	#colorbox, #colorbox #cboxWrapper, #colorbox #cboxWrapper #cboxContent, #colorbox #cboxWrapper #cboxContent #cboxLoadedContent, #colorbox #cboxWrapper #cboxContent #cboxLoadedContent{
+		max-width:460px;
+		width: 100% !important;
+	}
+	#colorbox{
+		left:50% !important;
+		transform:translateX(-50%);
+		-moz-transform:translateX(-50%);
+		-o-transform:translateX(-50%);
+		-ms-transform:translateX(-50%);
+		-webkit-transform:translateX(-50%);
+	}
+}
+
+
+@media screen and (max-width: 480px) {
+	.planetx{		
+		#block1.intro-togma {
+			.jump-calories-wrap{
+				 .count {
+					color: #fff;
+					font-size: 20px;
+				 }
+			}
+		}
+		#block2.spacer.testimonials {
+			.preview-box{
+				margin:0 auto 20px;	
+			    width: 80%;
+			}
+		}
+		 #block3.spacer.games_apps { 
+			 #appTab{ 
+			 	.nav-tabs { 
+					 > li { 
+							 margin: 0 9px;
+						 a { 
+							 h5 {
+								font-size:15px;
+							 }
+						 }
+					 }
+				}
+				.tab-content{
+					 > .tab-pane {
+						  .entry {
+							  width: 100%;
+						  }
+					 }
+				}
+			}
+		}
+		#block5.spacer.features{
+			 .entry {
+				width: 100%;
+				margin: 0 auto 0px;
+			 }
+		}
+		#block6.spacer.awards {
+			.award-box {
+				padding: 0;
+			}
+		}
+		#block7.spacer.in_media{
+			 h1 {
+				margin-bottom: 30px;
+			 }
+		}
+	}
+	#colorbox, #colorbox #cboxWrapper, #colorbox #cboxWrapper #cboxContent, #colorbox #cboxWrapper #cboxContent #cboxLoadedContent, #colorbox #cboxWrapper #cboxContent #cboxLoadedContent{
+		max-width:310px;
+		width: 100% !important;
+	}	
+	#colorbox{
+		left:50% !important;
+		top: 50% !important;
+		transform:translate(-50% , -50%);
+		-moz-transform:translate(-50% , -50%);
+		-o-transform:translate(-50% , -50%);
+		-ms-transform:translate(-50% , -50%);
+		-webkit-transform:translate(-50% , -50%);
+	}
+}
+
