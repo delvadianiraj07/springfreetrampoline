@@ -25,7 +25,7 @@ $retina-hd: 2.5; // hd retina > 2.5x
 }
 
 
-// Mixin
+// Mixin //
 @mixin gradient-vertical-three($start-color: #fff, $mid-color: #fff, $end-color: #fff, $start-percent: 0%, $mid-percent: 50%, $end-percent: 100%) {
 	background-image: -webkit-linear-gradient(top, $start-color $start-percent, $mid-color $mid-percent, $end-color $end-percent);  // Safari 5.1-6, Chrome 10+
 	background-image: -o-linear-gradient(top, $start-color $start-percent, $mid-color $mid-percent, $end-color $end-percent);  // Opera 12
