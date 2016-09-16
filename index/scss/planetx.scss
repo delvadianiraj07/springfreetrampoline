@@ -481,7 +481,7 @@ $retina-hd: 2.5; // hd retina > 2.5x
     #static-panels{
     	@include breakpoint($mobile){
 	    	section.intro-togma{
-	    		height: 100vh;
+	    		height: 60vh;
 	    	}
     	}
     }
@@ -489,19 +489,20 @@ $retina-hd: 2.5; // hd retina > 2.5x
     	padding-top: 60px;
     	position: relative;
     	overflow: hidden;
-    	background: #edfcff url(../images/home-tgoma-bg.jpg) no-repeat center 280px; 
+    	background: #E8F2FA url(../images/home-tgoma-bg.jpg) no-repeat center 280px; 
 		-webkit-background-size: cover;
 		-moz-background-size: cover;
 		-o-background-size: cover;
 		background-size: cover;
 		height: 100vh;
-		max-width: 1107px;
+		/*max-width: 1107px;*/
 		margin: 0 auto;
     	@include breakpoint($desktop){    		
 			height: 120vh;
     	}
     	@include breakpoint($mobile){
 			padding-top: 0px;
+			background-position-y: 180px
     	}
     	h1{
     		color: #e30040;
@@ -537,9 +538,12 @@ $retina-hd: 2.5; // hd retina > 2.5x
 				position: absolute;
 			    width: 100%;
 			    bottom: 0;
-			    @media only screen and (min-width: #{$desktop}){
+			    @include breakpoint($mobile){
+					text-align: center;
+			    }
+			    /*@media only screen and (min-width: #{$desktop}){
 					max-width: 1107px;
-	    		}
+	    		}*/
 				.title{
 					font-size: 30px;
 					color: #fff;

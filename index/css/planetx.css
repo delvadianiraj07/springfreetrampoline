@@ -296,25 +296,26 @@
     transform: translateY(-50%); }
   @media only screen and (max-width: 767px) {
     .planetx #static-panels section.intro-togma {
-      height: 100vh; } }
+      height: 60vh; } }
   .planetx .intro-togma {
     padding-top: 60px;
     position: relative;
     overflow: hidden;
-    background: #edfcff url(../images/home-tgoma-bg.jpg) no-repeat center 280px;
+    background: #E8F2FA url(../images/home-tgoma-bg.jpg) no-repeat center 280px;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
     height: 100vh;
-    max-width: 1107px;
+    /*max-width: 1107px;*/
     margin: 0 auto; }
     @media only screen and (max-width: 1199px) {
       .planetx .intro-togma {
         height: 120vh; } }
     @media only screen and (max-width: 767px) {
       .planetx .intro-togma {
-        padding-top: 0px; } }
+        padding-top: 0px;
+        background-position-y: 180px; } }
     .planetx .intro-togma h1 {
       color: #e30040; }
     .planetx .intro-togma img.tgoma {
@@ -341,10 +342,13 @@
         padding: 28px 0 35px 0;
         position: absolute;
         width: 100%;
-        bottom: 0; }
-        @media only screen and (min-width: 1199px) {
+        bottom: 0;
+        		    /*@media only screen and (min-width: 1199px){
+        				max-width: 1107px;
+            		}*/ }
+        @media only screen and (max-width: 767px) {
           .planetx .intro-togma .intro-togma-bg .jump-calories-wrap {
-            max-width: 1107px; } }
+            text-align: center; } }
         .planetx .intro-togma .intro-togma-bg .jump-calories-wrap .title {
           font-size: 30px;
           color: #fff;

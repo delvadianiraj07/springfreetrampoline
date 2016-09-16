@@ -2,6 +2,33 @@
 
 @import 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i,600,600i,700,700i,900,900i';
 
+$mobile: 767px;  // mobile 767px and less 
+$tablet: 991px;  // mobile 767px and less 
+$desktop: 1199px; // tablet 1025px {desctop - 1} and less 
+$lg-desktop: 1299px; // tablet 1025px {desctop - 1} and less 
+$retina: 1.5;    // standart retina > 1.5x
+$retina-hd: 2.5; // hd retina > 2.5x
+
+// breakpoints mixin
+@mixin breakpoint($rule, $orientation:""){
+	@if ($rule == $retina or $rule == $retina-hd){
+		@media only screen and ( min-resolution : #{$retina*96} ), ( -webkit-min-device-pixel-ratio : #{$retina} ){
+			@content;
+		}
+	}
+	@if ($orientation == "landscape" ){
+		@media only screen and (max-width: #{$rule}) and (orientation: #{$orientation}){
+			@content;
+		}
+	}
+	@else{
+		@media only screen and (max-width: #{$rule}){
+			@content;
+		}
+	}
+}
+
+
 .planetx{
 	font-family: 'Source Sans Pro', sans-serif;
 	font-size:20px;
@@ -49,14 +76,20 @@
 				font-weight:300;
 			}
 			.count {
-				color: #fff;
 				font-size: 30px;
+			    color: #fff;
+			    line-height: 27px;
+			    margin-bottom: 12px;
 				span {
-					padding: 3px 10px;
-					border-radius: 3px;
-					background-color: #0492b7;
-					display: inline-block;
-					line-height:1.2;
+					padding: 10px 10px;
+				    border-radius: 3px;
+				    background-color: #00afe0;
+				    display: inline-block;
+				    margin: 0px 4px;
+				    @include breakpoint($mobile){
+						padding: 4px 6px 2px 6px;
+						line-height: 20px;
+				    }
 				}
 			}
 		}
