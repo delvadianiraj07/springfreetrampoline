@@ -497,6 +497,9 @@ $retina-hd: 2.5; // hd retina > 2.5x
 		height: 100vh;
 		/*max-width: 1107px;*/
 		margin: 0 auto;
+		@media only screen and (min-width: 1200px){
+			height: 160vh;
+		}
     	@include breakpoint($desktop){    		
 			height: 120vh;
     	}
