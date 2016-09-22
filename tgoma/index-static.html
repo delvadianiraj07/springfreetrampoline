@@ -1172,10 +1172,8 @@
 		$(this).closest('#slide_video').show();
 		var get_scr = $(this).prev().attr('src');
 		$(this).prev().attr('src',get_scr+"?autoplay=1");
- 		$(this).hide();
-		
-		ev.preventDefault();
-	 
+ 		$(this).hide();		
+		ev.preventDefault();	 
 	  });
 	</script>
 </body>

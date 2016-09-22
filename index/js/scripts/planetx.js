@@ -98,10 +98,17 @@
                 $(this).siblings().removeClass('open-preview');
                 $(this).addClass('open-preview');
 
-                $(this).find('.hotspot-tooltip').click(function(ev) {
-                    ev.stopPropagation();
-                });
-                event.stopPropagation();
+                /*$(this).find('.hotspot-tooltip').click(function(ev) {
+                   ev.stopPropagation();
+                });*/
+				$(this).find('.hotspot-tooltip').hover(
+				  function() {
+					
+				  }, function() {
+					$(this).parents('.hotspot-point').removeClass('open-preview');
+				  }
+				);
+                //event.stopPropagation();
             });
             var hs_item = $(this).find('.hotspot-tooltip').html();
             $('#hotspots-item').append('<div class="hotspot-tooltip clearfix">' + hs_item + '</div>');
@@ -109,7 +116,7 @@
         });
         $(document).click(function(e) {
             var $all_hotspot = $('#trmp-hotspots .hotspot-point');
-            $all_hotspot.removeClass('open-preview');
+            //$all_hotspot.removeClass('open-preview');
         });
 
 
@@ -206,31 +213,68 @@
     // ====================================
 
 
-        $(".ilbvid-trampo-1").iLightBox({
+        $("#trmp-hotspots .ilbvid-trampo-1").iLightBox({
+            skin: "springfree",
+            controls: {
+                fullscreen: !1
+            }
+        });		
+		
+        $("#trmp-hotspots .ilbvid-trampo-2").iLightBox({
             skin: "springfree",
             controls: {
                 fullscreen: !1
             }
         });
-        $(".ilbvid-trampo-2").iLightBox({
+        $("#trmp-hotspots .ilbvid-trampo-3").iLightBox({
             skin: "springfree",
             controls: {
                 fullscreen: !1
             }
         });
-        $(".ilbvid-trampo-3").iLightBox({
+        $("#trmp-hotspots .ilbvid-trampo-4").iLightBox({
             skin: "springfree",
             controls: {
                 fullscreen: !1
             }
         });
-        $(".ilbvid-trampo-4").iLightBox({
+        $("#trmp-hotspots .ilbvid-trampo-5").iLightBox({
             skin: "springfree",
             controls: {
                 fullscreen: !1
             }
         });
-        $(".ilbvid-trampo-5").iLightBox({
+		
+		
+		$("#hotspots-item .ilbvid-trampo-1").iLightBox({
+            skin: "springfree",
+            controls: {
+                fullscreen: !1
+            }
+        });
+		
+		$("#hotspots-item .ilbvid-trampo-2").iLightBox({
+            skin: "springfree",
+            controls: {
+                fullscreen: !1
+            }
+        });
+		
+		$("#hotspots-item .ilbvid-trampo-3").iLightBox({
+            skin: "springfree",
+            controls: {
+                fullscreen: !1
+            }
+        });
+		
+		$("#hotspots-item .ilbvid-trampo-4").iLightBox({
+            skin: "springfree",
+            controls: {
+                fullscreen: !1
+            }
+        });
+		
+		$("#hotspots-item .ilbvid-trampo-5").iLightBox({
             skin: "springfree",
             controls: {
                 fullscreen: !1
