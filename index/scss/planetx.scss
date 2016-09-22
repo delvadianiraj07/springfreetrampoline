@@ -481,7 +481,7 @@ $retina-hd: 2.5; // hd retina > 2.5x
     #static-panels{
     	@include breakpoint($mobile){
 	    	section.intro-togma{
-	    		height: 100vh;
+	    		height: 60vh;
 	    	}
     	}
     }
@@ -489,19 +489,23 @@ $retina-hd: 2.5; // hd retina > 2.5x
     	padding-top: 60px;
     	position: relative;
     	overflow: hidden;
-    	background: #edfcff url(../images/home-tgoma-bg.jpg) no-repeat center 280px; 
+    	background: #E8F2FA url(../images/home-tgoma-bg.jpg) no-repeat center 280px; 
 		-webkit-background-size: cover;
 		-moz-background-size: cover;
 		-o-background-size: cover;
 		background-size: cover;
 		height: 100vh;
-		max-width: 1107px;
+		/*max-width: 1107px;*/
 		margin: 0 auto;
+		@media only screen and (min-width: 1200px){
+			height: 160vh;
+		}
     	@include breakpoint($desktop){    		
 			height: 120vh;
     	}
     	@include breakpoint($mobile){
 			padding-top: 0px;
+			background-position-y: 180px
     	}
     	h1{
     		color: #e30040;
@@ -537,9 +541,12 @@ $retina-hd: 2.5; // hd retina > 2.5x
 				position: absolute;
 			    width: 100%;
 			    bottom: 0;
-			    @media only screen and (min-width: #{$desktop}){
+			    @include breakpoint($mobile){
+					text-align: center;
+			    }
+			    /*@media only screen and (min-width: #{$desktop}){
 					max-width: 1107px;
-	    		}
+	    		}*/
 				.title{
 					font-size: 30px;
 					color: #fff;
@@ -551,21 +558,49 @@ $retina-hd: 2.5; // hd retina > 2.5x
 					}
 				}
 				.count{
-					color: #fff;
 					font-size: 30px;
+				    color: #fff;
+				    line-height: 27px;
+				    margin-bottom: 12px;
 					@include breakpoint($mobile){
 						font-size: 18px;
 					}
 					span{
-						padding: 3px 10px;
+						padding: 10px 10px;
 					    border-radius: 3px;
-					    background-color: #00afe0;
 					    display: inline-block;
 					    margin: 0px 4px;
+					    position: relative;
+
+					    background: rgba(0,175,239,1);
+						background: -moz-linear-gradient(top, rgba(0,175,239,1) 0%, rgba(19,186,247,1) 50%, rgba(0,175,239,1) 51%, rgba(0,175,239,1) 71%, rgba(0,175,239,1) 100%);
+						background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(0,175,239,1)), color-stop(50%, rgba(19,186,247,1)), color-stop(51%, rgba(0,175,239,1)), color-stop(71%, rgba(0,175,239,1)), color-stop(100%, rgba(0,175,239,1)));
+						background: -webkit-linear-gradient(top, rgba(0,175,239,1) 0%, rgba(19,186,247,1) 50%, rgba(0,175,239,1) 51%, rgba(0,175,239,1) 71%, rgba(0,175,239,1) 100%);
+						background: -o-linear-gradient(top, rgba(0,175,239,1) 0%, rgba(19,186,247,1) 50%, rgba(0,175,239,1) 51%, rgba(0,175,239,1) 71%, rgba(0,175,239,1) 100%);
+						background: -ms-linear-gradient(top, rgba(0,175,239,1) 0%, rgba(19,186,247,1) 50%, rgba(0,175,239,1) 51%, rgba(0,175,239,1) 71%, rgba(0,175,239,1) 100%);
+						background: linear-gradient(to bottom, rgba(0,175,239,1) 0%, rgba(19,186,247,1) 50%, rgba(0,175,239,1) 51%, rgba(0,175,239,1) 71%, rgba(0,175,239,1) 100%);
+						filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00afef', endColorstr='#00afef', GradientType=0 );
 					    @include breakpoint($mobile){
 							padding: 4px 6px 2px 6px;
     						line-height: 20px;
 					    }
+					    &.flip{
+							z-index: 2;
+							-webkit-animation: turn 0.5s 0s linear both;
+							-moz-animation: turn 0.5s 0s linear both;
+							animation: turn 0.5s 0s linear both;
+					    }
+					    &:after{
+					    	content: '';
+					    	display: block;
+					    	width: 100%;
+					    	height: 1px;
+					    	background: #3892d8;
+					    	position: absolute;
+					    	top: 50%;
+					    	left: 0px;
+					    	z-index: 1;
+				    	}
 					}
 				}
 			}
@@ -1000,4 +1035,31 @@ $retina-hd: 2.5; // hd retina > 2.5x
 	::i-block-chrome,.planetx .how-we-make .trampoline-hotspot .hotspot-point .hotspot-tooltip{
 		bottom: -27px;
 	}
+	::i-block-chrome,.count span {
+		padding: 11px 10px 9px 10px;
+	}
+}
+
+@-webkit-keyframes turn {
+	0% { -webkit-transform: rotateX(0deg); }
+	50%{ -webkit-transform: rotateX(90deg); }	
+	100% { -webkit-transform: rotateX(0deg); }
+}
+
+@-moz-keyframes turn {
+  0% { -webkit-transform: rotateX(0deg); }
+	50%{ -webkit-transform: rotateX(90deg); }	
+	100% { -webkit-transform: rotateX(0deg); }
+}
+
+@-o-keyframes turn {
+  0% { -webkit-transform: rotateX(0deg); }
+	50%{ -webkit-transform: rotateX(90deg); }	
+	100% { -webkit-transform: rotateX(0deg); }
+}
+
+@keyframes turn {
+  0% { -webkit-transform: rotateX(0deg); }
+	50%{ -webkit-transform: rotateX(90deg); }	
+	100% { -webkit-transform: rotateX(0deg); }
 }

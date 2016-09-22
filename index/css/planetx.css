@@ -296,25 +296,29 @@
     transform: translateY(-50%); }
   @media only screen and (max-width: 767px) {
     .planetx #static-panels section.intro-togma {
-      height: 100vh; } }
+      height: 60vh; } }
   .planetx .intro-togma {
     padding-top: 60px;
     position: relative;
     overflow: hidden;
-    background: #edfcff url(../images/home-tgoma-bg.jpg) no-repeat center 280px;
+    background: #E8F2FA url(../images/home-tgoma-bg.jpg) no-repeat center 280px;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
     height: 100vh;
-    max-width: 1107px;
+    /*max-width: 1107px;*/
     margin: 0 auto; }
+    @media only screen and (min-width: 1200px) {
+      .planetx .intro-togma {
+        height: 160vh; } }
     @media only screen and (max-width: 1199px) {
       .planetx .intro-togma {
         height: 120vh; } }
     @media only screen and (max-width: 767px) {
       .planetx .intro-togma {
-        padding-top: 0px; } }
+        padding-top: 0px;
+        background-position-y: 180px; } }
     .planetx .intro-togma h1 {
       color: #e30040; }
     .planetx .intro-togma img.tgoma {
@@ -341,10 +345,13 @@
         padding: 28px 0 35px 0;
         position: absolute;
         width: 100%;
-        bottom: 0; }
-        @media only screen and (min-width: 1199px) {
+        bottom: 0;
+        		    /*@media only screen and (min-width: 1199px){
+        				max-width: 1107px;
+            		}*/ }
+        @media only screen and (max-width: 767px) {
           .planetx .intro-togma .intro-togma-bg .jump-calories-wrap {
-            max-width: 1107px; } }
+            text-align: center; } }
         .planetx .intro-togma .intro-togma-bg .jump-calories-wrap .title {
           font-size: 30px;
           color: #fff;
@@ -355,21 +362,46 @@
               font-size: 22px;
               margin-bottom: 0px; } }
         .planetx .intro-togma .intro-togma-bg .jump-calories-wrap .count {
+          font-size: 30px;
           color: #fff;
-          font-size: 30px; }
+          line-height: 27px;
+          margin-bottom: 12px; }
           @media only screen and (max-width: 767px) {
             .planetx .intro-togma .intro-togma-bg .jump-calories-wrap .count {
               font-size: 18px; } }
           .planetx .intro-togma .intro-togma-bg .jump-calories-wrap .count span {
-            padding: 3px 10px;
+            padding: 10px 10px;
             border-radius: 3px;
-            background-color: #00afe0;
             display: inline-block;
-            margin: 0px 4px; }
+            margin: 0px 4px;
+            position: relative;
+            background: #00afef;
+            background: -moz-linear-gradient(top, #00afef 0%, #13baf7 50%, #00afef 51%, #00afef 71%, #00afef 100%);
+            background: -webkit-gradient(left top, left bottom, color-stop(0%, #00afef), color-stop(50%, #13baf7), color-stop(51%, #00afef), color-stop(71%, #00afef), color-stop(100%, #00afef));
+            background: -webkit-linear-gradient(top, #00afef 0%, #13baf7 50%, #00afef 51%, #00afef 71%, #00afef 100%);
+            background: -o-linear-gradient(top, #00afef 0%, #13baf7 50%, #00afef 51%, #00afef 71%, #00afef 100%);
+            background: -ms-linear-gradient(top, #00afef 0%, #13baf7 50%, #00afef 51%, #00afef 71%, #00afef 100%);
+            background: linear-gradient(to bottom, #00afef 0%, #13baf7 50%, #00afef 51%, #00afef 71%, #00afef 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00afef', endColorstr='#00afef', GradientType=0 ); }
             @media only screen and (max-width: 767px) {
               .planetx .intro-togma .intro-togma-bg .jump-calories-wrap .count span {
                 padding: 4px 6px 2px 6px;
                 line-height: 20px; } }
+            .planetx .intro-togma .intro-togma-bg .jump-calories-wrap .count span.flip {
+              z-index: 2;
+              -webkit-animation: turn 0.5s 0s linear both;
+              -moz-animation: turn 0.5s 0s linear both;
+              animation: turn 0.5s 0s linear both; }
+            .planetx .intro-togma .intro-togma-bg .jump-calories-wrap .count span:after {
+              content: '';
+              display: block;
+              width: 100%;
+              height: 1px;
+              background: #3892d8;
+              position: absolute;
+              top: 50%;
+              left: 0px;
+              z-index: 1; }
     @media only screen and (max-width: 991px) {
       .planetx .intro-togma .home-tgoma {
         display: none; } }
@@ -701,6 +733,37 @@
     width: 80%; }
 
   ::i-block-chrome, .planetx .how-we-make .trampoline-hotspot .hotspot-point .hotspot-tooltip {
-    bottom: -27px; } }
+    bottom: -27px; }
+
+  ::i-block-chrome, .count span {
+    padding: 11px 10px 9px 10px; } }
+@-webkit-keyframes turn {
+  0% {
+    -webkit-transform: rotateX(0deg); }
+  50% {
+    -webkit-transform: rotateX(90deg); }
+  100% {
+    -webkit-transform: rotateX(0deg); } }
+@-moz-keyframes turn {
+  0% {
+    -webkit-transform: rotateX(0deg); }
+  50% {
+    -webkit-transform: rotateX(90deg); }
+  100% {
+    -webkit-transform: rotateX(0deg); } }
+@-o-keyframes turn {
+  0% {
+    -webkit-transform: rotateX(0deg); }
+  50% {
+    -webkit-transform: rotateX(90deg); }
+  100% {
+    -webkit-transform: rotateX(0deg); } }
+@keyframes turn {
+  0% {
+    -webkit-transform: rotateX(0deg); }
+  50% {
+    -webkit-transform: rotateX(90deg); }
+  100% {
+    -webkit-transform: rotateX(0deg); } }
 
 /*# sourceMappingURL=planetx.css.map */
