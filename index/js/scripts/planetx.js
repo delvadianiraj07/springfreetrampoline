@@ -163,7 +163,7 @@
     var diffSeconds_2 = Math.ceil((timeDiff_2 / (1000 * 3600 * 24)) * 86400);
     // ----
 
-    window.setInterval(function(){
+   // window.setInterval(function(){
         diffSeconds = parseInt(diffSeconds) + parseInt(jump);
         var diffSeconds_a = diffSeconds.toString().split('');
         var jump_count = new Array();
@@ -208,7 +208,7 @@
                 $(this).text(diffSeconds_a_2[index]);
             });
         },300);
-    }, 1000); 
+    //}, 1000); 
     
     // ====================================
 
@@ -302,5 +302,24 @@
         });
 
     });
+
+    // Make the flip counter
+    $("#flipcounter").flipCounterInit({'speed': 0.5});
+
+    var startTime = new Date().getTime();
+    var initialDate = new Date("9/10/2015").getTime();
+
+    // Update values
+    function updateLoop() {
+        var elapsedTime = new Date().getTime() - initialDate;
+        var diffSeconds = Math.ceil((elapsedTime / (1000 * 3600 * 24)) * 86400);
+        $("#flipcounter").flipCounterUpdate(diffSeconds);
+        window.setTimeout(function() {
+            updateLoop();
+        }, 43);
+    }
+
+    // do it!
+    updateLoop();
 
 })(jQuery);
