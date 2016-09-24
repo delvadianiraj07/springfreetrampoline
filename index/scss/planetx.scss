@@ -1030,11 +1030,11 @@ $retina-hd: 2.5; // hd retina > 2.5x
 	    padding: 0;
 	    li{
 	    	display: inline-block;
-	    	margin-left: 14px;
+	    	margin-left: 7px;
 
 	    	.numberwrap{
 	    		position: relative;
-			    width: 50px;
+			    width: 40px;
 			    height: 60px;
 	    	}
 	    }
@@ -1042,47 +1042,47 @@ $retina-hd: 2.5; // hd retina > 2.5x
 	    	display: block;
 	    }
 	    li.comma{
-	    	text-shadow: 0px 0px 25px rgba(0, 0, 0, 0.5);
-		    color: #e4e4e4;
-		    margin-left: 16px;
+		    color: #fff;
+		    margin-left: 7px;
 	    }
 	    span, li.comma{
 			font-size: 30px;
 		    line-height: 57px;
-		    color: #e4e4e4;
-		    text-shadow: 0px 0px 25px rgba(255, 255, 255, 0.1);
+		    color: #fff;
 	    }
 	    .flipper_top{
 	    	position: absolute;
-		    width: 50px;
+		    width: 40px;
 		    height: 30px;
-		    background: #19191c;
-		    border-radius: 1px 1px 0px 0px;
-		    border: 1px solid #222226;
-		    border-top: 1px solid #2e2f37;
+			background: #028ec1;
+			border-radius: 1px 1px 0px 0px;
+			border: 1px solid #046b90;
+			border-top: 1px solid #137598;
 		    border-bottom: 0;
 		    top: 2px;
 		    text-align: center;
 		    overflow: hidden;
 
-		    .rings { background-position: -4px 53px; }
+		    .rings { 
+		    	top: 24px;
+		    	/*background-position: -4px 53px;*/
+		    }
 	    }
 	    .flipper_bottom {
 		    position: absolute;
-		    width: 50px;
+		    width: 40px;
 		    height: 28px;
-		    background: #242529;
+		    background: #00afef;
 		    border-radius: 0px 0px 1px 1px;
-		    
-		    border: 1px solid #28292d;
-		    border-bottom: 1px solid #3d3e42;
+		    border: 1px solid #087198;
+		    border-bottom: 1px solid #107aa0;
 		    border-top: 0;
 		    top: 31px;
 		    left: 0px;
 		    text-align: center;
 		    overflow: hidden;
 
-		    .rings { background-position: -4px -8px; }
+		    .rings { /*background-position: -4px -8px;*/ }
 		}
 		.flipper_top1{
 			top: 0px;
@@ -1103,11 +1103,13 @@ $retina-hd: 2.5; // hd retina > 2.5x
 		}
 		.rings {
 		    position: absolute;
-		    top: 0px;
+		    top: -4px;
 		    left: 0px;
 		    background: url(../images/rings.png) no-repeat;
 		    width: 100%;
 		    height: 100%;
+		    background-size: 38px;
+		    opacity: 0.7;
 		}
 	}
 	.flipper_top_front{
